@@ -1,0 +1,284 @@
+[
+ {
+  "name": "Shortnose Gar",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Gulf coastal plain (TX–FL)",
+   "Mississippi backwaters",
+   "Chesapeake tributaries"
+  ]
+ },
+ {
+  "name": "Freshwater Drum",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Gulf coast surf & bays",
+   "Chesapeake (MD/VA)",
+   "Florida beaches",
+   "Australian estuaries"
+  ]
+ },
+ {
+  "name": "Red Drum (Redfish)",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Louisiana marshes",
+   "Laguna Madre (TX)",
+   "Mosquito/Indian River (FL)",
+   "Charleston creeks (SC)"
+  ]
+ },
+ {
+  "name": "Striped Bass (Coastal)",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Chesapeake (MD/VA)",
+   "Cape Cod Canal (MA)",
+   "Hudson River (NY)",
+   "Delaware River (NJ/PA)"
+  ]
+ },
+ {
+  "name": "Barred Surfperch",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "US farm ponds and reservoirs",
+   "Great Lakes (US/CA)",
+   "Southern US rivers",
+   "Introduced EU waters"
+  ]
+ },
+ {
+  "name": "Redtail Surfperch",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "US farm ponds and reservoirs",
+   "Great Lakes (US/CA)",
+   "Southern US rivers",
+   "Introduced EU waters"
+  ]
+ },
+ {
+  "name": "Spotted Bay Bass",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "US farm ponds and reservoirs",
+   "Great Lakes (US/CA)",
+   "Southern US rivers",
+   "Introduced EU waters"
+  ]
+ },
+ {
+  "name": "Chinook Salmon",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Columbia River (WA/OR)",
+   "Kenai (AK)",
+   "Sacramento system (CA)",
+   "Fraser (BC)"
+  ]
+ },
+ {
+  "name": "Chum Salmon",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "SE Alaska",
+   "Puget Sound (WA)",
+   "BC rivers"
+  ]
+ },
+ {
+  "name": "Steelhead (Anadromous Rainbow)",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Skagit & Sauk (WA)",
+   "Skeena (BC)",
+   "Deschutes (OR)",
+   "Cattaraugus Creek (NY)"
+  ]
+ },
+ {
+  "name": "European Eel",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Gulf coastal plain (TX–FL)",
+   "Mississippi backwaters",
+   "Chesapeake tributaries"
+  ]
+ },
+ {
+  "name": "Japanese Eel",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Gulf coastal plain (TX–FL)",
+   "Mississippi backwaters",
+   "Chesapeake tributaries"
+  ]
+ },
+ {
+  "name": "American Smelt",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Pacific Northwest beaches (WA/OR)",
+   "Atlantic coast (US/CA)",
+   "North Sea (EU)"
+  ]
+ },
+ {
+  "name": "Skipjack Herring",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Atlantic coast runs (US)",
+   "Chesapeake (MD/VA)",
+   "Gulf coast (LA/TX)"
+  ]
+ },
+ {
+  "name": "Gizzard Shad",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Atlantic coast runs (US)",
+   "Chesapeake (MD/VA)",
+   "Gulf coast (LA/TX)"
+  ]
+ },
+ {
+  "name": "Threadfin Shad",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Atlantic coast runs (US)",
+   "Chesapeake (MD/VA)",
+   "Gulf coast (LA/TX)"
+  ]
+ },
+ {
+  "name": "Brook Silverside",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Pacific Northwest beaches (WA/OR)",
+   "Atlantic coast (US/CA)",
+   "North Sea (EU)"
+  ]
+ },
+ {
+  "name": "Inland Silverside",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "Pacific Northwest beaches (WA/OR)",
+   "Atlantic coast (US/CA)",
+   "North Sea (EU)"
+  ]
+ },
+ {
+  "name": "Striped Snakehead",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "SE Asia wetlands",
+   "Mid-Atlantic US (introduced)",
+   "Florida (introduced)"
+  ]
+ },
+ {
+  "name": "French Angelfish",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Native tropical rivers (Amazon/Africa/Asia)",
+   "Stocked/feral populations (FL/HI/TH)",
+   "Aquaculture ponds"
+  ]
+ },
+ {
+  "name": "Queen Angelfish",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Native tropical rivers (Amazon/Africa/Asia)",
+   "Stocked/feral populations (FL/HI/TH)",
+   "Aquaculture ponds"
+  ]
+ },
+ {
+  "name": "Emperor Angelfish",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Native tropical rivers (Amazon/Africa/Asia)",
+   "Stocked/feral populations (FL/HI/TH)",
+   "Aquaculture ponds"
+  ]
+ },
+ {
+  "name": "Slender Sunfish",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "US farm ponds and reservoirs",
+   "Great Lakes (US/CA)",
+   "Southern US rivers",
+   "Introduced EU waters"
+  ]
+ },
+ {
+  "name": "Pacific Ocean Perch",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "US farm ponds and reservoirs",
+   "Great Lakes (US/CA)",
+   "Southern US rivers",
+   "Introduced EU waters"
+  ]
+ },
+ {
+  "name": "Pacific Spiny Lumpsucker",
+  "env": "Saltwater",
+  "issue": "saltwater-with-freshwater-regions",
+  "regs": [
+   "Mississippi system rivers",
+   "Great Lakes bays",
+   "Southern reservoirs",
+   "European stillwaters"
+  ]
+ },
+ {
+  "name": "Grayling (European)",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "North Sea (NOR/UK)",
+   "Iceland",
+   "Georges Bank (US)",
+   "Norwegian coast"
+  ]
+ },
+ {
+  "name": "Wolf Fish (Trairao)",
+  "env": "Freshwater",
+  "issue": "freshwater-with-saltwater-regions",
+  "regs": [
+   "North Atlantic (NOR/IS/UK)",
+   "Greenland",
+   "New England (US)"
+  ]
+ }
+]

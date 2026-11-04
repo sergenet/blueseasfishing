@@ -1,0 +1,56 @@
+# =============================================
+# BlueSeasFishing.com - Apache/LiteSpeed config
+# =============================================
+
+# --- Default document ---
+DirectoryIndex index.html
+
+# --- Canonical host: force www ---
+# Both hosts currently serve 200 with no redirect, splitting search signals
+# between blueseasfishing.com and www.blueseasfishing.com. 301 everything
+# non-canonical onto the canonical host. (HTTP->HTTPS is already handled by
+# the server, so only the host needs checking here — no loop risk.)
+RewriteEngine On
+RewriteBase /
+
+# https://blueseasfishing.com/...  ->  https://www.blueseasfishing.com/...
+RewriteCond %{HTTP_HOST} ^blueseasfishing\.com$ [NC]
+RewriteRule ^ https://www.blueseasfishing.com%{REQUEST_URI} [R=301,L]
+
+# --- Legacy PHP pages -> new HTML equivalents (preserved from live config) ---
+Redirect 301 /blog.php       /blog.html
+Redirect 301 /fish-id.php    /fish-id.html
+Redirect 301 /forum.php      /forum.html
+Redirect 301 /gallery.php    /gallery.html
+Redirect 301 /index.php      /index.html
+Redirect 301 /login.php      /login.html
+Redirect 301 /shop.php       /shop.html
+Redirect 301 /subscribe.php  /subscribe.html
+
+# --- Consolidate duplicate gear page ---
+# gear-recommendations.html and recommended-fishing-gear.html are near-identical
+# pages both listed in the sitemap. Keep recommended-fishing-gear.html
+# (stronger keyword title) and 301 the other onto it.
+Redirect 301 /gear-recommendations.html /recommended-fishing-gear.html
+
+# --- Images converted to WebP: redirect old extension URLs ---
+# og:image and legacy references used .jpg/.png; 301s preserve any link equity
+# and keep Search Console clean. Rewrites (not Redirect) so any path depth works.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^images/(species|destinations)/(.+)\.(jpg|jpeg|png)$ /images/$1/$2.webp [R=301,L]
+
+# --- Keep utility/member pages out of the index ---
+# (login/members/premium-success already carry <meta name="robots">; this is a
+# belt-and-braces header for hosts that strip meta tags.)
+<IfModule mod_headers.c>
+  <FilesMatch "^(login|members-area|premium-success|subscribe)\.html$">
+    Header set X-Robots-Tag "noindex, follow"
+  </FilesMatch>
+  # --- Static asset caching ---
+  <FilesMatch "\.(css|js|png|jpg|jpeg|webp|gif|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# --- Custom error page (soft-404 protection) ---
+ErrorDocument 404 /404.html

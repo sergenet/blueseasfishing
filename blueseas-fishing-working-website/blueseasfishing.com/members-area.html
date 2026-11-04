@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+<meta charset="utf-8">
+<title>Members Area — Blue Seas Fishing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/images/favicon.ico">
+<style>
+  :root{--bg:#f8fafc;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--brand:#1d4ed8}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  a{color:#1d4ed8;text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px 16px}
+  .top{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .btn{display:inline-block;background:#1d4ed8;color:#fff;border-radius:10px;padding:10px 14px;font-weight:600;border:0;cursor:pointer;font:inherit}
+  .btn.ghost{background:#e5e7eb;color:#111;border:1px solid #d1d5db}
+  .muted{color:#64748b}
+  .grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+  label{display:block;margin:8px 0 6px;font-weight:600}
+  select,input[type="text"],input[type="email"]{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;box-sizing:border-box}
+  .list{margin:8px 0 0 18px}
+  .badge{display:inline-block;background:#f1f5f9;border:1px solid var(--line);border-radius:999px;padding:4px 8px;font-size:12px;color:#0f172a}
+  .chip{display:inline-block;background:#dcfce7;color:#166534;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+  .chip.off{background:#f1f5f9;color:#475569}
+  .target{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px}
+  .target h4{margin:0}
+  .intel-row{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:8px 0}
+  #status{font-size:14px;color:#15803d;margin-top:8px}
+  #status.err{color:#b91c1c}
+</style>
+<script src="/membership.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=2" defer></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+  <meta property="og:image" content="https://www.blueseasfishing.com/images/deep-sea-marlin-trolling-fishing-action.jpg">
+  <meta property="og:image:alt" content="Premium required">
+  <meta name="twitter:image" content="https://www.blueseasfishing.com/images/deep-sea-marlin-trolling-fishing-action.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <a class="btn ghost" href="javascript:history.length>1?history.back():location.assign('/index.html')">← Back</a> <a href="/recommended-fishing-gear.html">Shop Gear</a> <a href="/forum.html">Forum</a> <a href="/subscribe.html">Subscribe</a>
+    <div style="font-weight:800">Members Area</div>
+    <div>
+      <a class="btn ghost" href="/premium.html" id="manage-plan">Manage Plan</a>
+      <a class="btn ghost" id="logout" href="/index.html">Log out</a>
+    </div>
+  </div>
+
+  <div id="gate" class="card" style="display:none">
+    <h1>Premium required</h1>
+    <p class="muted">This area is for Premium members. Upgrade to unlock the trip planner, weekly bite briefs and advanced species intel.</p>
+    <a class="btn" href="/premium.html">Go Premium</a>
+  </div>
+
+  <div id="gate-brief" class="card" style="display:none;margin-top:14px">
+    <h2 style="margin-top:0">Weekly Regional Bite Brief — free</h2>
+    <p class="muted">Not premium yet? Get the weekly bite brief by email anyway — what's biting in your region, straight from our 548-species database. One-click unsubscribe.</p>
+    <label for="gate-region">Region</label>
+    <select id="gate-region"></select>
+    <label for="gate-email">Email for the weekly brief</label>
+    <input id="gate-email" type="email" placeholder="you@example.com">
+    <div style="margin-top:8px">
+      <label style="font-weight:400;display:flex;gap:8px;align-items:flex-start">
+        <input type="checkbox" id="gate-consent" style="margin-top:4px">
+        <span>I agree to receive the weekly bite brief by email.</span>
+      </label>
+    </div>
+    <div style="margin-top:8px">
+      <button class="btn" id="gate-save" type="button">Subscribe to the free brief</button>
+    </div>
+    <div id="gate-status" role="status"></div>
+  </div>
+
+  <section id="content" style="display:none">
+    <div class="card" style="background:linear-gradient(135deg,#0a1b3d,#1d4ed8);color:#fff;border:0">
+      <h1 style="margin:0 0 4px">Welcome, <span id="who">Member</span> 🎣</h1>
+      <p style="margin:0 0 12px;opacity:.9">Unlimited AI fish identification is included in your membership.</p>
+      <a class="btn" style="background:#fff;color:#1d4ed8;font-size:18px;padding:12px 22px" href="/fish-id.html">Identify a Fish →</a>
+      <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;font-size:18px;padding:12px 22px;border:1px solid rgba(255,255,255,.5)" href="/trip-planner.html">Plan a Trip →</a>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">Weekly Regional Bite Brief</h2>
+      <p class="muted">Generated live from our 548-species database for your region and the current month. Save your email to also get it in your inbox every week.</p>
+      <label for="region">Region</label>
+      <select id="region"></select>
+      <label for="email">Email for the weekly brief (optional)</label>
+      <input id="email" type="email" placeholder="you@example.com">
+      <div style="margin-top:8px">
+        <button class="btn" id="save" type="button">Save preferences &amp; subscribe</button>
+      </div>
+      <div id="status" role="status"></div>
+      <div id="brief"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin-top:0">Advanced Species Intel</h2>
+        <p class="muted">Deep dives across all 548 profiles: habitat, season windows, baits and hotspots.</p>
+        <input id="intel-search" type="text" placeholder="Search a species — e.g. pike, snapper, perch" autocomplete="off">
+        <div id="intel"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Quarterly Mini-Guides</h2>
+        <ul class="list" id="guides-list">
+          <li><a href="/guides/mediterranean-shore-fishing.html">Shore fishing in the Mediterranean</a> — reading swells &amp; structure</li>
+          <li><a href="/guides/eastern-european-rivers.html">Eastern European rivers</a> — targeting asp, zander, pike efficiently</li>
+          <li><a href="/guides/british-canals.html">British canals</a> — perch &amp; pike with ultralight tackle</li>
+          <li><a href="/guides/alpine-lakes-trout.html">Alpine lakes</a> — trout tactics from shore &amp; small craft</li>
+        </ul>
+        <p class="muted">Print any guide from your browser to take it fishing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/assets/js/bsf-plan.js?v=1" defer></script>
+<script>
+(function(){
+  var gate    = document.getElementById('gate');
+  var content = document.getElementById('content');
+  var who     = document.getElementById('who');
+  var emailEl = document.getElementById('email');
+  var region  = document.getElementById('region');
+  var briefEl = document.getElementById('brief');
+  var statusEl= document.getElementById('status');
+  var intelEl = document.getElementById('intel');
+  var intelQ  = document.getElementById('intel-search');
+  var logout  = document.getElementById('logout');
+  var managePlan = document.getElementById('manage-plan');
+
+  var MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var nowMonth = new Date().getMonth() + 1;
+  var species = [], regions = [];
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  // locale prefix for links built at runtime (mirror transform can't touch scripts)
+  var LANGP = (function(){ var l=(document.documentElement.lang||'en').toLowerCase(); return (/^[a-z]{2}$/.test(l) && l!=='en') ? '/'+l : ''; })();
+  function prefs(){ try{return JSON.parse(localStorage.getItem('bsf_prefs_v1')||'{}');}catch(e){return{}} }
+  function savePrefs(p){ try{ localStorage.setItem('bsf_prefs_v1', JSON.stringify(p)); }catch(e){} }
+
+  function renderBrief(){
+    var key = region.value;
+    var def = regions.find(function(g){ return g.key === key; }) || null;
+    if (!def) { briefEl.innerHTML = ''; return; }
+    var brief = window.BSF_PLAN.buildBrief(species, def, nowMonth);
+    if (!brief.inSeason.length) {
+      briefEl.innerHTML = '<p class="muted">No species matched this region yet — our coverage there is still growing.</p>';
+      return;
+    }
+    briefEl.innerHTML = '<h3 style="margin-bottom:0">What should be biting in ' + esc(def.label) + ' — ' + MONTH_NAMES[nowMonth-1] + '</h3>' +
+      brief.inSeason.map(function(p){
+        var r = p.row;
+        var spots = (r.regions||[]).slice(0,3).map(esc).join(' · ');
+        return '<div class="target"><h4>' + esc(r.name) +
+          ' <span class="chip' + (p.inSeason?'':' off') + '">' + (p.inSeason?'In season':'Off-season') + '</span></h4>' +
+          (r.baits ? '<div><strong>Baits:</strong> ' + esc(r.baits) + '</div>' : '') +
+          (r.season ? '<div><strong>Season:</strong> ' + esc(r.season) + '</div>' : '') +
+          (spots ? '<div class="muted" style="font-size:14px">Hotspots: ' + spots + '</div>' : '') +
+          '</div>';
+      }).join('');
+  }
+
+  function renderIntel(q){
+    q = String(q||'').trim().toLowerCase();
+    if (!q) {
+      intelEl.innerHTML = '<p class="muted" style="margin-top:10px">Start typing to search all 548 species.</p>';
+      return;
+    }
+    var hits = species.filter(function(s){ return s.name.toLowerCase().indexOf(q) !== -1 || (s.sci||'').toLowerCase().indexOf(q) !== -1; }).slice(0, 8);
+    if (!hits.length) { intelEl.innerHTML = '<p class="muted" style="margin-top:10px">No species matched “' + esc(q) + '”.</p>'; return; }
+    intelEl.innerHTML = hits.map(function(s){
+      return '<div class="intel-row"><div><strong>' + esc(s.name) + '</strong>' +
+        (s.sci ? ' <span class="muted" style="font-style:italic">' + esc(s.sci) + '</span>' : '') +
+        (s.habitat ? '<div style="font-size:14px">' + esc(s.habitat) + '</div>' : '') +
+        (s.baits ? '<div style="font-size:14px"><strong>Baits:</strong> ' + esc(s.baits) + '</div>' : '') +
+        (s.season ? '<div style="font-size:14px"><strong>Season:</strong> ' + esc(s.season) + '</div>' : '') +
+        '</div><a class="badge" href="' + LANGP + '/gallery.html#' + encodeURIComponent(s.name) + '">Profile</a></div>';
+    }).join('');
+  }
+
+  function load(){
+    var m = {status:'guest'};
+    fetch('/api/membership.php?action=me', {credentials:'include'})
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        m = j && j.data && j.data.user ? j.data.user : m;
+        if (window.BSF && BSF.login && m.status !== 'guest') BSF.login({email:m.email||'',name:m.name||'',status:m.status||'member'});
+        finish(m);
+      })
+      .catch(function(){ finish(m); });
+  }
+
+  function finish(m){
+    if (m.status!=='premium'){
+      gate.style.display='block';
+      document.getElementById('gate-brief').style.display='block';
+      content.style.display='none';
+      loadGateRegions();
+      return;
+    }
+    gate.style.display='none'; content.style.display='block';
+    who.textContent = m.email || m.name || 'Premium Member';
+    if (m.status === 'premium') managePlan.style.display = 'none';
+
+    var p = prefs();
+    if (p.email) emailEl.value = p.email;
+
+    window.BSF_PLAN.loadSpecies().then(function(sp){
+      species = sp;
+      return window.BSF_PLAN.loadRegions();
+    }).then(function(rg){
+      regions = rg;
+      region.innerHTML = regions.map(function(g){ return '<option value="'+esc(g.key)+'">'+esc(g.label)+'</option>'; }).join('');
+      if (p.region && regions.some(function(g){ return g.key === p.region; })) region.value = p.region;
+      renderBrief();
+      renderIntel('');
+    }).catch(function(){
+      briefEl.innerHTML = '<p class="muted">Could not load the species database. Refresh to retry.</p>';
+    });
+  }
+
+  document.getElementById('save').addEventListener('click', function(){
+    var email = emailEl.value.trim();
+    var p = prefs();
+    p.region = region.value;
+    p.email = email;
+    savePrefs(p);
+    renderBrief();
+    statusEl.className = '';
+    if (!email) { statusEl.textContent = 'Preferences saved on this device.'; return; }
+    statusEl.textContent = 'Saving…';
+    var body = new URLSearchParams({ action:'subscribe', email: email, region: region.value, consent:'yes', source:'members-area' });
+    fetch('/api/brief-subscribe.php', { method:'POST', credentials:'include',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) throw new Error(j.error || 'Subscribe failed');
+        statusEl.textContent = 'Saved — the brief will arrive weekly at ' + email + '. Check your inbox for a confirmation from contact@blueseasfishing.com.';
+      })
+      .catch(function(e){
+        statusEl.className = 'err';
+        statusEl.textContent = 'Saved on this device, but the email signup failed: ' + e.message + '. Try again in a moment.';
+      });
+  });
+
+  region.addEventListener('change', renderBrief);
+  intelQ.addEventListener('input', function(){ renderIntel(intelQ.value); });
+
+  /* Free-member gate: weekly brief signup (same API as the premium card). */
+  var gateRegion = document.getElementById('gate-region');
+  var gateLoaded = false;
+  function loadGateRegions(){
+    if (gateLoaded) return; gateLoaded = true;
+    fetch('/assets/data/brief-regions.json').then(function(r){ return r.json(); }).then(function(j){
+      var list = (j && j.regions) || [];
+      gateRegion.innerHTML = list.map(function(g){ return '<option value="'+esc(g.key)+'">'+esc(g.label)+'</option>'; }).join('') || '<option value="">Regions unavailable</option>';
+    }).catch(function(){
+      gateRegion.innerHTML = '<option value="">Could not load regions — refresh to retry</option>';
+    });
+  }
+  document.getElementById('gate-save').addEventListener('click', function(){
+    var statusEl = document.getElementById('gate-status');
+    var email = document.getElementById('gate-email').value.trim();
+    var consent = document.getElementById('gate-consent').checked;
+    statusEl.className = '';
+    if (!email || email.indexOf('@') === -1) { statusEl.className='err'; statusEl.textContent = 'Enter a valid email address.'; return; }
+    if (!consent) { statusEl.className='err'; statusEl.textContent = 'Please agree to receive the weekly brief.'; return; }
+    statusEl.textContent = 'Subscribing…';
+    var body = new URLSearchParams({ action:'subscribe', email: email, region: gateRegion.value, consent:'yes', source:'members-area-gate' });
+    fetch('/api/brief-subscribe.php', { method:'POST', credentials:'include',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) throw new Error(j.error || 'Signup failed');
+        statusEl.textContent = 'You\'re subscribed — the next brief will arrive at ' + email + '. Check for a confirmation from contact@blueseasfishing.com.';
+      })
+      .catch(function(e){ statusEl.className='err'; statusEl.textContent = e.message; });
+  });
+
+  managePlan.onclick = async (event)=>{
+    event.preventDefault();
+    managePlan.textContent = 'Opening…';
+    try {
+      const response = await fetch('/api/billing.php', {method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'action=portal'});
+      const result = await response.json();
+      if (!response.ok || !result.ok || !result.data?.url) throw new Error(result.error || 'Could not open billing management.');
+      location.assign(result.data.url);
+    } catch (error) {
+      alert(error.message || 'Could not open billing management.');
+      managePlan.textContent = 'Manage Plan';
+    }
+  };
+  logout.onclick = async (event)=>{
+    event.preventDefault();
+    if (logout.dataset.busy) return;
+    logout.dataset.busy = '1';
+    logout.textContent = 'Logging out…';
+    /* Kill the server session first. Never let a network hiccup strand the
+       user here — race a timeout so logout always completes. */
+    try {
+      await Promise.race([
+        fetch('/api/membership.php?action=logout',{credentials:'include'}),
+        new Promise(resolve=>setTimeout(resolve,4000))
+      ]);
+    } catch (err) {}
+    /* Clear local state. Guard BSF so a stale cached membership.js can't
+       break logout; fall back to removing the stored member key directly. */
+    try {
+      if (window.BSF && typeof BSF.logout === 'function') BSF.logout();
+      else localStorage.removeItem('bsf_member_v3');
+    } catch (err) { try { localStorage.removeItem('bsf_member_v3'); } catch (e2) {} }
+    location.replace('/index.html');
+  };
+
+  if (document.readyState==='loading') document.addEventListener('DOMContentLoaded', load); else load();
+  document.addEventListener('bsf-member-change', load);
+})();
+</script>
+<script src="/assets/js/nav-back.js?v=3" defer></script><script src="/branding.js?v=3" defer></script>
+</body>
+</html>

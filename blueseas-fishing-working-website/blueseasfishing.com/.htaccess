@@ -1,0 +1,154 @@
+# =============================================
+# BlueSeasFishing.com - Apache/LiteSpeed config
+# =============================================
+
+# --- No directory listings ---
+# Without this, every directory that has no index.html served a crawlable
+# autoindex page named "Index of /<dir>/": /guides/, /assets/, and all ~380
+# states/<name>/ directories. Verified on this host 2026-11-01 before applying:
+# a probe directory carrying this exact directive returned 403 while its child
+# file stayed 200, so `Options` is permitted here and cannot 500 the site.
+Options -Indexes
+
+# --- Default document ---
+DirectoryIndex index.html
+
+# --- Canonical host: force www ---
+# Both hosts currently serve 200 with no redirect, splitting search signals
+# between blueseasfishing.com and www.blueseasfishing.com. 301 everything
+# non-canonical onto the canonical host. (HTTP->HTTPS is already handled by
+# the server, so only the host needs checking here — no loop risk.)
+RewriteEngine On
+RewriteBase /
+
+# https://blueseasfishing.com/...  ->  https://www.blueseasfishing.com/...
+RewriteCond %{HTTP_HOST} ^blueseasfishing\.com$ [NC]
+RewriteRule ^ https://www.blueseasfishing.com%{REQUEST_URI} [R=301,L]
+
+# --- /index.html -> / (single home URL; was serving a 200 duplicate) ---
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# --- /<dir>/index.html -> /<dir>/ (canonical directory URLs; prevent duplicates) ---
+RewriteCond %{THE_REQUEST} \s/+([^?]+/)index\.html[\s?] [NC]
+RewriteRule ^.+/index\.html$ /%1 [R=301,L]
+
+# --- Owner dashboard: /admin -> /api/admin.php (key stays in the query) ---
+# The dashboard is a PHP script under /api/, so typing /admin used to 404.
+# Internal rewrite (not a redirect) so /admin?key=... works and the POST forms
+# on the page keep resolving against the same URL.
+RewriteRule ^admin/?$ /api/admin.php [L,QSA]
+
+# --- Extensionless URLs -> canonical .html (was 404: /blog, /species/<slug>) ---
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ /$1.html [R=301,L]
+
+# --- Legacy PHP pages -> new HTML equivalents (preserved from live config) ---
+Redirect 301 /blog.php       /blog.html
+Redirect 301 /fish-id.php    /fish-id.html
+Redirect 301 /forum.php      /forum.html
+Redirect 301 /gallery.php    /gallery.html
+Redirect 301 /index.php      /
+Redirect 301 /login.php      /login.html
+Redirect 301 /shop.php       /shop.html
+Redirect 301 /subscribe.php  /subscribe.html
+
+# --- Consolidate duplicate gear page (across all locales) ---
+# gear-recommendations.html and recommended-fishing-gear.html are near-identical
+# pages both listed in the sitemap. Keep recommended-fishing-gear.html
+# (stronger keyword title) and 301 the other onto it.
+Redirect 301 /gear-recommendations.html /recommended-fishing-gear.html
+RedirectMatch 301 ^/([a-z]{2})/gear-recommendations\.html$ /$1/recommended-fishing-gear.html
+
+# --- Consolidate near-duplicate destination pages (region-merges.json) ---
+# The upstream region data held near-synonyms for the same fishery (Georges
+# Bank, Georges Bank (US), Georges Bank (MA)), each with its own page: 28
+# near-duplicate pages splitting crawl budget. They are merged into one
+# canonical page carrying the full species union; these 301s preserve link
+# equity. Source of truth: tools/region-merges.json.
+Redirect 301 /destinations/atlantic-coast-runs-us.html /destinations/atlantic-coast-us-ca.html
+Redirect 301 /destinations/atlantic-europe-fr-es-pt.html /destinations/atlantic-europe.html
+Redirect 301 /destinations/california-offshore.html /destinations/california-banks-ca.html
+Redirect 301 /destinations/channel-islands-ca.html /destinations/channel-islands.html
+Redirect 301 /destinations/chesapeake-md.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/chesapeake-tributaries.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/chesapeake-va-md.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/florida-beaches.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-coasts.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-reefs.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-us.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/georges-bank.html /destinations/georges-bank-us.html
+Redirect 301 /destinations/georges-bank-ma.html /destinations/georges-bank-us.html
+Redirect 301 /destinations/great-lakes.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/great-lakes-bays.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/great-lakes-tributaries.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/gulf-of-mexico-fl-tx.html /destinations/gulf-of-mexico.html
+Redirect 301 /destinations/gulf-of-mexico-fl-tx-la.html /destinations/gulf-of-mexico.html
+Redirect 301 /destinations/iwp.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-offshore.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-reefs-aus-pac.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-reefs-aus-pac-ind.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/mediterranean-estuaries.html /destinations/mediterranean.html
+Redirect 301 /destinations/monterey-bay-ca.html /destinations/monterey-bay.html
+Redirect 301 /destinations/pacific-northwest.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/pacific-northwest-beaches-wa-or.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/pacific-northwest-deepwater.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/south-atlantic-reefs-fl-nc.html /destinations/south-atlantic-fl-nc.html
+
+# --- Images converted to WebP: redirect old extension URLs ---
+# og:image and legacy references used .jpg/.png; 301s preserve any link equity
+# and keep Search Console clean. Rewrites (not Redirect) so any path depth works.
+# The second condition only fires the redirect when the .webp twin actually
+# exists — previously a missing twin redirected straight into a 404 (GSC
+# "Redirect error"); without it the original .jpg is served as-is.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/images/$1/$2.webp -f
+RewriteRule ^images/(species|destinations)/(.+)\.(jpg|jpeg|png)$ /images/$1/$2.webp [R=301,L]
+
+# --- Keep utility/member pages out of the index ---
+# (login/members/premium-success already carry <meta name="robots">; this is a
+# belt-and-braces header for hosts that strip meta tags.)
+<IfModule mod_headers.c>
+  <FilesMatch "^(login|members-area|premium-success|subscribe)\.html$">
+    Header set X-Robots-Tag "noindex, follow"
+  </FilesMatch>
+  # --- Static asset caching ---
+  <FilesMatch "\.(png|jpg|jpeg|webp|gif|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  # --- HTML always revalidates: the site updates daily and visitors must not
+  #     submit stale forms or read stale content (bit us once: a cached pre-
+  #     picker homepage submitted without the state field). ---
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# --- Custom error page (soft-404 protection) ---
+ErrorDocument 404 /404.html
+
+# --- Block direct access to internal tooling state files (dotfiles) ---
+# The generators' data maps and logs are build inputs/outputs, not public pages.
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# --- Deploy backups: build artifacts, never public pages ---
+# /backup-p0-<stamp>/ holds entire pre-change copies of the site plus generator
+# scripts. Options -Indexes above removes the listing but not a direct fetch of
+# a known filename, so deny the directory outright.
+<IfModule mod_rewrite.c>
+  RewriteRule ^backup- - [F,L]
+</IfModule>
+
+# --- Newsletter issue bundles: build artifacts, not public pages ---
+# The email bodies live at /newsletter-issues/<stamp>/<state>.html on disk for
+# the cron sender only. They must not be crawlable (duplicate content vs the
+# live pages they quote; and they carry {{UNSUB_TOKEN}} placeholders).
+<IfModule mod_rewrite.c>
+  RewriteRule ^newsletter-issues/ - [F,L]
+</IfModule>

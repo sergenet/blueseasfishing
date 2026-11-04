@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+  <script src="/branding.js?v=3" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonnez-vous — Briefs de pêche mensuels et hebdomadaires — Blue Seas Fishing</title>
+  <meta name="robots" content="noindex,follow">
+    <meta name="description" content="Deux brèves par courrier électronique, construites à partir de notre base de données de 548 espèces.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/modern-styles.css?v=20261017-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <script src="/analytics-consent.js?v=2" defer></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+<style>
+  .sub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+  @media (max-width: 860px) { .sub-grid { grid-template-columns: 1fr; } }
+  .sub-card { background: #fff; border: 1px solid var(--neutral-border, #e2e8f0); border-radius: 14px; padding: 22px; }
+  .sub-card h2 { margin: 0 0 6px; font-size: 21px; }
+  .sub-card .cadence { font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: #1d4ed8; }
+  .sub-card label { display: block; margin: 14px 0 6px; font-weight: 600; font-size: 15px; }
+  .sub-card input[type="email"], .sub-card select { width: 100%; padding: 11px 12px; font: inherit; border: 1px solid #cbd5e1; border-radius: 10px; box-sizing: border-box; }
+  .sub-card .consent { display: flex; gap: 8px; align-items: flex-start; margin: 14px 0 0; font-weight: 400; font-size: 14px; color: #475569; }
+  .sub-card .consent input { margin-top: 3px; }
+  .sub-card button { margin-top: 16px; width: 100%; }
+  .sub-msg { margin-top: 10px; font-size: 14px; min-height: 1.2em; }
+  .sub-msg.err { color: #b91c1c; }
+  .sub-done { background: #ecfdf5; border: 1px solid #10b981; border-radius: 14px; padding: 22px; text-align: center; }
+  .sub-done .check { color: #15803d; font-size: 20px; margin-right: 8px; }
+  .sub-done strong { color: #065f46; font-size: 18px; }
+  #done-both { max-width: 520px; margin: 28px auto 0; font-size: 20px; padding: 30px; }
+</style>
+  <link rel="canonical" href="https://www.blueseasfishing.com/fr/subscribe.html">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+    <nav class="navbar">
+        <div class="container">
+            <a href="/fr/index.html" class="navbar-brand">
+                <i class="fas fa-fish"></i>
+                BlueSeas<span class="logo-accent">Pêche</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Basculer la navigation" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/fr/index.html" class="nav-link">Page d'accueil</a></li>
+                <li><a href="/fr/fish-id.html" class="nav-link">Identifier le poisson</a></li>
+                <li><a href="/fr/gallery.html" class="nav-link">Base de données sur les espèces</a></li>
+                <li><a href="/fr/shop.html" class="nav-link">Conseils et équipement</a></li><li><a href="/fr/recommended-fishing-gear.html" class="nav-link">Acheter du matériel</a></li><li><a href="/fr/login.html" class="nav-link member-link">Connexion membre</a></li>
+                <li><a href="/fr/community.html" class="nav-link">Galerie communautaire</a></li>
+                <li><a href="/fr/forum.html" class="nav-link">Forum</a></li>
+                <li><a href="/fr/subscribe.html" class="nav-link active">S'abonner&#10;</a></li>
+                <li><a href="/fr/fish-id.html" class="btn btn-primary btn-sm">Télécharger une photo</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="container">
+        <section class="section" style="padding-bottom: 40px;">
+            <div style="text-align:center; max-width: 640px; margin: 0 auto;">
+                <h1>Restez sur la morsure</h1>
+                <p class="lead" style="color:#64748b">Deux brèves par courrier électronique, construites à partir de notre base de données de 548 espèces. Abonnez-vous à l'un ou aux deux - désabonnez-vous en un clic depuis n'importe quel e-mail.</p>
+            </div>
+
+            <!-- Shown only when BOTH subscriptions are active -->
+            <div id="done-both" class="sub-done" hidden>
+                <span class="check"><i class="fas fa-check-circle"></i></span><strong>Vous êtes abonné</strong>
+            </div>
+
+            <div class="sub-grid" id="sub-grid">
+                <!-- Monthly -->
+                <div>
+                    <div id="card-monthly" class="sub-card">
+                        <div class="cadence">Mensuel</div>
+                        <h2><i class="fas fa-calendar-alt" style="color:#1d4ed8"></i> Brief mensuel</h2>
+                        <p style="color:#64748b;margin:6px 0 0">Qu'est-ce qui mord <strong>votre état</strong>, objectifs saisonniers et nouveaux guides — un e-mail au début de chaque mois.</p>
+                        <form id="form-monthly">
+                            <label for="m-email">Adresse email</label>
+                            <input type="email" id="m-email" placeholder="votre@exemple.com" required>
+                            <label for="m-state">Votre état (facultatif – personnalise le brief)</label>
+                            <select id="m-state"><option value="">Passer — résumé global</option></select>
+                            <label class="consent"><input type="checkbox" id="m-consent" required> <span>J'accepte de recevoir les mises à jour par e-mail de Blue Seas Fishing.</span></label>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i> Abonnez-vous au mensuel</button>
+                            <div class="sub-msg" id="m-msg" role="status"></div>
+                        </form>
+                    </div>
+                    <div id="done-monthly" class="sub-done" hidden>
+                        <span class="check"><i class="fas fa-check-circle"></i></span><strong>Vous êtes abonné</strong>
+                    </div>
+                </div>
+
+                <!-- Weekly -->
+                <div>
+                    <div id="card-weekly" class="sub-card">
+                        <div class="cadence">Hebdomadaire</div>
+                        <h2><i class="fas fa-fish" style="color:#1d4ed8"></i> Brief régional hebdomadaire</h2>
+                        <p style="color:#64748b;margin:6px 0 0">Chaque semaine : espèces cibles, meilleurs appâts et fenêtres de saison pour <strong>votre région</strong> - directement à partir de la base de données de 548 espèces.</p>
+                        <form id="form-weekly">
+                            <label for="w-email">Adresse email</label>
+                            <input type="email" id="w-email" placeholder="votre@exemple.com" required>
+                            <label for="w-region">Votre région</label>
+                            <select id="w-region" required><option value="">Choisissez votre région</option></select>
+                            <label class="consent"><input type="checkbox" id="w-consent" required> <span>J'accepte de recevoir le brief hebdomadaire par email.</span></label>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-fish"></i> Abonnez-vous à la semaine</button>
+                            <div class="sub-msg" id="w-msg" role="status"></div>
+                        </form>
+                    </div>
+                    <div id="done-weekly" class="sub-done" hidden>
+                        <span class="check"><i class="fas fa-check-circle"></i></span><strong>Vous êtes abonné</strong>
+                    </div>
+                </div>
+            </div>
+
+            <p style="text-align:center;margin-top:26px;color:#64748b;font-size:14px">
+                Chaque e-mail comprend un lien de désabonnement en un clic. <a href="/fr/premium.html" style="color:#1d4ed8;font-weight:600">Membres premium</a> procurez-vous également le planificateur de voyage imprimable.
+            </p>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="/fr/index.html" class="navbar-brand">
+                    <i class="fas fa-fish"></i>
+                    BlueSeas<span class="logo-accent">Pêche</span>
+                </a>
+                <p style="margin-top: 1rem; opacity: 0.8;">Votre destination ultime pour l'identification des poissons et l'expertise en matière de pêche grâce à l'IA.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Explorer</h4>
+                <ul class="footer-links">
+                    <li><a href="/fr/fish-id.html">Identification des poissons</a></li>
+                    <li><a href="/fr/gallery.html">Base de données sur les espèces</a></li>
+                    <li><a href="/fr/blog.html">Conseils de pêche</a></li>
+                    <li><a href="/fr/shop.html">Tests de matériel</a></li>
+                    <li><a href="/fr/community.html">Galerie communautaire</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Communauté</h4>
+                <ul class="footer-links">
+                    <li><a href="/fr/forum.html">Forum</a></li>
+                    <li><a href="/fr/gallery.html">Galerie de photos</a></li>
+                    <li><a href="/fr/blog.html">Blogue</a></li>
+                    <li><a href="/fr/subscribe.html">S'abonner&#10;</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Juridique</h4>
+                <ul class="footer-links">
+                    <li><a href="/fr/privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="/fr/terms.html">Conditions d'utilisation</a></li>
+                    <li><a href="/fr/cookies.html">Politique en matière de cookies</a></li>
+                    <li><a href="/fr/contact.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 BlueSeasFishing.com. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* Subscription hub state machine.
+ * Each subscription, once active, swaps its form for a "You are subscribed"
+ * note; when both are active the two notes collapse into one.
+ * State = localStorage (instant) + server probe by the remembered email
+ * (correct across devices: e.g. subscribed on the homepage earlier). */
+(function () {
+  'use strict';
+  var state = { monthly: false, weekly: false, email: '' };
+  try { Object.assign(state, JSON.parse(localStorage.getItem('bsf_subs_v1') || '{}')); } catch (e) {}
+
+  function save() { try { localStorage.setItem('bsf_subs_v1', JSON.stringify(state)); } catch (e) {} }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  function render() {
+    var both = state.monthly && state.weekly;
+    document.getElementById('done-both').hidden = !both;
+    [['monthly', 'card-monthly', 'done-monthly'], ['weekly', 'card-weekly', 'done-weekly']].forEach(function (p) {
+      var done = state[p[0]];
+      document.getElementById(p[1]).hidden = done || both;
+      document.getElementById(p[2]).hidden = !done || both;
+    });
+    // prefill the still-open form with the remembered email
+    if (state.email) {
+      if (!state.monthly) document.getElementById('m-email').value = state.email;
+      if (!state.weekly) document.getElementById('w-email').value = state.email;
+    }
+  }
+
+  function done(which, email) {
+    state[which] = true;
+    state.email = email;
+    save();
+    render();
+    try { window.bsfTrack && window.bsfTrack(which === 'monthly' ? 'newsletter_signup' : 'brief_signup', { source: 'subscribe-page' }); } catch (e) {}
+  }
+
+  function msg(id, text, isErr) {
+    var el = document.getElementById(id);
+    el.textContent = text || '';
+    el.className = 'sub-msg' + (isErr ? ' err' : '');
+  }
+
+  /* ---- populate selects (same data files the homepage uses) ---- */
+  try {
+    var cachedStates = JSON.parse(sessionStorage.getItem('bsf-states') || 'null');
+    var fillStates = function (list) {
+      var sel = document.getElementById('m-state');
+      list.forEach(function (s) { var o = document.createElement('option'); o.value = s.slug; o.textContent = s.name; sel.appendChild(o); });
+    };
+    if (cachedStates && cachedStates.length) fillStates(cachedStates);
+    else fetch('/assets/data/states-list.json').then(function (r) { return r.json(); }).then(function (list) {
+      sessionStorage.setItem('bsf-states', JSON.stringify(list));
+      fillStates(list);
+    }).catch(function () {});
+  } catch (e) {}
+
+  fetch('/assets/data/brief-regions.json').then(function (r) { return r.json(); }).then(function (j) {
+    var sel = document.getElementById('w-region');
+    ((j && j.regions) || []).forEach(function (g) { var o = document.createElement('option'); o.value = g.key; o.textContent = g.label; sel.appendChild(o); });
+  }).catch(function () {});
+
+  /* ---- server probe: sync state for the remembered email ---- */
+  if (state.email) {
+    var probe = function (url) { return fetch(url).then(function (r) { return r.json(); }).catch(function () { return null; }); };
+    Promise.all([
+      probe('/api/newsletter.php?check=' + encodeURIComponent(state.email)),
+      probe('/api/brief-subscribe.php?action=status&email=' + encodeURIComponent(state.email))
+    ]).then(function (res) {
+      var m = res[0], w = res[1];
+      if (m && m.ok && m.data && m.data.status === 'active') state.monthly = true;
+      if (w && w.ok && w.data && w.data.status === 'active') state.weekly = true;
+      save();
+      render();
+    });
+  }
+  render();
+
+  /* ---- submits ---- */
+  document.getElementById('form-monthly').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('m-email').value.trim();
+    var btn = e.currentTarget.querySelector('button');
+    btn.disabled = true;
+    msg('m-msg', 'Subscribing…');
+    var body = new URLSearchParams({
+      email: email,
+      state: document.getElementById('m-state').value,
+      consent: 'yes',
+      source: 'subscribe-page'
+    });
+    fetch('/api/newsletter.php', { method: 'POST', body: body })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j.ok) throw new Error(j.error || 'Subscription failed.');
+        done('monthly', email);
+      })
+      .catch(function (err) { msg('m-msg', err.message || 'Service temporarily unavailable.', true); })
+      .finally(function () { btn.disabled = false; });
+  });
+
+  document.getElementById('form-weekly').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('w-email').value.trim();
+    var region = document.getElementById('w-region').value;
+    if (!region) { msg('w-msg', 'Please choose your region.', true); return; }
+    var btn = e.currentTarget.querySelector('button');
+    btn.disabled = true;
+    msg('w-msg', 'Subscribing…');
+    var body = new URLSearchParams({
+      action: 'subscribe',
+      email: email,
+      region: region,
+      consent: 'yes',
+      source: 'subscribe-page'
+    });
+    fetch('/api/brief-subscribe.php', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j.ok) throw new Error(j.error || 'Subscription failed.');
+        done('weekly', email);
+      })
+      .catch(function (err) { msg('w-msg', err.message || 'Service temporarily unavailable.', true); })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+
+<script>
+function toggleMobileMenu() {
+    const nav = document.getElementById('navbar-nav');
+    nav.classList.toggle('active');
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(26, 54, 93, 0.98)';
+    } else {
+        header.style.background = 'rgba(26, 54, 93, 0.95)';
+    }
+});
+</script>
+
+<script src="/assets/js/nav-back.js?v=3" defer></script>  <script src="/assets/js/lang-switch.js?v=5" defer></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+Source pages: 1103
+
+[25/1103] mirrored=175 skipped=0 deferred=0 failed=0 (2s)
+
+[50/1103] mirrored=350 skipped=0 deferred=0 failed=0 (3s)
+
+[75/1103] mirrored=525 skipped=0 deferred=0 failed=0 (4s)
+
+[100/1103] mirrored=700 skipped=0 deferred=0 failed=0 (6s)
+
+[125/1103] mirrored=875 skipped=0 deferred=0 failed=0 (7s)
+
+[150/1103] mirrored=1050 skipped=0 deferred=0 failed=0 (9s)
+
+[175/1103] mirrored=1225 skipped=0 deferred=0 failed=0 (10s)
+
+[200/1103] mirrored=1400 skipped=0 deferred=0 failed=0 (11s)
+
+[225/1103] mirrored=1575 skipped=0 deferred=0 failed=0 (13s)
+
+[250/1103] mirrored=1750 skipped=0 deferred=0 failed=0 (14s)
+
+[275/1103] mirrored=1925 skipped=0 deferred=0 failed=0 (16s)
+
+[300/1103] mirrored=2100 skipped=0 deferred=0 failed=0 (19s)
+
+[325/1103] mirrored=2275 skipped=0 deferred=0 failed=0 (21s)
+
+[350/1103] mirrored=2450 skipped=0 deferred=0 failed=0 (24s)
+
+[375/1103] mirrored=2625 skipped=0 deferred=0 failed=0 (27s)
+
+[400/1103] mirrored=2800 skipped=0 deferred=0 failed=0 (29s)
+
+[425/1103] mirrored=2975 skipped=0 deferred=0 failed=0 (32s)
+
+[450/1103] mirrored=3150 skipped=0 deferred=0 failed=0 (35s)
+
+[475/1103] mirrored=3325 skipped=0 deferred=0 failed=0 (39s)
+
+[500/1103] mirrored=3500 skipped=0 deferred=0 failed=0 (42s)
+
+[525/1103] mirrored=3675 skipped=0 deferred=0 failed=0 (44s)
+
+[550/1103] mirrored=3850 skipped=0 deferred=0 failed=0 (48s)
+
+[575/1103] mirrored=4025 skipped=0 deferred=0 failed=0 (50s)
+
+[600/1103] mirrored=4200 skipped=0 deferred=0 failed=0 (53s)
+
+[625/1103] mirrored=4375 skipped=0 deferred=0 failed=0 (57s)
+
+[650/1103] mirrored=4550 skipped=0 deferred=0 failed=0 (60s)
+
+[675/1103] mirrored=4725 skipped=0 deferred=0 failed=0 (63s)
+
+[700/1103] mirrored=4900 skipped=0 deferred=0 failed=0 (68s)
+
+[725/1103] mirrored=5075 skipped=0 deferred=0 failed=0 (72s)
+
+[750/1103] mirrored=5250 skipped=0 deferred=0 failed=0 (76s)
+
+[775/1103] mirrored=5425 skipped=0 deferred=0 failed=0 (81s)
+
+[800/1103] mirrored=5600 skipped=0 deferred=0 failed=0 (84s)
+
+[825/1103] mirrored=5775 skipped=0 deferred=0 failed=0 (89s)
+
+[850/1103] mirrored=5950 skipped=0 deferred=0 failed=0 (96s)
+
+[875/1103] mirrored=6125 skipped=0 deferred=0 failed=0 (99s)
+
+[900/1103] mirrored=6300 skipped=0 deferred=0 failed=0 (105s)
+
+[925/1103] mirrored=6475 skipped=0 deferred=0 failed=0 (108s)
+
+[950/1103] mirrored=6650 skipped=0 deferred=0 failed=0 (113s)
+
+[975/1103] mirrored=6825 skipped=0 deferred=0 failed=0 (117s)
+
+[1000/1103] mirrored=7000 skipped=0 deferred=0 failed=0 (121s)
+
+[1025/1103] mirrored=7175 skipped=0 deferred=0 failed=0 (125s)
+
+[1050/1103] mirrored=7350 skipped=0 deferred=0 failed=0 (132s)
+
+[1075/1103] mirrored=7525 skipped=0 deferred=0 failed=0 (136s)
+
+[1100/1103] mirrored=7700 skipped=0 deferred=0 failed=0 (142s)
+
+Done in 142s: en-injected=1103 (unchanged=0), mirrored=7721, skipped=0, deferred=0, failed=0
+[resume] build complete after 1 attempt(s)

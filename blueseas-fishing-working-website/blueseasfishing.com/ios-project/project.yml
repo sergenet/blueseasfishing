@@ -1,0 +1,64 @@
+name: BlueSeasFishing
+options:
+  bundleIdPrefix: com.blueseasfishing
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: false
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  BlueSeasFishing:
+    type: application
+    platform: iOS
+    sources:
+      # Swift sources
+      - path: BlueSeasFishing
+      # Data bundle: listed as plain file sources so each .json lands in
+      # Copy Bundle Resources AT THE BUNDLE ROOT — exactly where
+      # DataStore.bundleFile(_:) looks (Bundle.main.url(forResource:)).
+      # (A folder-type reference would nest them under Data/ and break lookup.)
+      - path: Data/species.json
+      - path: Data/comparisons.json
+      - path: Data/destinations.json
+    resources:
+      - path: Assets.xcassets
+    info:
+      path: BlueSeasFishing/Info.plist
+      properties:
+        CFBundleDisplayName: Blue Seas Fishing
+        CFBundleShortVersionString: 1.0.0
+        CFBundleVersion: 1
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        ITSAppUsesNonExemptEncryption: false
+        CFBundleDevelopmentRegion: en
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.blueseasfishing.app
+        PRODUCT_NAME: BlueSeasFishing
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: 5.9
+
+schemes:
+  BlueSeasFishing:
+    build:
+      targets:
+        BlueSeasFishing: all
+    run:
+      config: Debug
+    archive:
+      config: Release

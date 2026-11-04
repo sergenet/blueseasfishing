@@ -1,0 +1,1927 @@
+{
+ "destinations": [
+  {
+   "slug": "alaska-sitka-homer",
+   "name": "Alaska (Sitka/Homer)",
+   "count": 26,
+   "species": [
+    "bank-rockfish",
+    "black-rockfish",
+    "blackgill-rockfish",
+    "blue-rockfish",
+    "brown-rockfish",
+    "canary-rockfish",
+    "chilipepper-rockfish",
+    "china-rockfish",
+    "copper-rockfish",
+    "darkblotched-rockfish",
+    "flag-rockfish",
+    "gopher-rockfish",
+    "grass-rockfish",
+    "kelp-rockfish",
+    "olive-rockfish",
+    "quillback-rockfish",
+    "rosy-rockfish",
+    "shortraker-rockfish",
+    "silvergray-rockfish",
+    "starry-rockfish",
+    "stripetail-rockfish",
+    "tiger-rockfish",
+    "widow-rockfish",
+    "yelloweye-rockfish",
+    "yellowmouth-rockfish",
+    "yellowtail-rockfish"
+   ]
+  },
+  {
+   "slug": "amazon-br",
+   "name": "Amazon (BR)",
+   "count": 9,
+   "species": [
+    "freshwater-angelfish",
+    "oscar",
+    "pictus-catfish",
+    "red-bellied-piranha",
+    "redtail-catfish",
+    "ripsaw-catfish",
+    "silver-arowana",
+    "tambaqui",
+    "tiger-shovelnose-catfish"
+   ]
+  },
+  {
+   "slug": "atlantic-beaches-eu",
+   "name": "Atlantic beaches (EU)",
+   "count": 8,
+   "species": [
+    "bull-ray",
+    "chilean-devil-ray",
+    "common-stingray",
+    "eagle-ray-spotted",
+    "gray-angelfish",
+    "gray-triggerfish",
+    "pelagic-stingray",
+    "shagreen-ray"
+   ]
+  },
+  {
+   "slug": "atlantic-coast-us-ca",
+   "name": "Atlantic coast (US/CA)",
+   "count": 8,
+   "species": [
+    "atlantic-saury",
+    "capelin",
+    "european-pilchard",
+    "northern-anchovy",
+    "pacific-sand-lance",
+    "pacific-sardine",
+    "pacific-saury",
+    "sand-lance"
+   ]
+  },
+  {
+   "slug": "atlantic-coast-runs-us",
+   "name": "Atlantic coast runs (US)",
+   "count": 4,
+   "species": [
+    "atlantic-herring",
+    "atlantic-menhaden",
+    "gulf-menhaden",
+    "pacific-herring"
+   ]
+  },
+  {
+   "slug": "atlantic-europe",
+   "name": "Atlantic Europe",
+   "count": 16,
+   "species": [
+    "atlantic-cutlassfish",
+    "atlantic-lumpfish",
+    "atlantic-moonfish",
+    "atlantic-pomfret",
+    "escolar",
+    "golden-grey-mullet",
+    "grey-mullet-thinlip",
+    "oarfish",
+    "oilfish",
+    "pacific-pomfret",
+    "red-mullet",
+    "ribbonfish",
+    "sharptail-mola",
+    "striped-mullet",
+    "striped-red-mullet",
+    "white-mullet"
+   ]
+  },
+  {
+   "slug": "atlantic-europe-fr-es-pt",
+   "name": "Atlantic Europe (FR/ES/PT)",
+   "count": 6,
+   "species": [
+    "atlantic-bonito",
+    "blackfin-tuna",
+    "longtail-tuna",
+    "pacific-bonito",
+    "pacific-chub-mackerel",
+    "southern-bluefin-tuna"
+   ]
+  },
+  {
+   "slug": "australian-estuaries",
+   "name": "Australian estuaries",
+   "count": 13,
+   "species": [
+    "atlantic-croaker",
+    "california-corbina",
+    "corb-shi-drum",
+    "fat-snook",
+    "golden-grey-mullet",
+    "grey-mullet-thinlip",
+    "red-mullet",
+    "reef-croaker",
+    "striped-mullet",
+    "striped-red-mullet",
+    "swordspine-snook",
+    "white-mullet",
+    "whiting"
+   ]
+  },
+  {
+   "slug": "bahamas",
+   "name": "Bahamas",
+   "count": 8,
+   "species": [
+    "bonefish",
+    "indo-pacific-tarpon",
+    "ladyfish",
+    "mutton-snapper",
+    "queen-angelfish",
+    "rock-beauty",
+    "tiger-shark",
+    "yellowtail-snapper"
+   ]
+  },
+  {
+   "slug": "bays-and-nearshore-structure",
+   "name": "Bays and nearshore structure",
+   "count": 3,
+   "species": [
+    "longhorn-sculpin",
+    "pacific-staghorn-sculpin",
+    "sculpin"
+   ]
+  },
+  {
+   "slug": "bc-coast",
+   "name": "BC coast",
+   "count": 3,
+   "species": [
+    "pacific-hake",
+    "rex-sole",
+    "rock-sole"
+   ]
+  },
+  {
+   "slug": "bristol-channel-uk",
+   "name": "Bristol Channel (UK)",
+   "count": 12,
+   "species": [
+    "blonde-ray",
+    "bull-ray",
+    "chilean-devil-ray",
+    "common-skate-blue-skate",
+    "common-stingray",
+    "eagle-ray-spotted",
+    "gray-angelfish",
+    "gray-triggerfish",
+    "pelagic-stingray",
+    "shagreen-ray",
+    "small-eyed-ray",
+    "thornback-ray"
+   ]
+  },
+  {
+   "slug": "british-columbia-bc",
+   "name": "British Columbia (BC)",
+   "count": 26,
+   "species": [
+    "bank-rockfish",
+    "black-rockfish",
+    "blackgill-rockfish",
+    "blue-rockfish",
+    "brown-rockfish",
+    "canary-rockfish",
+    "chilipepper-rockfish",
+    "china-rockfish",
+    "copper-rockfish",
+    "darkblotched-rockfish",
+    "flag-rockfish",
+    "gopher-rockfish",
+    "grass-rockfish",
+    "kelp-rockfish",
+    "olive-rockfish",
+    "quillback-rockfish",
+    "rosy-rockfish",
+    "shortraker-rockfish",
+    "silvergray-rockfish",
+    "starry-rockfish",
+    "stripetail-rockfish",
+    "tiger-rockfish",
+    "widow-rockfish",
+    "yelloweye-rockfish",
+    "yellowmouth-rockfish",
+    "yellowtail-rockfish"
+   ]
+  },
+  {
+   "slug": "cabo-mx",
+   "name": "Cabo (MX)",
+   "count": 3,
+   "species": [
+    "roosterfish",
+    "shortfin-mako",
+    "striped-marlin"
+   ]
+  },
+  {
+   "slug": "california-banks-ca",
+   "name": "California banks (CA)",
+   "count": 26,
+   "species": [
+    "bank-rockfish",
+    "black-rockfish",
+    "blackgill-rockfish",
+    "blue-rockfish",
+    "brown-rockfish",
+    "canary-rockfish",
+    "chilipepper-rockfish",
+    "china-rockfish",
+    "copper-rockfish",
+    "darkblotched-rockfish",
+    "flag-rockfish",
+    "gopher-rockfish",
+    "grass-rockfish",
+    "kelp-rockfish",
+    "olive-rockfish",
+    "quillback-rockfish",
+    "rosy-rockfish",
+    "shortraker-rockfish",
+    "silvergray-rockfish",
+    "starry-rockfish",
+    "stripetail-rockfish",
+    "tiger-rockfish",
+    "widow-rockfish",
+    "yelloweye-rockfish",
+    "yellowmouth-rockfish",
+    "yellowtail-rockfish"
+   ]
+  },
+  {
+   "slug": "california-offshore",
+   "name": "California offshore",
+   "count": 15,
+   "species": [
+    "atlantic-bonito",
+    "atlantic-cutlassfish",
+    "atlantic-lumpfish",
+    "atlantic-moonfish",
+    "atlantic-pomfret",
+    "blackfin-tuna",
+    "blue-shark",
+    "longtail-tuna",
+    "oarfish",
+    "pacific-bonito",
+    "pacific-chub-mackerel",
+    "pacific-pomfret",
+    "ribbonfish",
+    "sharptail-mola",
+    "southern-bluefin-tuna"
+   ]
+  },
+  {
+   "slug": "california-baja",
+   "name": "California/Baja",
+   "count": 15,
+   "species": [
+    "basking-shark",
+    "blacktip-reef-shark",
+    "blacktip-shark",
+    "dusky-shark",
+    "grey-reef-shark",
+    "lemon-shark",
+    "nurse-shark",
+    "oceanic-whitetip-shark",
+    "reef-shark-caribbean",
+    "salmon-shark",
+    "sand-tiger-shark",
+    "sandbar-shark",
+    "sharksucker",
+    "silky-shark",
+    "spinner-shark"
+   ]
+  },
+  {
+   "slug": "canary-islands",
+   "name": "Canary Islands",
+   "count": 11,
+   "species": [
+    "annular-seabream",
+    "atlantic-stargazer",
+    "axillary-seabream",
+    "bigeye-tuna",
+    "black-seabream",
+    "blackspot-seabream",
+    "goldenline-seabream",
+    "painted-comber",
+    "salema-porgy",
+    "two-banded-seabream",
+    "white-seabream"
+   ]
+  },
+  {
+   "slug": "caribbean",
+   "name": "Caribbean",
+   "count": 61,
+   "species": [
+    "african-pompano",
+    "almaco-jack",
+    "atlantic-lizardfish",
+    "atlantic-spadefish",
+    "balloonfish",
+    "bigeye-thresher",
+    "black-grouper",
+    "blue-runner",
+    "bumphead-parrotfish",
+    "checkered-puffer",
+    "copperband-butterflyfish",
+    "cubera-snapper-pacific",
+    "dog-snapper",
+    "flowery-rockcod",
+    "french-angelfish",
+    "great-barracuda",
+    "horse-eye-jack",
+    "indo-pacific-sailfish",
+    "indo-pacific-tarpon",
+    "jack-mackerel",
+    "ladyfish",
+    "lesser-amberjack",
+    "longbill-spearfish",
+    "lookdown",
+    "mahogany-snapper",
+    "malabar-grouper",
+    "mediterranean-spearfish",
+    "midnight-parrotfish",
+    "nassau-grouper",
+    "northern-puffer",
+    "ocean-triggerfish",
+    "pacific-barracuda",
+    "pacific-spadefish",
+    "palometa",
+    "picasso-triggerfish",
+    "pompano",
+    "porcupinefish",
+    "princess-parrotfish",
+    "queen-angelfish",
+    "queen-parrotfish",
+    "queen-triggerfish",
+    "rainbow-parrotfish",
+    "red-grouper",
+    "redtail-triggerfish",
+    "rock-beauty",
+    "scamp-grouper",
+    "schoolmaster-snapper",
+    "scrawled-cowfish",
+    "shortbill-spearfish",
+    "silk-snapper",
+    "skipjack-tuna",
+    "smooth-trunkfish",
+    "snowy-grouper",
+    "southern-puffer",
+    "spanish-flag-snapper",
+    "spotted-trunkfish",
+    "stoplight-parrotfish",
+    "titan-triggerfish",
+    "vermilion-snapper",
+    "warsaw-grouper",
+    "yellowedge-grouper"
+   ]
+  },
+  {
+   "slug": "carolina-sounds",
+   "name": "Carolina sounds",
+   "count": 3,
+   "species": [
+    "inshore-lizardfish",
+    "spot",
+    "weakfish"
+   ]
+  },
+  {
+   "slug": "carolinas",
+   "name": "Carolinas",
+   "count": 15,
+   "species": [
+    "basking-shark",
+    "blacktip-reef-shark",
+    "blacktip-shark",
+    "dusky-shark",
+    "grey-reef-shark",
+    "lemon-shark",
+    "nurse-shark",
+    "oceanic-whitetip-shark",
+    "reef-shark-caribbean",
+    "salmon-shark",
+    "sand-tiger-shark",
+    "sandbar-shark",
+    "sharksucker",
+    "silky-shark",
+    "spinner-shark"
+   ]
+  },
+  {
+   "slug": "channel-islands",
+   "name": "Channel Islands",
+   "count": 4,
+   "species": [
+    "ballan-wrasse",
+    "bluestreak-cleaner-wrasse",
+    "napoleon-wrasse",
+    "undulate-ray"
+   ]
+  },
+  {
+   "slug": "channel-islands-ca",
+   "name": "Channel Islands (CA)",
+   "count": 4,
+   "species": [
+    "bocaccio",
+    "california-halibut",
+    "california-sheephead",
+    "treefish"
+   ]
+  },
+  {
+   "slug": "chesapeake-md",
+   "name": "Chesapeake (MD)",
+   "count": 4,
+   "species": [
+    "inland-silverside",
+    "rainwater-killifish",
+    "scup-porgy",
+    "white-perch"
+   ]
+  },
+  {
+   "slug": "chesapeake-md-va",
+   "name": "Chesapeake (MD/VA)",
+   "count": 13,
+   "species": [
+    "atlantic-croaker",
+    "atlantic-herring",
+    "atlantic-menhaden",
+    "california-corbina",
+    "corb-shi-drum",
+    "fat-snook",
+    "gulf-menhaden",
+    "pacific-herring",
+    "reef-croaker",
+    "spot",
+    "striped-bass-coastal",
+    "swordspine-snook",
+    "whiting"
+   ]
+  },
+  {
+   "slug": "chesapeake-va-md",
+   "name": "Chesapeake (VA/MD)",
+   "count": 3,
+   "species": [
+    "cobia",
+    "northern-stargazer",
+    "weakfish"
+   ]
+  },
+  {
+   "slug": "chesapeake-tributaries",
+   "name": "Chesapeake tributaries",
+   "count": 3,
+   "species": [
+    "bowfin",
+    "conger-eel",
+    "striped-bass-inland"
+   ]
+  },
+  {
+   "slug": "columbia-river-or-wa",
+   "name": "Columbia River (OR/WA)",
+   "count": 7,
+   "species": [
+    "american-shad-inland-runs",
+    "atlantic-sturgeon",
+    "green-sturgeon",
+    "gulf-sturgeon",
+    "pallid-sturgeon",
+    "shortnose-sturgeon",
+    "shovelnose-sturgeon"
+   ]
+  },
+  {
+   "slug": "coral-sea",
+   "name": "Coral Sea",
+   "count": 3,
+   "species": [
+    "barred-coral-trout",
+    "red-emperor",
+    "scribbled-rabbitfish"
+   ]
+  },
+  {
+   "slug": "cornwall-uk",
+   "name": "Cornwall (UK)",
+   "count": 9,
+   "species": [
+    "ballan-wrasse",
+    "blonde-ray",
+    "blue-shark",
+    "bluestreak-cleaner-wrasse",
+    "cuckoo-wrasse",
+    "garfish",
+    "napoleon-wrasse",
+    "porbeagle",
+    "undulate-ray"
+   ]
+  },
+  {
+   "slug": "danube-hu-rs",
+   "name": "Danube (HU/RS)",
+   "count": 3,
+   "species": [
+    "vimba",
+    "wels-catfish",
+    "white-eye-bream"
+   ]
+  },
+  {
+   "slug": "dry-tortugas-fl",
+   "name": "Dry Tortugas (FL)",
+   "count": 5,
+   "species": [
+    "hogfish",
+    "lane-snapper",
+    "mangrove-snapper",
+    "mutton-snapper",
+    "yellowtail-snapper"
+   ]
+  },
+  {
+   "slug": "eastern-pacific-cabo-panama",
+   "name": "Eastern Pacific (Cabo/Panama)",
+   "count": 4,
+   "species": [
+    "indo-pacific-sailfish",
+    "longbill-spearfish",
+    "mediterranean-spearfish",
+    "shortbill-spearfish"
+   ]
+  },
+  {
+   "slug": "english-channel",
+   "name": "English Channel",
+   "count": 3,
+   "species": [
+    "john-dory",
+    "pouting",
+    "tub-gurnard"
+   ]
+  },
+  {
+   "slug": "european-stillwaters",
+   "name": "European stillwaters",
+   "count": 13,
+   "species": [
+    "bigmouth-buffalo",
+    "black-redhorse",
+    "blue-sucker",
+    "golden-redhorse",
+    "greater-redhorse",
+    "longnose-sucker",
+    "northern-hogsucker",
+    "river-carpsucker",
+    "shorthead-redhorse",
+    "silver-redhorse",
+    "smallmouth-buffalo",
+    "spotted-sucker",
+    "white-sucker"
+   ]
+  },
+  {
+   "slug": "european-stocked-ponds",
+   "name": "European stocked ponds",
+   "count": 12,
+   "species": [
+    "black-bullhead",
+    "brown-bullhead",
+    "butter-catfish",
+    "jau-catfish",
+    "marble-catfish",
+    "pumpkinseed",
+    "snail-bullhead",
+    "stonecat",
+    "tadpole-madtom",
+    "vundu-catfish",
+    "white-catfish",
+    "yellow-bullhead"
+   ]
+  },
+  {
+   "slug": "fl-lakes-introduced",
+   "name": "FL lakes (introduced)",
+   "count": 3,
+   "species": [
+    "blue-tilapia",
+    "mozambique-tilapia",
+    "nile-tilapia"
+   ]
+  },
+  {
+   "slug": "flaming-gorge-ut-wy",
+   "name": "Flaming Gorge (UT/WY)",
+   "count": 3,
+   "species": [
+    "burbot",
+    "kokanee-salmon",
+    "lake-trout"
+   ]
+  },
+  {
+   "slug": "florida-us",
+   "name": "Florida (US)",
+   "count": 5,
+   "species": [
+    "atlantic-flyingfish",
+    "atlantic-needlefish",
+    "ballyhoo",
+    "california-flyingfish",
+    "houndfish"
+   ]
+  },
+  {
+   "slug": "florida-atlantic",
+   "name": "Florida Atlantic",
+   "count": 7,
+   "species": [
+    "african-pompano",
+    "almaco-jack",
+    "horse-eye-jack",
+    "jack-mackerel",
+    "lesser-amberjack",
+    "pompano",
+    "skipjack-tuna"
+   ]
+  },
+  {
+   "slug": "florida-beaches",
+   "name": "Florida beaches",
+   "count": 7,
+   "species": [
+    "atlantic-croaker",
+    "california-corbina",
+    "corb-shi-drum",
+    "fat-snook",
+    "reef-croaker",
+    "swordspine-snook",
+    "whiting"
+   ]
+  },
+  {
+   "slug": "florida-canals-introduced",
+   "name": "Florida canals (introduced)",
+   "count": 3,
+   "species": [
+    "black-acara",
+    "oscar",
+    "walking-catfish"
+   ]
+  },
+  {
+   "slug": "florida-coasts",
+   "name": "Florida coasts",
+   "count": 15,
+   "species": [
+    "basking-shark",
+    "blacktip-reef-shark",
+    "blacktip-shark",
+    "dusky-shark",
+    "grey-reef-shark",
+    "lemon-shark",
+    "nurse-shark",
+    "oceanic-whitetip-shark",
+    "reef-shark-caribbean",
+    "salmon-shark",
+    "sand-tiger-shark",
+    "sandbar-shark",
+    "sharksucker",
+    "silky-shark",
+    "spinner-shark"
+   ]
+  },
+  {
+   "slug": "florida-keys-bahamas",
+   "name": "Florida Keys / Bahamas",
+   "count": 4,
+   "species": [
+    "indo-pacific-sailfish",
+    "longbill-spearfish",
+    "mediterranean-spearfish",
+    "shortbill-spearfish"
+   ]
+  },
+  {
+   "slug": "florida-reefs",
+   "name": "Florida reefs",
+   "count": 3,
+   "species": [
+    "french-angelfish",
+    "queen-angelfish",
+    "rock-beauty"
+   ]
+  },
+  {
+   "slug": "florida-reefs-us",
+   "name": "Florida reefs (US)",
+   "count": 23,
+   "species": [
+    "atlantic-spadefish",
+    "balloonfish",
+    "bigeye-thresher",
+    "bumphead-parrotfish",
+    "checkered-puffer",
+    "copperband-butterflyfish",
+    "midnight-parrotfish",
+    "northern-puffer",
+    "ocean-triggerfish",
+    "pacific-spadefish",
+    "picasso-triggerfish",
+    "porcupinefish",
+    "princess-parrotfish",
+    "queen-parrotfish",
+    "queen-triggerfish",
+    "rainbow-parrotfish",
+    "redtail-triggerfish",
+    "scrawled-cowfish",
+    "smooth-trunkfish",
+    "southern-puffer",
+    "spotted-trunkfish",
+    "stoplight-parrotfish",
+    "titan-triggerfish"
+   ]
+  },
+  {
+   "slug": "fraser-bc",
+   "name": "Fraser (BC)",
+   "count": 7,
+   "species": [
+    "atlantic-sturgeon",
+    "chinook-salmon",
+    "green-sturgeon",
+    "gulf-sturgeon",
+    "pallid-sturgeon",
+    "shortnose-sturgeon",
+    "shovelnose-sturgeon"
+   ]
+  },
+  {
+   "slug": "georges-bank",
+   "name": "Georges Bank",
+   "count": 3,
+   "species": [
+    "ocean-pout",
+    "red-hake",
+    "sea-raven"
+   ]
+  },
+  {
+   "slug": "georges-bank-ma",
+   "name": "Georges Bank (MA)",
+   "count": 3,
+   "species": [
+    "american-plaice",
+    "silver-hake",
+    "yellowtail-flounder"
+   ]
+  },
+  {
+   "slug": "georges-bank-us",
+   "name": "Georges Bank (US)",
+   "count": 5,
+   "species": [
+    "blue-ling",
+    "cowcod",
+    "cusk",
+    "pacific-cod",
+    "sablefish-black-cod"
+   ]
+  },
+  {
+   "slug": "grand-banks-nl",
+   "name": "Grand Banks (NL)",
+   "count": 4,
+   "species": [
+    "american-plaice",
+    "white-hake",
+    "witch-flounder",
+    "yellowtail-flounder"
+   ]
+  },
+  {
+   "slug": "great-barrier-reef-qld",
+   "name": "Great Barrier Reef (QLD)",
+   "count": 6,
+   "species": [
+    "blacktip-trevally",
+    "brassy-trevally",
+    "coral-trout",
+    "golden-trevally",
+    "red-emperor",
+    "scribbled-rabbitfish"
+   ]
+  },
+  {
+   "slug": "great-lakes",
+   "name": "Great Lakes",
+   "count": 3,
+   "species": [
+    "emerald-shiner",
+    "gizzard-shad",
+    "round-whitefish"
+   ]
+  },
+  {
+   "slug": "great-lakes-us-ca",
+   "name": "Great Lakes (US/CA)",
+   "count": 15,
+   "species": [
+    "atlantic-sturgeon",
+    "bantam-sunfish",
+    "dollar-sunfish",
+    "green-sturgeon",
+    "gulf-sturgeon",
+    "logperch",
+    "mud-sunfish",
+    "orangespotted-sunfish",
+    "pallid-sturgeon",
+    "peacock-bass-butterfly",
+    "pirate-perch",
+    "sacramento-perch",
+    "shadow-bass",
+    "shortnose-sturgeon",
+    "shovelnose-sturgeon"
+   ]
+  },
+  {
+   "slug": "great-lakes-bays",
+   "name": "Great Lakes bays",
+   "count": 13,
+   "species": [
+    "bigmouth-buffalo",
+    "black-redhorse",
+    "blue-sucker",
+    "golden-redhorse",
+    "greater-redhorse",
+    "longnose-sucker",
+    "northern-hogsucker",
+    "river-carpsucker",
+    "shorthead-redhorse",
+    "silver-redhorse",
+    "smallmouth-buffalo",
+    "spotted-sucker",
+    "white-sucker"
+   ]
+  },
+  {
+   "slug": "great-lakes-tributaries",
+   "name": "Great Lakes tributaries",
+   "count": 4,
+   "species": [
+    "blacknose-dace",
+    "greenside-darter",
+    "hornyhead-chub",
+    "spotfin-shiner"
+   ]
+  },
+  {
+   "slug": "gulf-coast-la-tx",
+   "name": "Gulf coast (LA/TX)",
+   "count": 4,
+   "species": [
+    "atlantic-herring",
+    "atlantic-menhaden",
+    "gulf-menhaden",
+    "pacific-herring"
+   ]
+  },
+  {
+   "slug": "gulf-coast-surf-bays",
+   "name": "Gulf coast surf & bays",
+   "count": 7,
+   "species": [
+    "atlantic-croaker",
+    "california-corbina",
+    "corb-shi-drum",
+    "fat-snook",
+    "reef-croaker",
+    "swordspine-snook",
+    "whiting"
+   ]
+  },
+  {
+   "slug": "gulf-of-alaska",
+   "name": "Gulf of Alaska",
+   "count": 5,
+   "species": [
+    "arrowtooth-flounder",
+    "dover-sole",
+    "pacific-ocean-perch",
+    "rex-sole",
+    "rock-sole"
+   ]
+  },
+  {
+   "slug": "gulf-of-maine",
+   "name": "Gulf of Maine",
+   "count": 7,
+   "species": [
+    "atlantic-halibut",
+    "atlantic-mackerel",
+    "red-hake",
+    "sea-raven",
+    "silver-hake",
+    "white-hake",
+    "witch-flounder"
+   ]
+  },
+  {
+   "slug": "gulf-of-mexico",
+   "name": "Gulf of Mexico",
+   "count": 39,
+   "species": [
+    "african-pompano",
+    "almaco-jack",
+    "annular-seabream",
+    "atlantic-bonito",
+    "atlantic-lizardfish",
+    "atlantic-threadfin",
+    "axillary-seabream",
+    "black-seabream",
+    "blackfin-tuna",
+    "blackspot-seabream",
+    "bull-ray",
+    "chilean-devil-ray",
+    "common-stingray",
+    "eagle-ray-spotted",
+    "golden-grey-mullet",
+    "goldenline-seabream",
+    "gray-angelfish",
+    "gray-triggerfish",
+    "grey-mullet-thinlip",
+    "horse-eye-jack",
+    "jack-mackerel",
+    "lesser-amberjack",
+    "longtail-tuna",
+    "lookdown",
+    "pacific-bonito",
+    "pacific-chub-mackerel",
+    "palometa",
+    "pelagic-stingray",
+    "pompano",
+    "red-mullet",
+    "salema-porgy",
+    "shagreen-ray",
+    "skipjack-tuna",
+    "southern-bluefin-tuna",
+    "striped-mullet",
+    "striped-red-mullet",
+    "two-banded-seabream",
+    "white-mullet",
+    "white-seabream"
+   ]
+  },
+  {
+   "slug": "gulf-of-mexico-fl-tx",
+   "name": "Gulf of Mexico (FL/TX)",
+   "count": 7,
+   "species": [
+    "cubera-snapper-pacific",
+    "dog-snapper",
+    "mahogany-snapper",
+    "schoolmaster-snapper",
+    "silk-snapper",
+    "spanish-flag-snapper",
+    "vermilion-snapper"
+   ]
+  },
+  {
+   "slug": "gulf-of-mexico-fl-tx-la",
+   "name": "Gulf of Mexico (FL/TX/LA)",
+   "count": 9,
+   "species": [
+    "black-grouper",
+    "flowery-rockcod",
+    "malabar-grouper",
+    "nassau-grouper",
+    "red-grouper",
+    "scamp-grouper",
+    "snowy-grouper",
+    "warsaw-grouper",
+    "yellowedge-grouper"
+   ]
+  },
+  {
+   "slug": "hawaii",
+   "name": "Hawaii",
+   "count": 31,
+   "species": [
+    "atlantic-spadefish",
+    "balloonfish",
+    "bigeye-thresher",
+    "blacktip-trevally",
+    "bluefin-trevally",
+    "brassy-trevally",
+    "bumphead-parrotfish",
+    "checkered-puffer",
+    "copperband-butterflyfish",
+    "escolar",
+    "golden-trevally",
+    "midnight-parrotfish",
+    "northern-puffer",
+    "ocean-triggerfish",
+    "oilfish",
+    "opah",
+    "pacific-spadefish",
+    "picasso-triggerfish",
+    "porcupinefish",
+    "princess-parrotfish",
+    "queen-parrotfish",
+    "queen-triggerfish",
+    "rainbow-parrotfish",
+    "redtail-triggerfish",
+    "scrawled-cowfish",
+    "smooth-trunkfish",
+    "southern-puffer",
+    "spotted-trunkfish",
+    "stoplight-parrotfish",
+    "tiger-shark",
+    "titan-triggerfish"
+   ]
+  },
+  {
+   "slug": "hudson-canyon-ny",
+   "name": "Hudson Canyon (NY)",
+   "count": 3,
+   "species": [
+    "blueline-tilefish",
+    "sand-tilefish",
+    "tilefish"
+   ]
+  },
+  {
+   "slug": "hudson-river-ny",
+   "name": "Hudson River (NY)",
+   "count": 4,
+   "species": [
+    "american-eel",
+    "striped-bass-coastal",
+    "striped-bass-inland",
+    "white-perch"
+   ]
+  },
+  {
+   "slug": "iceland",
+   "name": "Iceland",
+   "count": 9,
+   "species": [
+    "atlantic-cod",
+    "atlantic-halibut",
+    "blue-ling",
+    "cowcod",
+    "cusk",
+    "greenland-halibut",
+    "haddock",
+    "pacific-cod",
+    "sablefish-black-cod"
+   ]
+  },
+  {
+   "slug": "indian-ocean-kenya-maldives",
+   "name": "Indian Ocean (Kenya/Maldives)",
+   "count": 4,
+   "species": [
+    "indo-pacific-sailfish",
+    "longbill-spearfish",
+    "mediterranean-spearfish",
+    "shortbill-spearfish"
+   ]
+  },
+  {
+   "slug": "introduced-eu-waters",
+   "name": "Introduced EU waters",
+   "count": 9,
+   "species": [
+    "bantam-sunfish",
+    "dollar-sunfish",
+    "logperch",
+    "mud-sunfish",
+    "orangespotted-sunfish",
+    "peacock-bass-butterfly",
+    "pirate-perch",
+    "sacramento-perch",
+    "shadow-bass"
+   ]
+  },
+  {
+   "slug": "ireland",
+   "name": "Ireland",
+   "count": 3,
+   "species": [
+    "ballan-wrasse",
+    "bluestreak-cleaner-wrasse",
+    "napoleon-wrasse"
+   ]
+  },
+  {
+   "slug": "iwp",
+   "name": "IWP",
+   "count": 5,
+   "species": [
+    "atlantic-flyingfish",
+    "atlantic-needlefish",
+    "ballyhoo",
+    "california-flyingfish",
+    "houndfish"
+   ]
+  },
+  {
+   "slug": "iwp-offshore",
+   "name": "IWP offshore",
+   "count": 8,
+   "species": [
+    "atlantic-cutlassfish",
+    "atlantic-lumpfish",
+    "atlantic-moonfish",
+    "atlantic-pomfret",
+    "oarfish",
+    "pacific-pomfret",
+    "ribbonfish",
+    "sharptail-mola"
+   ]
+  },
+  {
+   "slug": "iwp-reefs",
+   "name": "IWP reefs",
+   "count": 30,
+   "species": [
+    "atlantic-spadefish",
+    "balloonfish",
+    "bigeye-thresher",
+    "bumphead-parrotfish",
+    "checkered-puffer",
+    "copperband-butterflyfish",
+    "cubera-snapper-pacific",
+    "dog-snapper",
+    "mahogany-snapper",
+    "midnight-parrotfish",
+    "northern-puffer",
+    "ocean-triggerfish",
+    "pacific-spadefish",
+    "picasso-triggerfish",
+    "porcupinefish",
+    "princess-parrotfish",
+    "queen-parrotfish",
+    "queen-triggerfish",
+    "rainbow-parrotfish",
+    "redtail-triggerfish",
+    "schoolmaster-snapper",
+    "scrawled-cowfish",
+    "silk-snapper",
+    "smooth-trunkfish",
+    "southern-puffer",
+    "spanish-flag-snapper",
+    "spotted-trunkfish",
+    "stoplight-parrotfish",
+    "titan-triggerfish",
+    "vermilion-snapper"
+   ]
+  },
+  {
+   "slug": "iwp-reefs-aus-pac",
+   "name": "IWP reefs (AUS/PAC)",
+   "count": 9,
+   "species": [
+    "black-grouper",
+    "flowery-rockcod",
+    "malabar-grouper",
+    "nassau-grouper",
+    "red-grouper",
+    "scamp-grouper",
+    "snowy-grouper",
+    "warsaw-grouper",
+    "yellowedge-grouper"
+   ]
+  },
+  {
+   "slug": "iwp-reefs-aus-pac-ind",
+   "name": "IWP reefs (AUS/PAC/IND)",
+   "count": 3,
+   "species": [
+    "blacktip-trevally",
+    "brassy-trevally",
+    "golden-trevally"
+   ]
+  },
+  {
+   "slug": "jupiter-fl",
+   "name": "Jupiter (FL)",
+   "count": 3,
+   "species": [
+    "bull-shark",
+    "goliath-grouper",
+    "hammerhead-shark-great"
+   ]
+  },
+  {
+   "slug": "key-west-fl",
+   "name": "Key West (FL)",
+   "count": 4,
+   "species": [
+    "cubera-snapper",
+    "king-mackerel",
+    "mutton-snapper",
+    "yellowtail-snapper"
+   ]
+  },
+  {
+   "slug": "laguna-madre-tx",
+   "name": "Laguna Madre (TX)",
+   "count": 3,
+   "species": [
+    "black-drum",
+    "red-drum-redfish",
+    "spotted-seatrout"
+   ]
+  },
+  {
+   "slug": "louisiana-marshes",
+   "name": "Louisiana marshes",
+   "count": 3,
+   "species": [
+    "black-drum",
+    "red-drum-redfish",
+    "sheepshead"
+   ]
+  },
+  {
+   "slug": "maldives",
+   "name": "Maldives",
+   "count": 4,
+   "species": [
+    "emperor-angelfish",
+    "giant-trevally-gt",
+    "manta-ray",
+    "pelagic-thresher"
+   ]
+  },
+  {
+   "slug": "mediterranean",
+   "name": "Mediterranean",
+   "count": 21,
+   "species": [
+    "annular-seabream",
+    "atlantic-flyingfish",
+    "atlantic-needlefish",
+    "atlantic-stargazer",
+    "axillary-seabream",
+    "ballyhoo",
+    "black-seabream",
+    "blackspot-seabream",
+    "bluefin-tuna",
+    "california-flyingfish",
+    "goldenline-seabream",
+    "greater-weever",
+    "houndfish",
+    "john-dory",
+    "louvar",
+    "painted-comber",
+    "salema-porgy",
+    "slender-sunfish",
+    "tub-gurnard",
+    "two-banded-seabream",
+    "white-seabream"
+   ]
+  },
+  {
+   "slug": "mediterranean-estuaries",
+   "name": "Mediterranean estuaries",
+   "count": 6,
+   "species": [
+    "golden-grey-mullet",
+    "grey-mullet-thinlip",
+    "red-mullet",
+    "striped-mullet",
+    "striped-red-mullet",
+    "white-mullet"
+   ]
+  },
+  {
+   "slug": "mekong-th-la",
+   "name": "Mekong (TH/LA)",
+   "count": 3,
+   "species": [
+    "clown-knifefish",
+    "giant-gourami",
+    "snakeskin-gourami"
+   ]
+  },
+  {
+   "slug": "middle-grounds-gom",
+   "name": "Middle Grounds (GOM)",
+   "count": 4,
+   "species": [
+    "blueline-tilefish",
+    "hogfish",
+    "sand-tilefish",
+    "tilefish"
+   ]
+  },
+  {
+   "slug": "mississippi-river",
+   "name": "Mississippi River",
+   "count": 3,
+   "species": [
+    "blue-catfish",
+    "gizzard-shad",
+    "skipjack-herring"
+   ]
+  },
+  {
+   "slug": "mississippi-system",
+   "name": "Mississippi system",
+   "count": 11,
+   "species": [
+    "black-bullhead",
+    "brown-bullhead",
+    "butter-catfish",
+    "jau-catfish",
+    "marble-catfish",
+    "snail-bullhead",
+    "stonecat",
+    "tadpole-madtom",
+    "vundu-catfish",
+    "white-catfish",
+    "yellow-bullhead"
+   ]
+  },
+  {
+   "slug": "mississippi-system-rivers",
+   "name": "Mississippi system rivers",
+   "count": 13,
+   "species": [
+    "bigmouth-buffalo",
+    "black-redhorse",
+    "blue-sucker",
+    "golden-redhorse",
+    "greater-redhorse",
+    "longnose-sucker",
+    "northern-hogsucker",
+    "river-carpsucker",
+    "shorthead-redhorse",
+    "silver-redhorse",
+    "smallmouth-buffalo",
+    "spotted-sucker",
+    "white-sucker"
+   ]
+  },
+  {
+   "slug": "monterey-bay",
+   "name": "Monterey Bay",
+   "count": 3,
+   "species": [
+    "bocaccio",
+    "dover-sole",
+    "pacific-hake"
+   ]
+  },
+  {
+   "slug": "monterey-bay-ca",
+   "name": "Monterey Bay (CA)",
+   "count": 3,
+   "species": [
+    "california-halibut",
+    "pacific-sanddab",
+    "petrale-sole"
+   ]
+  },
+  {
+   "slug": "nile-eg",
+   "name": "Nile (EG)",
+   "count": 3,
+   "species": [
+    "nile-tilapia",
+    "north-african-catfish",
+    "redbelly-tilapia"
+   ]
+  },
+  {
+   "slug": "north-atlantic-coasts",
+   "name": "North Atlantic coasts",
+   "count": 3,
+   "species": [
+    "longhorn-sculpin",
+    "pacific-staghorn-sculpin",
+    "sculpin"
+   ]
+  },
+  {
+   "slug": "north-sea-eu",
+   "name": "North Sea (EU)",
+   "count": 9,
+   "species": [
+    "american-plaice",
+    "atlantic-saury",
+    "capelin",
+    "european-pilchard",
+    "northern-anchovy",
+    "pacific-sand-lance",
+    "pacific-sardine",
+    "pacific-saury",
+    "sand-lance"
+   ]
+  },
+  {
+   "slug": "north-sea-nor-uk",
+   "name": "North Sea (NOR/UK)",
+   "count": 5,
+   "species": [
+    "blue-ling",
+    "cowcod",
+    "cusk",
+    "pacific-cod",
+    "sablefish-black-cod"
+   ]
+  },
+  {
+   "slug": "northeast-us-offshore-ma-nj",
+   "name": "Northeast US offshore (MA/NJ)",
+   "count": 6,
+   "species": [
+    "atlantic-bonito",
+    "blackfin-tuna",
+    "longtail-tuna",
+    "pacific-bonito",
+    "pacific-chub-mackerel",
+    "southern-bluefin-tuna"
+   ]
+  },
+  {
+   "slug": "norwegian-coast",
+   "name": "Norwegian coast",
+   "count": 7,
+   "species": [
+    "blue-ling",
+    "bluestreak-cleaner-wrasse",
+    "cowcod",
+    "cusk",
+    "napoleon-wrasse",
+    "pacific-cod",
+    "sablefish-black-cod"
+   ]
+  },
+  {
+   "slug": "offshore-wrecks-reefs",
+   "name": "Offshore wrecks & reefs",
+   "count": 7,
+   "species": [
+    "african-pompano",
+    "almaco-jack",
+    "horse-eye-jack",
+    "jack-mackerel",
+    "lesser-amberjack",
+    "pompano",
+    "skipjack-tuna"
+   ]
+  },
+  {
+   "slug": "ohio-river",
+   "name": "Ohio River",
+   "count": 4,
+   "species": [
+    "american-paddlefish",
+    "flathead-catfish",
+    "freshwater-drum",
+    "quillback"
+   ]
+  },
+  {
+   "slug": "open-ocean-drift-lines",
+   "name": "Open ocean / drift lines",
+   "count": 8,
+   "species": [
+    "atlantic-cutlassfish",
+    "atlantic-lumpfish",
+    "atlantic-moonfish",
+    "atlantic-pomfret",
+    "oarfish",
+    "pacific-pomfret",
+    "ribbonfish",
+    "sharptail-mola"
+   ]
+  },
+  {
+   "slug": "orinoco-ve",
+   "name": "Orinoco (VE)",
+   "count": 6,
+   "species": [
+    "freshwater-angelfish",
+    "pictus-catfish",
+    "red-bellied-piranha",
+    "ripsaw-catfish",
+    "tiger-shovelnose-catfish",
+    "wolf-fish-trairao"
+   ]
+  },
+  {
+   "slug": "outer-banks-nc",
+   "name": "Outer Banks (NC)",
+   "count": 6,
+   "species": [
+    "black-drum",
+    "bluefin-tuna",
+    "bluefish",
+    "false-albacore-little-tunny",
+    "mahi-mahi-dolphinfish",
+    "white-marlin"
+   ]
+  },
+  {
+   "slug": "pacific-northwest",
+   "name": "Pacific Northwest",
+   "count": 3,
+   "species": [
+    "longhorn-sculpin",
+    "pacific-staghorn-sculpin",
+    "sculpin"
+   ]
+  },
+  {
+   "slug": "pacific-northwest-wa-or",
+   "name": "Pacific Northwest (WA/OR)",
+   "count": 26,
+   "species": [
+    "bank-rockfish",
+    "black-rockfish",
+    "blackgill-rockfish",
+    "blue-rockfish",
+    "brown-rockfish",
+    "canary-rockfish",
+    "chilipepper-rockfish",
+    "china-rockfish",
+    "copper-rockfish",
+    "darkblotched-rockfish",
+    "flag-rockfish",
+    "gopher-rockfish",
+    "grass-rockfish",
+    "kelp-rockfish",
+    "olive-rockfish",
+    "quillback-rockfish",
+    "rosy-rockfish",
+    "shortraker-rockfish",
+    "silvergray-rockfish",
+    "starry-rockfish",
+    "stripetail-rockfish",
+    "tiger-rockfish",
+    "widow-rockfish",
+    "yelloweye-rockfish",
+    "yellowmouth-rockfish",
+    "yellowtail-rockfish"
+   ]
+  },
+  {
+   "slug": "pacific-northwest-beaches-wa-or",
+   "name": "Pacific Northwest beaches (WA/OR)",
+   "count": 8,
+   "species": [
+    "atlantic-saury",
+    "capelin",
+    "european-pilchard",
+    "northern-anchovy",
+    "pacific-sand-lance",
+    "pacific-sardine",
+    "pacific-saury",
+    "sand-lance"
+   ]
+  },
+  {
+   "slug": "pacific-northwest-deepwater",
+   "name": "Pacific Northwest deepwater",
+   "count": 3,
+   "species": [
+    "arrowtooth-flounder",
+    "dover-sole",
+    "pacific-ocean-perch"
+   ]
+  },
+  {
+   "slug": "puget-sound-wa",
+   "name": "Puget Sound (WA)",
+   "count": 5,
+   "species": [
+    "chum-salmon",
+    "english-sole",
+    "pink-salmon",
+    "rock-sole",
+    "starry-flounder"
+   ]
+  },
+  {
+   "slug": "red-sea",
+   "name": "Red Sea",
+   "count": 4,
+   "species": [
+    "emperor-angelfish",
+    "pelagic-thresher",
+    "red-emperor",
+    "scribbled-rabbitfish"
+   ]
+  },
+  {
+   "slug": "reservoirs-tx-ok-fl",
+   "name": "Reservoirs (TX/OK/FL)",
+   "count": 11,
+   "species": [
+    "black-bullhead",
+    "brown-bullhead",
+    "butter-catfish",
+    "jau-catfish",
+    "marble-catfish",
+    "snail-bullhead",
+    "stonecat",
+    "tadpole-madtom",
+    "vundu-catfish",
+    "white-catfish",
+    "yellow-bullhead"
+   ]
+  },
+  {
+   "slug": "sacramento-ca",
+   "name": "Sacramento (CA)",
+   "count": 7,
+   "species": [
+    "american-shad-inland-runs",
+    "atlantic-sturgeon",
+    "green-sturgeon",
+    "gulf-sturgeon",
+    "pallid-sturgeon",
+    "shortnose-sturgeon",
+    "shovelnose-sturgeon"
+   ]
+  },
+  {
+   "slug": "santee-cooper-sc",
+   "name": "Santee Cooper (SC)",
+   "count": 5,
+   "species": [
+    "blue-catfish",
+    "bowfin",
+    "channel-catfish",
+    "longnose-gar",
+    "white-perch"
+   ]
+  },
+  {
+   "slug": "seychelles",
+   "name": "Seychelles",
+   "count": 6,
+   "species": [
+    "blacktip-trevally",
+    "brassy-trevally",
+    "giant-trevally-gt",
+    "golden-trevally",
+    "great-barracuda",
+    "pacific-barracuda"
+   ]
+  },
+  {
+   "slug": "south-atlantic-fl-nc",
+   "name": "South Atlantic (FL–NC)",
+   "count": 10,
+   "species": [
+    "blueline-tilefish",
+    "cubera-snapper-pacific",
+    "dog-snapper",
+    "mahogany-snapper",
+    "sand-tilefish",
+    "schoolmaster-snapper",
+    "silk-snapper",
+    "spanish-flag-snapper",
+    "tilefish",
+    "vermilion-snapper"
+   ]
+  },
+  {
+   "slug": "south-atlantic-us",
+   "name": "South Atlantic (US)",
+   "count": 8,
+   "species": [
+    "annular-seabream",
+    "axillary-seabream",
+    "black-seabream",
+    "blackspot-seabream",
+    "goldenline-seabream",
+    "salema-porgy",
+    "two-banded-seabream",
+    "white-seabream"
+   ]
+  },
+  {
+   "slug": "south-atlantic-reefs-fl-nc",
+   "name": "South Atlantic reefs (FL–NC)",
+   "count": 9,
+   "species": [
+    "black-grouper",
+    "flowery-rockcod",
+    "malabar-grouper",
+    "nassau-grouper",
+    "red-grouper",
+    "scamp-grouper",
+    "snowy-grouper",
+    "warsaw-grouper",
+    "yellowedge-grouper"
+   ]
+  },
+  {
+   "slug": "southern-reservoirs",
+   "name": "Southern reservoirs",
+   "count": 13,
+   "species": [
+    "bigmouth-buffalo",
+    "black-redhorse",
+    "blue-sucker",
+    "golden-redhorse",
+    "greater-redhorse",
+    "longnose-sucker",
+    "northern-hogsucker",
+    "river-carpsucker",
+    "shorthead-redhorse",
+    "silver-redhorse",
+    "smallmouth-buffalo",
+    "spotted-sucker",
+    "white-sucker"
+   ]
+  },
+  {
+   "slug": "southern-us-rivers",
+   "name": "Southern US rivers",
+   "count": 20,
+   "species": [
+    "bantam-sunfish",
+    "black-bullhead",
+    "brown-bullhead",
+    "butter-catfish",
+    "dollar-sunfish",
+    "jau-catfish",
+    "logperch",
+    "marble-catfish",
+    "mud-sunfish",
+    "orangespotted-sunfish",
+    "peacock-bass-butterfly",
+    "pirate-perch",
+    "sacramento-perch",
+    "shadow-bass",
+    "snail-bullhead",
+    "stonecat",
+    "tadpole-madtom",
+    "vundu-catfish",
+    "white-catfish",
+    "yellow-bullhead"
+   ]
+  },
+  {
+   "slug": "susquehanna-pa",
+   "name": "Susquehanna (PA)",
+   "count": 4,
+   "species": [
+    "alewife",
+    "american-shad-inland-runs",
+    "fallfish",
+    "smallmouth-bass"
+   ]
+  },
+  {
+   "slug": "th-stocked-lakes",
+   "name": "TH stocked lakes",
+   "count": 4,
+   "species": [
+    "arapaima",
+    "redtail-catfish",
+    "silver-arowana",
+    "tambaqui"
+   ]
+  },
+  {
+   "slug": "trinity-river-tx",
+   "name": "Trinity River (TX)",
+   "count": 3,
+   "species": [
+    "alligator-gar",
+    "channel-catfish",
+    "longnose-gar"
+   ]
+  },
+  {
+   "slug": "tropical-subtropical-coasts",
+   "name": "Tropical/subtropical coasts",
+   "count": 5,
+   "species": [
+    "atlantic-flyingfish",
+    "atlantic-needlefish",
+    "ballyhoo",
+    "california-flyingfish",
+    "houndfish"
+   ]
+  },
+  {
+   "slug": "uk-canals",
+   "name": "UK canals",
+   "count": 3,
+   "species": [
+    "bleak",
+    "roach",
+    "silver-bream"
+   ]
+  },
+  {
+   "slug": "uk-coasts-where-legal",
+   "name": "UK coasts (where legal)",
+   "count": 15,
+   "species": [
+    "basking-shark",
+    "blacktip-reef-shark",
+    "blacktip-shark",
+    "dusky-shark",
+    "grey-reef-shark",
+    "lemon-shark",
+    "nurse-shark",
+    "oceanic-whitetip-shark",
+    "reef-shark-caribbean",
+    "salmon-shark",
+    "sand-tiger-shark",
+    "sandbar-shark",
+    "sharksucker",
+    "silky-shark",
+    "spinner-shark"
+   ]
+  },
+  {
+   "slug": "uk-south-coast",
+   "name": "UK south coast",
+   "count": 9,
+   "species": [
+    "bull-ray",
+    "chilean-devil-ray",
+    "common-stingray",
+    "common-thresher",
+    "eagle-ray-spotted",
+    "gray-angelfish",
+    "gray-triggerfish",
+    "pelagic-stingray",
+    "shagreen-ray"
+   ]
+  },
+  {
+   "slug": "us-farm-ponds-and-reservoirs",
+   "name": "US farm ponds and reservoirs",
+   "count": 9,
+   "species": [
+    "bantam-sunfish",
+    "dollar-sunfish",
+    "logperch",
+    "mud-sunfish",
+    "orangespotted-sunfish",
+    "peacock-bass-butterfly",
+    "pirate-perch",
+    "sacramento-perch",
+    "shadow-bass"
+   ]
+  },
+  {
+   "slug": "venice-la",
+   "name": "Venice (LA)",
+   "count": 4,
+   "species": [
+    "bigeye-tuna",
+    "greater-amberjack",
+    "lane-snapper",
+    "tripletail"
+   ]
+  }
+ ]
+}

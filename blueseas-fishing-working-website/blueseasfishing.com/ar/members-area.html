@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+<meta charset="utf-8">
+<title>منطقة الأعضاء — Blue Seas Fishing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/images/favicon.ico">
+<style>
+  :root{--bg:#f8fafc;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--brand:#1d4ed8}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  a{color:#1d4ed8;text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px 16px}
+  .top{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .btn{display:inline-block;background:#1d4ed8;color:#fff;border-radius:10px;padding:10px 14px;font-weight:600;border:0;cursor:pointer;font:inherit}
+  .btn.ghost{background:#e5e7eb;color:#111;border:1px solid #d1d5db}
+  .muted{color:#64748b}
+  .grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+  label{display:block;margin:8px 0 6px;font-weight:600}
+  select,input[type="text"],input[type="email"]{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;box-sizing:border-box}
+  .list{margin:8px 0 0 18px}
+  .badge{display:inline-block;background:#f1f5f9;border:1px solid var(--line);border-radius:999px;padding:4px 8px;font-size:12px;color:#0f172a}
+  .chip{display:inline-block;background:#dcfce7;color:#166534;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+  .chip.off{background:#f1f5f9;color:#475569}
+  .target{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px}
+  .target h4{margin:0}
+  .intel-row{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:8px 0}
+  #status{font-size:14px;color:#15803d;margin-top:8px}
+  #status.err{color:#b91c1c}
+</style>
+<script src="/membership.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=2" defer></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+  <link rel="canonical" href="https://www.blueseasfishing.com/ar/members-area.html">
+  <link rel="stylesheet" href="/assets/css/rtl.css?v=20261017-1">
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <a class="btn ghost" href="javascript:history.length>1? history.back (): location.assign ('/ index.html ')">← رجوع</a> <a href="/ar/recommended-fishing-gear.html">معدات المتجر</a> <a href="/ar/forum.html">المنتدى</a> <a href="/ar/subscribe.html">اشتراك</a>
+    <div style="font-weight:800">منطقة الأعضاء</div>
+    <div>
+      <a class="btn ghost" href="/ar/premium.html" id="manage-plan">إدارة الخطة</a>
+      <a class="btn ghost" id="logout" href="/ar/index.html">تسجيل الخروج</a>
+    </div>
+  </div>
+
+  <div id="gate" class="card" style="display:none">
+    <h1>قسط المطلوبة</h1>
+    <p class="muted">هذه المنطقة مخصصة للأعضاء المميزين. قم بالترقية لفتح مخطط الرحلة وموجزات الوجبات الأسبوعية والمعلومات المتقدمة عن الأنواع.</p>
+    <a class="btn" href="/ar/premium.html">اذهب إلى الإصدار المميز</a>
+  </div>
+
+  <div id="gate-brief" class="card" style="display:none;margin-top:14px">
+    <h2 style="margin-top:0">موجز إقليمي أسبوعي - مجانًا</h2>
+    <p class="muted">ليس قسطا بعد؟ احصل على ملخص اللقمة الأسبوعي عبر البريد الإلكتروني على أي حال - ما الذي يعض في منطقتك، مباشرة من قاعدة بياناتنا التي تضم 548 نوعًا. إلغاء الاشتراك بنقرة واحدة.</p>
+    <label for="gate-region">منطقة</label>
+    <select id="gate-region"></select>
+    <label for="gate-email">البريد الإلكتروني للملخص الأسبوعي</label>
+    <input id="gate-email" type="email" placeholder="البريد الالكتروني">
+    <div style="margin-top:8px">
+      <label style="font-weight:400;display:flex;gap:8px;align-items:flex-start">
+        <input type="checkbox" id="gate-consent" style="margin-top:4px">
+        <span>أوافق على تلقي ملخص اللقمة الأسبوعي عبر البريد الإلكتروني.</span>
+      </label>
+    </div>
+    <div style="margin-top:8px">
+      <button class="btn" id="gate-save" type="button">اشترك في الموجز المجاني</button>
+    </div>
+    <div id="gate-status" role="status"></div>
+  </div>
+
+  <section id="content" style="display:none">
+    <div class="card" style="background:linear-gradient(135deg,#0a1b3d,#1d4ed8);color:#fff;border:0">
+      <h1 style="margin:0 0 4px">مرحباً، <span id="who">عضو</span> 🎣</h1>
+      <p style="margin:0 0 12px;opacity:.9">يتم تضمين تعريف غير محدود لسمكة الذكاء الاصطناعي في عضويتك.</p>
+      <a class="btn" style="background:#fff;color:#1d4ed8;font-size:18px;padding:12px 22px" href="/ar/fish-id.html">تحديد السمكة →</a>
+      <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;font-size:18px;padding:12px 22px;border:1px solid rgba(255,255,255,.5)" href="/ar/trip-planner.html">خطط لرحلة →</a>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">موجز إقليمي أسبوعي</h2>
+      <p class="muted">تم إنشاؤها مباشرة من قاعدة بياناتنا المكونة من 548 نوعًا لمنطقتك والشهر الحالي. احفظ بريدك الإلكتروني لتحصل عليه أيضًا في صندوق الوارد الخاص بك كل أسبوع.</p>
+      <label for="region">منطقة</label>
+      <select id="region"></select>
+      <label for="email">البريد الإلكتروني للملخص الأسبوعي (اختياري)</label>
+      <input id="email" type="email" placeholder="البريد الالكتروني">
+      <div style="margin-top:8px">
+        <button class="btn" id="save" type="button">حفظ التفضيلات والاشتراك</button>
+      </div>
+      <div id="status" role="status"></div>
+      <div id="brief"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin-top:0">الأنواع المتقدمة إنتل</h2>
+        <p class="muted">الغوص العميق في جميع الملفات الشخصية البالغ عددها 548: الموطن، والنوافذ الموسمية، والطعوم، والنقاط الساخنة.</p>
+        <input id="intel-search" type="text" placeholder="ابحث عن نوع ما - على سبيل المثال. بايك، سمك النهاش، جثم" autocomplete="off">
+        <div id="intel"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">أدلة مصغرة ربع سنوية</h2>
+        <ul class="list" id="guides-list">
+          <li><a href="/ar/guides/mediterranean-shore-fishing.html">صيد الأسماك من الشاطئ في البحر الأبيض المتوسط</a> - القراءة تتضخم وهيكلها</li>
+          <li><a href="/ar/guides/eastern-european-rivers.html">أنهار أوروبا الشرقية</a> - استهداف أسب، زاندر، بايك بكفاءة</li>
+          <li><a href="/ar/guides/british-canals.html">القنوات البريطانية</a> - جثم ورمح مع معالجة خفيفة</li>
+          <li><a href="/ar/guides/alpine-lakes-trout.html">بحيرات جبال الألب</a> — تكتيكات سمك السلمون المرقط من الشاطئ والمراكب الصغيرة</li>
+        </ul>
+        <p class="muted">اطبع أي دليل من متصفحك لتأخذه في الصيد.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/assets/js/bsf-plan.js?v=1" defer></script>
+<script>
+(function(){
+  var gate    = document.getElementById('gate');
+  var content = document.getElementById('content');
+  var who     = document.getElementById('who');
+  var emailEl = document.getElementById('email');
+  var region  = document.getElementById('region');
+  var briefEl = document.getElementById('brief');
+  var statusEl= document.getElementById('status');
+  var intelEl = document.getElementById('intel');
+  var intelQ  = document.getElementById('intel-search');
+  var logout  = document.getElementById('logout');
+  var managePlan = document.getElementById('manage-plan');
+
+  var MONTH_NAMES = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  var nowMonth = new Date().getMonth() + 1;
+  var species = [], regions = [];
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  // locale prefix for links built at runtime (mirror transform can't touch scripts)
+  var LANGP = (function(){ var l=(document.documentElement.lang||'en').toLowerCase(); return (/^[a-z]{2}$/.test(l) && l!=='en') ? '/'+l : ''; })();
+  function prefs(){ try{return JSON.parse(localStorage.getItem('bsf_prefs_v1')||'{}');}catch(e){return{}} }
+  function savePrefs(p){ try{ localStorage.setItem('bsf_prefs_v1', JSON.stringify(p)); }catch(e){} }
+
+  function renderBrief(){
+    var key = region.value;
+    var def = regions.find(function(g){ return g.key === key; }) || null;
+    if (!def) { briefEl.innerHTML = ''; return; }
+    var brief = window.BSF_PLAN.buildBrief(species, def, nowMonth);
+    if (!brief.inSeason.length) {
+      briefEl.innerHTML = '<p class="muted">لا يوجد نوع يطابق هذه المنطقة بعد — تغطيتنا هناك ما زالت تتوسع.</p>';
+      return;
+    }
+    briefEl.innerHTML = '<h3 style="margin-bottom:0">ما الذي يعض في ' + esc(def.label) + ' — ' + MONTH_NAMES[nowMonth-1] + '</h3>' +
+      brief.inSeason.map(function(p){
+        var r = p.row;
+        var spots = (r.regions||[]).slice(0,3).map(esc).join(' · ');
+        return '<div class="target"><h4>' + esc(r.name) +
+          ' <span class="chip' + (p.inSeason?'':' off') + '">' + (p.inSeason?'في الموسم':'خارج الموسم') + '</span></h4>' +
+          (r.baits ? '<div><strong>الطُعم:</strong> ' + esc(r.baits) + '</div>' : '') +
+          (r.season ? '<div><strong>الموسم:</strong> ' + esc(r.season) + '</div>' : '') +
+          (spots ? '<div class="muted" style="font-size:14px">أفضل المواقع: ' + spots + '</div>' : '') +
+          '</div>';
+      }).join('');
+  }
+
+  function renderIntel(q){
+    q = String(q||'').trim().toLowerCase();
+    if (!q) {
+      intelEl.innerHTML = '<p class="muted" style="margin-top:10px">ابدأ بالكتابة للبحث في 548 نوعًا.</p>';
+      return;
+    }
+    var hits = species.filter(function(s){ return s.name.toLowerCase().indexOf(q) !== -1 || (s.sci||'').toLowerCase().indexOf(q) !== -1; }).slice(0, 8);
+    if (!hits.length) { intelEl.innerHTML = '<p class="muted" style="margin-top:10px">لا يوجد نوع يطابق “' + esc(q) + '”.</p>'; return; }
+    intelEl.innerHTML = hits.map(function(s){
+      return '<div class="intel-row"><div><strong>' + esc(s.name) + '</strong>' +
+        (s.sci ? ' <span class="muted" style="font-style:italic">' + esc(s.sci) + '</span>' : '') +
+        (s.habitat ? '<div style="font-size:14px">' + esc(s.habitat) + '</div>' : '') +
+        (s.baits ? '<div style="font-size:14px"><strong>الطُعم:</strong> ' + esc(s.baits) + '</div>' : '') +
+        (s.season ? '<div style="font-size:14px"><strong>الموسم:</strong> ' + esc(s.season) + '</div>' : '') +
+        '</div><a class="badge" href="' + LANGP + '/gallery.html#' + encodeURIComponent(s.name) + '">الملف</a></div>';
+    }).join('');
+  }
+
+  function load(){
+    var m = {status:'guest'};
+    fetch('/api/membership.php?action=me', {credentials:'include'})
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        m = j && j.data && j.data.user ? j.data.user : m;
+        if (window.BSF && BSF.login && m.status !== 'guest') BSF.login({email:m.email||'',name:m.name||'',status:m.status||'member'});
+        finish(m);
+      })
+      .catch(function(){ finish(m); });
+  }
+
+  function finish(m){
+    if (m.status!=='premium'){
+      gate.style.display='block';
+      document.getElementById('gate-brief').style.display='block';
+      content.style.display='none';
+      loadGateRegions();
+      return;
+    }
+    gate.style.display='none'; content.style.display='block';
+    who.textContent = m.email || m.name || 'عضو مميز';
+    if (m.status === 'premium') managePlan.style.display = 'none';
+
+    var p = prefs();
+    if (p.email) emailEl.value = p.email;
+
+    window.BSF_PLAN.loadSpecies().then(function(sp){
+      species = sp;
+      return window.BSF_PLAN.loadRegions();
+    }).then(function(rg){
+      regions = rg;
+      region.innerHTML = regions.map(function(g){ return '<option value="'+esc(g.key)+'">'+esc(g.label)+'</option>'; }).join('');
+      if (p.region && regions.some(function(g){ return g.key === p.region; })) region.value = p.region;
+      renderBrief();
+      renderIntel('');
+    }).catch(function(){
+      briefEl.innerHTML = '<p class="muted">تعذر تحميل قاعدة بيانات الأنواع. حدّث الصفحة للمحاولة مرة أخرى.</p>';
+    });
+  }
+
+  document.getElementById('save').addEventListener('click', function(){
+    var email = emailEl.value.trim();
+    var p = prefs();
+    p.region = region.value;
+    p.email = email;
+    savePrefs(p);
+    renderBrief();
+    statusEl.className = '';
+    if (!email) { statusEl.textContent = 'تم حفظ التفضيلات على هذا الجهاز.'; return; }
+    statusEl.textContent = 'جارٍ الحفظ…';
+    var body = new URLSearchParams({ action:'subscribe', email: email, region: region.value, consent:'yes', source:'members-area' });
+    fetch('/api/brief-subscribe.php', { method:'POST', credentials:'include',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) throw new Error(j.error || 'فشل الاشتراك');
+        statusEl.textContent = 'تم الحفظ — سيصل النشرة أسبوعيًا إلى ' + email + '. تحقق من بريدك الوارد لتأكيد من contact@blueseasfishing.com.';
+      })
+      .catch(function(e){
+        statusEl.className = 'err';
+        statusEl.textContent = 'تم الحفظ على هذا الجهاز، لكن تسجيل البريد الإلكتروني فشل: ' + e.message + '. حاول مرة أخرى بعد لحظات.';
+      });
+  });
+
+  region.addEventListener('change', renderBrief);
+  intelQ.addEventListener('input', function(){ renderIntel(intelQ.value); });
+
+  /* Free-member gate: weekly brief signup (same API as the premium card). */
+  var gateRegion = document.getElementById('gate-region');
+  var gateLoaded = false;
+  function loadGateRegions(){
+    if (gateLoaded) return; gateLoaded = true;
+    fetch('/assets/data/brief-regions.json').then(function(r){ return r.json(); }).then(function(j){
+      var list = (j && j.regions) || [];
+      gateRegion.innerHTML = list.map(function(g){ return '<option value="'+esc(g.key)+'">'+esc(g.label)+'</option>'; }).join('') || '<option value="">المناطق غير متاحة</option>';
+    }).catch(function(){
+      gateRegion.innerHTML = '<option value="">تعذر تحميل المناطق — حدّث للمحاولة مرة أخرى</option>';
+    });
+  }
+  document.getElementById('gate-save').addEventListener('click', function(){
+    var statusEl = document.getElementById('gate-status');
+    var email = document.getElementById('gate-email').value.trim();
+    var consent = document.getElementById('gate-consent').checked;
+    statusEl.className = '';
+    if (!email || email.indexOf('@') === -1) { statusEl.className='err'; statusEl.textContent = 'أدخل عنوان بريد إلكتروني صالحًا.'; return; }
+    if (!consent) { statusEl.className='err'; statusEl.textContent = 'يرجى الموافقة على استلام النشرة الأسبوعية.'; return; }
+    statusEl.textContent = 'جارٍ الاشتراك…';
+    var body = new URLSearchParams({ action:'subscribe', email: email, region: gateRegion.value, consent:'yes', source:'members-area-gate' });
+    fetch('/api/brief-subscribe.php', { method:'POST', credentials:'include',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) throw new Error(j.error || 'فشل التسجيل');
+        statusEl.textContent = 'تم اشتراكك — ستصل النشرة التالية إلى ' + email + '. ابحث عن التأكيد من contact@blueseasfishing.com.';
+      })
+      .catch(function(e){ statusEl.className='err'; statusEl.textContent = e.message; });
+  });
+
+  managePlan.onclick = async (event)=>{
+    event.preventDefault();
+    managePlan.textContent = 'جارٍ الفتح…';
+    try {
+      const response = await fetch('/api/billing.php', {method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'action=portal'});
+      const result = await response.json();
+      if (!response.ok || !result.ok || !result.data?.url) throw new Error(result.error || 'تعذر فتح إدارة الفواتير.');
+      location.assign(result.data.url);
+    } catch (error) {
+      alert(error.message || 'تعذر فتح إدارة الفواتير.');
+      managePlan.textContent = 'إدارة الخطة';
+    }
+  };
+  logout.onclick = async (event)=>{
+    event.preventDefault();
+    if (logout.dataset.busy) return;
+    logout.dataset.busy = '1';
+    logout.textContent = 'جارٍ تسجيل الخروج…';
+    /* Kill the server session first. Never let a network hiccup strand the
+       user here — race a timeout so logout always completes. */
+    try {
+      await Promise.race([
+        fetch('/api/membership.php?action=logout',{credentials:'include'}),
+        new Promise(resolve=>setTimeout(resolve,4000))
+      ]);
+    } catch (err) {}
+    /* Clear local state. Guard BSF so a stale cached membership.js can't
+       break logout; fall back to removing the stored member key directly. */
+    try {
+      if (window.BSF && typeof BSF.logout === 'function') BSF.logout();
+      else localStorage.removeItem('bsf_member_v3');
+    } catch (err) { try { localStorage.removeItem('bsf_member_v3'); } catch (e2) {} }
+    location.replace('/index.html');
+  };
+
+  if (document.readyState==='loading') document.addEventListener('DOMContentLoaded', load); else load();
+  document.addEventListener('bsf-member-change', load);
+})();
+</script>
+<script src="/assets/js/nav-back.js?v=3" defer></script><script src="/branding.js?v=3" defer></script>
+  <script src="/assets/js/lang-switch.js?v=5" defer></script>
+</body>
+</html>

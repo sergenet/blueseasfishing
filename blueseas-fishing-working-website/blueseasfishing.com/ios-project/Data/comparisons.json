@@ -1,0 +1,584 @@
+{
+ "comparisons": [
+  {
+   "slug": "black-crappie-vs-white-crappie",
+   "a": "Black Crappie",
+   "b": "White Crappie",
+   "env": "Freshwater",
+   "lede": "Same slabs, different patterns. Count dorsal spines when the pattern is washed out.",
+   "rows": [
+    {
+     "feature": "Dorsal spines",
+     "a": "Usually 7–8 spines",
+     "b": "Usually 5–6 spines"
+    },
+    {
+     "feature": "Flank pattern",
+     "a": "Irregular dark blotches, scattered",
+     "b": "Faint vertical bars, evenly spaced"
+    },
+    {
+     "feature": "Body shape",
+     "a": "Slightly deeper body and larger mouth",
+     "b": "Slimmer profile, smaller mouth"
+    },
+    {
+     "feature": "Typical water",
+     "a": "Clearer lakes with vegetation",
+     "b": "Murkier lakes, oxbows and backwaters"
+    }
+   ]
+  },
+  {
+   "slug": "blue-catfish-vs-channel-catfish",
+   "a": "Blue Catfish",
+   "b": "Channel Catfish",
+   "env": "Freshwater",
+   "lede": "Both are big-river catfish with forked tails. Anal-fin shape and spotting pattern do most of the work.",
+   "rows": [
+    {
+     "feature": "Anal fin",
+     "a": "Long, straight lower edge; 30–36 rays",
+     "b": "Rounded lower edge; 25–29 rays"
+    },
+    {
+     "feature": "Spotting",
+     "a": "Adults usually plain gray-blue, few or no spots",
+     "b": "Small dark spots scattered on the sides (most sizes)"
+    },
+    {
+     "feature": "Head shape",
+     "a": "Broad, flat head; heavy shoulders",
+     "b": "Narrower head with a more pointed snout"
+    },
+    {
+     "feature": "Size potential",
+     "a": "Enormous; well past 100 lb in big rivers",
+     "b": "Commonly 2–10 lb; trophies past 20 lb"
+    }
+   ]
+  },
+  {
+   "slug": "blue-marlin-vs-striped-marlin",
+   "a": "Blue Marlin",
+   "b": "Striped Marlin",
+   "env": "Saltwater",
+   "lede": "Pacific big-game royalty. Dorsal height, stripes and build separate the two.",
+   "rows": [
+    {
+     "feature": "First dorsal fin",
+     "a": "Tall but lower than body depth; rounded profile",
+     "b": "Taller than body depth; pointed, pocketed membranes"
+    },
+    {
+     "feature": "Stripes",
+     "a": "Light blue bars that fade quickly after landing",
+     "b": "Vivid lavender-blue vertical bars, persist when lit up"
+    },
+    {
+     "feature": "Build",
+     "a": "Deep-chested, heavy forward shoulder",
+     "b": "Sleeker, more compressed body"
+    },
+    {
+     "feature": "Bill",
+     "a": "Long, round, robust",
+     "b": "Longer relative to body, more slender"
+    }
+   ]
+  },
+  {
+   "slug": "bluegill-vs-redear-sunfish",
+   "a": "Bluegill",
+   "b": "Redear Sunfish",
+   "env": "Freshwater",
+   "lede": "The ear flap ends the argument: solid black versus black with a red-orange edge.",
+   "rows": [
+    {
+     "feature": "Ear flap (gill cover)",
+     "a": "Solid dark flap, no colored border",
+     "b": "Dark flap edged in red to orange"
+    },
+    {
+     "feature": "Mouth",
+     "a": "Small mouth; jaw short of the eye",
+     "b": "Small mouth, slightly longer on adults"
+    },
+    {
+     "feature": "Body color",
+     "a": "Deep blue-green with orange breast",
+     "b": "Olive-gold, plainer sides, longer body"
+    },
+    {
+     "feature": "Feeding habit",
+     "a": "Insects and larvae throughout the weeds",
+     "b": "Snails and mussels — the \"shellcracker\""
+    }
+   ]
+  },
+  {
+   "slug": "brook-trout-vs-brown-trout",
+   "a": "Brook Trout",
+   "b": "Brown Trout",
+   "env": "Freshwater",
+   "lede": "A char versus a true trout: vermiculation and white-edged fins versus red halos and a square tail.",
+   "rows": [
+    {
+     "feature": "Back pattern",
+     "a": "Worm-like pale vermiculation lines",
+     "b": "Plain or with dark spots; no worm lines"
+    },
+    {
+     "feature": "Flank spots",
+     "a": "Pale yellow spots; red spots with blue halos",
+     "b": "Red-black spots, many ringed with pale halos"
+    },
+    {
+     "feature": "Fins",
+     "a": "White leading edges with black striping",
+     "b": "Plain fins, no white-black edge"
+    },
+    {
+     "feature": "Tail",
+     "a": "Nearly square",
+     "b": "Slightly forked"
+    }
+   ]
+  },
+  {
+   "slug": "california-halibut-vs-pacific-halibut",
+   "a": "California Halibut",
+   "b": "Pacific Halibut",
+   "env": "Saltwater",
+   "lede": "A nearshore 10-pounder versus a deep-water giant — plus one scale check.",
+   "rows": [
+    {
+     "feature": "Size potential",
+     "a": "Rarely past 50 lb; typical 5–15 lb",
+     "b": "Commonly 20–100 lb; records past 400 lb"
+    },
+    {
+     "feature": "Scales",
+     "a": "Larger, rougher scales — gritty to the touch",
+     "b": "Very small, smooth scales"
+    },
+    {
+     "feature": "Color",
+     "a": "Sandy brown, sometimes pale \"buttermilk\" patches",
+     "b": "Uniform dark-brown to olive eyed side"
+    },
+    {
+     "feature": "Depth",
+     "a": "Surf zone to about 300 ft, often near beaches",
+     "b": "Deep offshore flats, 100–1,000+ ft"
+    }
+   ]
+  },
+  {
+   "slug": "channel-catfish-vs-flathead-catfish",
+   "a": "Channel Catfish",
+   "b": "Flathead Catfish",
+   "env": "Freshwater",
+   "lede": "A forked tail versus a rounded one, and two totally different feeding styles — the ID mirrors the biology.",
+   "rows": [
+    {
+     "feature": "Tail",
+     "a": "Deeply forked",
+     "b": "Slightly forked to rounded"
+    },
+    {
+     "feature": "Head / jaw",
+     "a": "Pointed snout, upper jaw even with lower",
+     "b": "Broad flat head; lower jaw sticks out past the upper"
+    },
+    {
+     "feature": "Color",
+     "a": "Slate to olive with scattered dark spots",
+     "b": "Yellow-olive to chocolate brown, plain or mottled"
+    },
+    {
+     "feature": "Feeding",
+     "a": "Opportunistic scavenger — cut bait, stink bait",
+     "b": "Live-fish predator — sunfish, shad, live bait rigs"
+    }
+   ]
+  },
+  {
+   "slug": "chinook-salmon-vs-coho-salmon",
+   "a": "Chinook Salmon",
+   "b": "Coho Salmon",
+   "env": "Saltwater",
+   "lede": "The two big Pacific salmon. Tail spots and gum line are the timeless checks.",
+   "rows": [
+    {
+     "feature": "Tail spots",
+     "a": "Spots on both tail lobes and the back",
+     "b": "Spots only on the upper tail lobe"
+    },
+    {
+     "feature": "Gum line",
+     "a": "Black at the base of the teeth",
+     "b": "White to pale gray gums"
+    },
+    {
+     "feature": "Size",
+     "a": "Largest Pacific salmon — 15–40 lb common in runs",
+     "b": "Smaller — 6–12 lb typical"
+    },
+    {
+     "feature": "Tail shape",
+     "a": "Broad, more square",
+     "b": "More forked"
+    }
+   ]
+  },
+  {
+   "slug": "king-mackerel-vs-spanish-mackerel",
+   "a": "King Mackerel",
+   "b": "Spanish Mackerel",
+   "env": "Saltwater",
+   "lede": "The speed family. Size and the lateral-line \"drop\" separate kings from spaniards.",
+   "rows": [
+    {
+     "feature": "Size",
+     "a": "Commonly 10–40 lb; giants past 60 lb",
+     "b": "1–5 lb; rarely past 10 lb"
+    },
+    {
+     "feature": "Lateral line",
+     "a": "Dips sharply below the second dorsal fin",
+     "b": "Gently slopes the full length"
+    },
+    {
+     "feature": "Spots",
+     "a": "Usually spotless; juveniles can show spots",
+     "b": "Bronze oval spots on the flank"
+    },
+    {
+     "feature": "Dorsal fin",
+     "a": "Gray front edge",
+     "b": "Distinctly black front edge on the first dorsal"
+    }
+   ]
+  },
+  {
+   "slug": "lake-trout-vs-bull-trout",
+   "a": "Lake Trout",
+   "b": "Bull Trout",
+   "env": "Freshwater",
+   "lede": "Two deep-water chars. Tail shape and fin edges separate them; range confirms.",
+   "rows": [
+    {
+     "feature": "Tail",
+     "a": "Deeply forked",
+     "b": "Flat to slightly curved rear edge"
+    },
+    {
+     "feature": "Fin edges",
+     "a": "No white leading-edge marks",
+     "b": "White leading edges, front fins"
+    },
+    {
+     "feature": "Spotting",
+     "a": "Light wormy spots over dark green-gray",
+     "b": "Orange to red spots over olive-back"
+    },
+    {
+     "feature": "Where found",
+     "a": "Deep cold lakes across the North",
+     "b": "Cold rivers/lakes of the Pacific Northwest"
+    }
+   ]
+  },
+  {
+   "slug": "largemouth-bass-vs-smallmouth-bass",
+   "a": "Largemouth Bass",
+   "b": "Smallmouth Bass",
+   "env": "Freshwater",
+   "lede": "The classic bass confusion. Jaw length, dorsal-fin gap and color pattern separate them in seconds once you know where to look.",
+   "rows": [
+    {
+     "feature": "Mouth / jaw",
+     "a": "Upper jaw extends well past the rear of the eye",
+     "b": "Upper jaw stops at or before the rear of the eye"
+    },
+    {
+     "feature": "Dorsal fin",
+     "a": "Deep notch between spined and soft sections",
+     "b": "Shallow notch; the two sections nearly merge"
+    },
+    {
+     "feature": "Color pattern",
+     "a": "Green sides with a dark lateral blotch chain",
+     "b": "Brown-bronze sides with dark vertical bars"
+    },
+    {
+     "feature": "Preferred water",
+     "a": "Warm, weedy lakes, ponds and slow river banks",
+     "b": "Cooler, clearer water with rock, gravel and current"
+    }
+   ]
+  },
+  {
+   "slug": "largemouth-bass-vs-spotted-bass",
+   "a": "Largemouth Bass",
+   "b": "Spotted Bass",
+   "env": "Freshwater",
+   "lede": "Spotted bass increasingly share largemouth water. One mouth-length check and one tongue check settle most IDs.",
+   "rows": [
+    {
+     "feature": "Mouth / jaw",
+     "a": "Upper jaw extends past the rear of the eye",
+     "b": "Upper jaw stops at or just short of the eye"
+    },
+    {
+     "feature": "Dorsal fin",
+     "a": "Clear notch between the two sections",
+     "b": "Sections connected by a low arch, nearly continuous"
+    },
+    {
+     "feature": "Flank pattern",
+     "a": "Dark lateral blotch chain along the side",
+     "b": "Rows of small spots below the lateral line"
+    },
+    {
+     "feature": "Tongue",
+     "a": "Smooth tongue",
+     "b": "Rough tooth patch at the base of the tongue"
+    }
+   ]
+  },
+  {
+   "slug": "northern-pike-vs-muskellunge",
+   "a": "Northern Pike",
+   "b": "Muskellunge",
+   "env": "Freshwater",
+   "lede": "The esox cousins: cheek scales, spot-versus-bar patterns and tail shape tell them apart.",
+   "rows": [
+    {
+     "feature": "Cheek scales",
+     "a": "Fully scaled cheek and gill cover",
+     "b": "Lower half of the cheek bare (scaleless patch)"
+    },
+    {
+     "feature": "Pattern",
+     "a": "Light bean-shaped spots on dark body",
+     "b": "Vertical dark bars on a lighter body"
+    },
+    {
+     "feature": "Tail",
+     "a": "More forked",
+     "b": "Rounded"
+    },
+    {
+     "feature": "Size",
+     "a": "Commonly 24–40 in",
+     "b": "Commonly 36–50 in where established"
+    }
+   ]
+  },
+  {
+   "slug": "rainbow-trout-vs-cutthroat-trout",
+   "a": "Rainbow Trout",
+   "b": "Cutthroat Trout",
+   "env": "Freshwater",
+   "lede": "One look under the jaw: the cutthroat's red-orange slash is the namesake and the giveaway.",
+   "rows": [
+    {
+     "feature": "Jaw slash",
+     "a": "No slash under the lower jaw",
+     "b": "Distinct red-orange slash under the jaw"
+    },
+    {
+     "feature": "Lateral stripe",
+     "a": "Pink to rose lateral stripe, common",
+     "b": "Usually absent or faint"
+    },
+    {
+     "feature": "Spotting",
+     "a": "Dense small black spots, tail heavily spotted",
+     "b": "Coarser spots, concentrated toward the tail"
+    },
+    {
+     "feature": "Maxilla",
+     "a": "Ends near the eye",
+     "b": "Often extends past the eye"
+    }
+   ]
+  },
+  {
+   "slug": "red-drum-redfish-vs-black-drum",
+   "a": "Red Drum (Redfish)",
+   "b": "Black Drum",
+   "env": "Saltwater",
+   "lede": "Two drum, two silhouettes. Barbels, eyespots and tail shape separate them instantly.",
+   "rows": [
+    {
+     "feature": "Chin barbels",
+     "a": "None",
+     "b": "Several short barbels under the chin"
+    },
+    {
+     "feature": "Tail spots",
+     "a": "One or more dark eyespots near the tail base",
+     "b": "No eyespots; juveniles show dark vertical bars instead"
+    },
+    {
+     "feature": "Tail shape",
+     "a": "Truncated, slightly curved edge",
+     "b": "Broad and rounded"
+    },
+    {
+     "feature": "Mouth",
+     "a": "Down-turned, feed-forward snout",
+     "b": "Pavement teeth; crushes shell on structure"
+    }
+   ]
+  },
+  {
+   "slug": "sailfish-vs-blue-marlin",
+   "a": "Sailfish",
+   "b": "Blue Marlin",
+   "env": "Saltwater",
+   "lede": "A sail versus a rounded fin: the name literally describes the difference.",
+   "rows": [
+    {
+     "feature": "Dorsal fin",
+     "a": "Sail-shaped, taller than body depth, folds into a groove",
+     "b": "Rounded fin, lower than body depth"
+    },
+    {
+     "feature": "Size",
+     "a": "7–8 ft, 40–80 lb typical",
+     "b": "Larger and far heavier; grander class exists"
+    },
+    {
+     "feature": "Build",
+     "a": "Slender, compressed sides",
+     "b": "Deep, muscular chest"
+    },
+    {
+     "feature": "Speed claim",
+     "a": "Often cited as the fastest billfish",
+     "b": "Power over pace"
+    }
+   ]
+  },
+  {
+   "slug": "southern-flounder-vs-summer-flounder-fluke",
+   "a": "Southern Flounder",
+   "b": "Summer Flounder (Fluke)",
+   "env": "Saltwater",
+   "lede": "Both flatfish face right. Spot patterns and range do the talking.",
+   "rows": [
+    {
+     "feature": "Ocellated spots",
+     "a": "About 3 large eyespots; few small spots",
+     "b": "5–6 eyespots plus many small spots on the flank"
+    },
+    {
+     "feature": "Blind side",
+     "a": "Unspotted white; occasional dark blotch",
+     "b": "Unspotted white"
+    },
+    {
+     "feature": "Tail edge",
+     "a": "Rounded to double-rounded",
+     "b": "Truncated (square-ish)"
+    },
+    {
+     "feature": "Range",
+     "a": "Gulf and US Southeast Atlantic coasts",
+     "b": "Mid-Atlantic to New England (\"fluke\")"
+    }
+   ]
+  },
+  {
+   "slug": "spotted-seatrout-vs-weakfish",
+   "a": "Spotted Seatrout",
+   "b": "Weakfish",
+   "env": "Saltwater",
+   "lede": "Two Cynoscion cousins on opposite coasts. Spot pattern and range usually settle the call.",
+   "rows": [
+    {
+     "feature": "Spot pattern",
+     "a": "Distinct round black spots across back, dorsal and tail",
+     "b": "Few, small, irregular spots — more vermiculation than dots"
+    },
+    {
+     "feature": "Anal-fin spines",
+     "a": "One thin spine",
+     "b": "Two thin spines"
+    },
+    {
+     "feature": "Back color",
+     "a": "Blue-gray to green with silver flanks",
+     "b": "Bronze-green to olive with purple sheen"
+    },
+    {
+     "feature": "Range",
+     "a": "Gulf of Mexico and US Southeast coasts",
+     "b": "Mid-Atlantic to Northeast coasts"
+    }
+   ]
+  },
+  {
+   "slug": "yellow-perch-vs-white-perch",
+   "a": "Yellow Perch",
+   "b": "White Perch",
+   "env": "Freshwater",
+   "lede": "Not actually cousins — a true perch versus a temperate bass that borrowed the name.",
+   "rows": [
+    {
+     "feature": "Family",
+     "a": "True perch (Percidae)",
+     "b": "Temperate bass (Moronidae) — related to white bass"
+    },
+    {
+     "feature": "Pattern",
+     "a": "Bold dark vertical bars on gold-green",
+     "b": "Plain silver-gray sides, faint bars at most"
+    },
+    {
+     "feature": "Fins",
+     "a": "Orange-red pelvic and anal fins",
+     "b": "Plain gray fins"
+    },
+    {
+     "feature": "Size",
+     "a": "Hand-sized; 8–12 in typical",
+     "b": "6–10 in typical; bigger in brackish rivers"
+    }
+   ]
+  },
+  {
+   "slug": "yellowfin-tuna-vs-bluefin-tuna",
+   "a": "Yellowfin Tuna",
+   "b": "Bluefin Tuna",
+   "env": "Saltwater",
+   "lede": "The ocean's two great tunas. Fin length and pectoral color settle it at the rail.",
+   "rows": [
+    {
+     "feature": "Second dorsal + anal fins",
+     "a": "Long, sickle-shaped in adults — often past the tail base",
+     "b": "Short and rounded at all sizes"
+    },
+    {
+     "feature": "Pectoral fin",
+     "a": "Long, reaching well past the fin base; yellow tint",
+     "b": "Short, stiff, dark"
+    },
+    {
+     "feature": "Body build",
+     "a": "Slender torpedo",
+     "b": "Thick, football-shaped trunk"
+    },
+    {
+     "feature": "Size",
+     "a": "Commonly 30–150 lb",
+     "b": "50 lb school fish to giants past 500 lb"
+    }
+   ]
+  }
+ ]
+}

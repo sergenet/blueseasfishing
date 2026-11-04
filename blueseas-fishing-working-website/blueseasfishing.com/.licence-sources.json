@@ -1,0 +1,206 @@
+{
+ "alabama": {
+  "url": "https://www.outdooralabama.com/",
+  "label": "Alabama (ADCNR)"
+ },
+ "alaska": {
+  "url": "https://www.adfg.alaska.gov/",
+  "label": "Alaska (ADF&G)"
+ },
+ "arizona": {
+  "url": "https://www.azgfd.com/",
+  "label": "Arizona (AZGFD)"
+ },
+ "arkansas": {
+  "url": "https://www.agfc.com/",
+  "label": "Arkansas (AGFC)"
+ },
+ "california": {
+  "url": "https://wildlife.ca.gov/",
+  "label": "California (CDFW)"
+ },
+ "colorado": {
+  "url": "https://cpw.state.co.us/",
+  "label": "Colorado (CPW)"
+ },
+ "connecticut": {
+  "url": "https://portal.ct.gov/deep",
+  "label": "Connecticut (DEEP)"
+ },
+ "delaware": {
+  "url": "https://dnrec.delaware.gov/",
+  "label": "Delaware (DNREC)"
+ },
+ "florida": {
+  "url": "https://myfwc.com/",
+  "label": "Florida (FWC)"
+ },
+ "georgia": {
+  "url": "https://georgiawildlife.com/",
+  "label": "Georgia (WRD)"
+ },
+ "hawaii": {
+  "url": "https://dlnr.hawaii.gov/dar/",
+  "label": "Hawaii (DAR)"
+ },
+ "idaho": {
+  "url": "https://idfg.idaho.gov/",
+  "label": "Idaho (IDFG)"
+ },
+ "illinois": {
+  "url": "https://www2.illinois.gov/dnr/",
+  "label": "Illinois (IDNR)"
+ },
+ "indiana": {
+  "url": "https://www.in.gov/dnr/",
+  "label": "Indiana (DNR)"
+ },
+ "iowa": {
+  "url": "https://www.iowadnr.gov/",
+  "label": "Iowa (DNR)"
+ },
+ "kansas": {
+  "url": "https://www.ksoutdoors.com/",
+  "label": "Kansas (KDWP)"
+ },
+ "kentucky": {
+  "url": "https://fw.ky.gov/",
+  "label": "Kentucky (KDFWR)"
+ },
+ "louisiana": {
+  "url": "https://www.wlf.louisiana.gov/",
+  "label": "Louisiana (LDWF)"
+ },
+ "maine": {
+  "url": "https://www.maine.gov/ifw/",
+  "label": "Maine (IFW)"
+ },
+ "maryland": {
+  "url": "https://dnr.maryland.gov/",
+  "label": "Maryland (DNR)"
+ },
+ "massachusetts": {
+  "url": "https://www.mass.gov/orgs/masswildlife",
+  "label": "Massachusetts (MassWildlife/DMF)"
+ },
+ "michigan": {
+  "url": "https://www.michigan.gov/dnr",
+  "label": "Michigan (DNR)"
+ },
+ "minnesota": {
+  "url": "https://www.dnr.state.mn.us/",
+  "label": "Minnesota (DNR)"
+ },
+ "mississippi": {
+  "url": "https://www.mdwfp.com/",
+  "label": "Mississippi (MDWFP/DMR)"
+ },
+ "missouri": {
+  "url": "https://mdc.mo.gov/",
+  "label": "Missouri (MDC)"
+ },
+ "montana": {
+  "url": "https://fwp.mt.gov/",
+  "label": "Montana (FWP)"
+ },
+ "nebraska": {
+  "url": "https://outdoornebraska.gov/",
+  "label": "Nebraska (NGPC)"
+ },
+ "nevada": {
+  "url": "https://www.ndow.org/",
+  "label": "Nevada (NDOW)"
+ },
+ "new-hampshire": {
+  "url": "https://wildlife.state.nh.us/",
+  "label": "New Hampshire (Fish and Game)"
+ },
+ "new-jersey": {
+  "url": "https://dep.nj.gov/njfishandwildlife/",
+  "label": "New Jersey (DEP Fish & Wildlife)"
+ },
+ "new-mexico": {
+  "url": "https://www.wildlife.state.nm.us/",
+  "label": "New Mexico (NMDGF)"
+ },
+ "new-york": {
+  "url": "https://www.dec.ny.gov/",
+  "label": "New York (DEC)"
+ },
+ "north-carolina": {
+  "url": "https://www.ncwildlife.org/",
+  "label": "North Carolina (NCWRC/DMF)"
+ },
+ "north-dakota": {
+  "url": "https://gf.nd.gov/",
+  "label": "North Dakota (Game and Fish)"
+ },
+ "ohio": {
+  "url": "https://ohiodnr.gov/",
+  "label": "Ohio (ODNR)"
+ },
+ "oklahoma": {
+  "url": "https://www.wildlifedepartment.com/",
+  "label": "Oklahoma (ODWC)"
+ },
+ "oregon": {
+  "url": "https://www.dfw.state.or.us/",
+  "label": "Oregon (ODFW)"
+ },
+ "pennsylvania": {
+  "url": "https://www.fishandboat.com/",
+  "label": "Pennsylvania (PFBC)"
+ },
+ "rhode-island": {
+  "url": "https://dem.ri.gov/",
+  "label": "Rhode Island (DEM)"
+ },
+ "south-carolina": {
+  "url": "https://www.dnr.sc.gov/",
+  "label": "South Carolina (SCDNR)"
+ },
+ "south-dakota": {
+  "url": "https://gfp.sd.gov/",
+  "label": "South Dakota (GFP)"
+ },
+ "tennessee": {
+  "url": "https://www.tn.gov/twra.html",
+  "label": "Tennessee (TWRA)"
+ },
+ "texas": {
+  "url": "https://tpwd.texas.gov/",
+  "label": "Texas (TPWD)"
+ },
+ "utah": {
+  "url": "https://wildlife.utah.gov/",
+  "label": "Utah (DWR)"
+ },
+ "vermont": {
+  "url": "https://vtfishandwildlife.com/",
+  "label": "Vermont (FWD)"
+ },
+ "virginia": {
+  "url": "https://dwr.virginia.gov/",
+  "label": "Virginia (DWR/VMRC)"
+ },
+ "washington": {
+  "url": "https://wdfw.wa.gov/",
+  "label": "Washington (WDFW)"
+ },
+ "west-virginia": {
+  "url": "https://wvdnr.gov/",
+  "label": "West Virginia (DNR)"
+ },
+ "wisconsin": {
+  "url": "https://dnr.wisconsin.gov/",
+  "label": "Wisconsin (DNR)"
+ },
+ "wyoming": {
+  "url": "https://wgfd.wyo.gov/",
+  "label": "Wyoming (GFD)"
+ },
+ "district-of-columbia": {
+  "url": "https://doee.dc.gov/",
+  "label": "District of Columbia (DOEE)"
+ }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trip Planner — Multi-Fish Species &amp; Bait Plans</title>
+  <meta name="description" content="Premium trip planner: pick a destination and month, get a species-and-bait plan cross-referenced against all 548 profiles, with hotspot data you can print.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.blueseasfishing.com/trip-planner.html">
+  <link rel="stylesheet" href="/assets/css/modern-styles.css?v=20261017-1">
+  <style>
+    .plan-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px}
+    .plan-form label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}
+    .plan-form select{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;font:inherit}
+    .plan-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center}
+    .target{border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin-top:12px;background:#fff}
+    .target h3{margin:0 0 2px}
+    .target .sci{color:#64748b;font-style:italic;font-size:14px}
+    .target .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin-top:8px;font-size:15px}
+    .target .meta strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#64748b}
+    .chip{display:inline-block;background:#dcfce7;color:#166534;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+    .chip.off{background:#f1f5f9;color:#475569}
+    .gate{border:1px solid #e2e8f0;border-radius:14px;padding:22px;background:#fff;margin-top:16px;text-align:center}
+    #status{margin-top:10px;color:#475569}
+    @media print{
+      .navbar,.plan-form,.plan-actions,.gate,#status,.footer-widgets,footer,script{display:none!important}
+      .target{break-inside:avoid;border:1px solid #999}
+      body{background:#fff}
+    }
+  </style>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+<script src="/analytics-consent.js?v=2" defer></script>
+  <meta property="og:image" content="https://www.blueseasfishing.com/images/deep-sea-marlin-trolling-fishing-action.jpg">
+  <meta property="og:image:alt" content="Trip Planner">
+  <meta name="twitter:image" content="https://www.blueseasfishing.com/images/deep-sea-marlin-trolling-fishing-action.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <a href="/" style="font-weight:800;text-decoration:none;color:#0f172a">BlueSeas<span style="color:#1a365d">Fishing</span></a>
+      <a href="/" class="btn ghost">Home</a>
+      <a href="/members-area.html" class="btn ghost">Members Area</a>
+      <a href="/subscribe.html" class="btn ghost">Subscribe</a>
+    </div>
+  </nav>
+
+  <main class="container" style="max-width:920px;padding:24px 16px">
+    <h1>Trip Planner</h1>
+    <p class="lead">Pick a destination and a month — we cross-reference all 548 species profiles and build a multi-fish target list with baits, seasons and hotspot data. <strong>Premium feature.</strong></p>
+
+    <div id="gate" class="gate" hidden>
+      <h2 style="margin-top:0">Premium members plan trips</h2>
+      <p class="muted">The Trip Planner is included with Premium — alongside unlimited AI identifications and the weekly bite brief.</p>
+      <p><a class="btn" href="/premium.html">Go Premium</a> <a class="btn ghost" href="/login.html">I'm already a member</a></p>
+    </div>
+
+    <section id="planner" hidden>
+      <div class="plan-form">
+        <div>
+          <label for="dest">Destination</label>
+          <select id="dest"><option value="">Any destination (browse by region)</option></select>
+        </div>
+        <div>
+          <label for="region">Region</label>
+          <select id="region"><option value="">Global — all waters</option></select>
+        </div>
+        <div>
+          <label for="month">Travel month</label>
+          <select id="month"></select>
+        </div>
+        <div>
+          <label for="water">Water type</label>
+          <select id="water">
+            <option value="">Fresh &amp; salt</option>
+            <option value="Freshwater">Freshwater only</option>
+            <option value="Saltwater">Saltwater only</option>
+          </select>
+        </div>
+      </div>
+      <div class="plan-actions">
+        <button class="btn" id="build" type="button">Build my trip plan</button>
+        <button class="btn ghost" id="print" type="button" hidden>Print / save as PDF</button>
+      </div>
+      <p id="status" role="status"></p>
+      <div id="results"></div>
+    </section>
+  </main>
+
+<script src="/membership.js?v=2" defer></script>
+<script src="/assets/js/bsf-plan.js?v=1" defer></script>
+<script>
+window.addEventListener('load', function () {
+  var gate = document.getElementById('gate');
+  var planner = document.getElementById('planner');
+  var statusEl = document.getElementById('status');
+  var results = document.getElementById('results');
+  var printBtn = document.getElementById('print');
+  var destSel = document.getElementById('dest');
+  var regionSel = document.getElementById('region');
+  var monthSel = document.getElementById('month');
+  var waterSel = document.getElementById('water');
+  var species = [], regions = [];
+
+  var MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  // locale prefix for links built at runtime (mirror transform can't touch scripts)
+  var LANGP = (function(){ var l=(document.documentElement.lang||'en').toLowerCase(); return (/^[a-z]{2}$/.test(l) && l!=='en') ? '/'+l : ''; })();
+
+  /* month options: default to now */
+  var nowMonth = new Date().getMonth() + 1;
+  monthSel.innerHTML = MONTH_NAMES.map(function(m,i){
+    return '<option value="'+(i+1)+'"'+(i+1===nowMonth?' selected':'')+'>'+m+'</option>';
+  }).join('');
+
+  function enable() {
+    gate.hidden = true;
+    planner.hidden = false;
+    Promise.all([window.BSF_PLAN.loadSpecies(), window.BSF_PLAN.loadRegions()]).then(function (r) {
+      species = r[0]; regions = r[1];
+      regionSel.innerHTML = '<option value="">Global — all waters</option>' + regions.map(function(g){
+        return '<option value="'+esc(g.key)+'">'+esc(g.label)+'</option>';
+      }).join('');
+      return fetch('/assets/data/destinations.json').then(function(x){ return x.json(); });
+    }).then(function (d) {
+      var list = (d.destinations || []).slice().sort(function(a,b){ return a.name.localeCompare(b.name); });
+      destSel.innerHTML = '<option value="">Any destination (browse by region)</option>' + list.map(function(x){
+        return '<option value="'+esc(x.name)+'">'+esc(x.name)+'</option>';
+      }).join('');
+      // deep link from destination pages: trip-planner.html?dest=Gulf%20of%20Mexico
+      var q = new URLSearchParams(location.search);
+      if (q.get('dest')) {
+        destSel.value = q.get('dest');
+        build();
+      }
+      if (q.get('species')) statusEl.textContent = 'Tip: search the results for "' + q.get('species') + '".';
+    }).catch(function (e) {
+      statusEl.textContent = 'Could not load the species database. Refresh to retry.';
+    });
+  }
+
+  function currentMemberIsPremium() {
+    // server first (fresh session), fall back to local cache
+    return fetch('/api/membership.php?action=me', { credentials: 'include' })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        var u = j && j.data && j.data.user;
+        if (u && u.status) { if (window.BSF && BSF.login) BSF.login({email:u.email||'',name:u.name||'',status:u.status}); return u.status === 'premium'; }
+        return !!(window.BSF && BSF.isPremium && BSF.isPremium());
+      })
+      .catch(function () { return !!(window.BSF && BSF.isPremium && BSF.isPremium()); });
+  }
+
+  function build() {
+    if (!species.length) return;
+    var regionKey = regionSel.value;
+    var regionDef = regions.find(function (g) { return g.key === regionKey; }) || null;
+    var month = parseInt(monthSel.value, 10);
+    var dest = destSel.value;
+    // picking a destination implies its region page family; region select still wins if set
+    var opts = { month: month, env: waterSel.value, limit: 14 };
+    if (dest) opts.destination = dest;
+    if (regionDef) opts.region = regionDef;
+    if (!dest && !regionDef && !opts.env) { opts.region = null; opts.env = ''; }
+    var picks = window.BSF_PLAN.buildPlan(species, opts);
+    if (!picks.length) {
+      results.innerHTML = '<p class="muted" style="margin-top:16px">No species matched that combination. Try a broader region, another month, or clear the water-type filter.</p>';
+      printBtn.hidden = true;
+      return;
+    }
+    var where = dest ? dest : (regionDef ? regionDef.label : 'all waters');
+    var head = '<h2 style="margin-top:18px">Your ' + esc(MONTH_NAMES[month-1]) + ' plan for ' + esc(where) + '</h2>' +
+               '<p class="muted">' + picks.length + ' target species from our 548-profile database, best matches first. Off-season species are marked.</p>';
+    results.innerHTML = head + picks.map(function (p) {
+      var r = p.row;
+      var spots = (r.regions || []).slice(0, 4).map(esc).join(' · ');
+      return '<article class="target">' +
+        '<h3>' + esc(r.name) + ' <span class="chip' + (p.inSeason ? '' : ' off') + '">' + (p.inSeason ? 'In season ' + MONTH_NAMES[month-1].slice(0,3) : 'Off-season now') + '</span></h3>' +
+        (r.sci ? '<div class="sci">' + esc(r.sci) + '</div>' : '') +
+        '<div class="meta">' +
+          (r.baits ? '<div><strong>Baits &amp; lures</strong>' + esc(r.baits) + '</div>' : '') +
+          (r.season ? '<div><strong>Season</strong>' + esc(r.season) + '</div>' : '') +
+          (r.habitat ? '<div><strong>Where they hold</strong>' + esc(r.habitat) + '</div>' : '') +
+          (spots ? '<div><strong>Hotspots</strong>' + spots + '</div>' : '') +
+        '</div>' +
+        '<p style="margin:10px 0 0"><a href="' + LANGP + '/gallery.html#' + encodeURIComponent(r.name) + '">Full profile</a></p>' +
+      '</article>';
+    }).join('');
+    printBtn.hidden = false;
+    statusEl.textContent = '';
+  }
+
+  document.getElementById('build').addEventListener('click', function () {
+    statusEl.textContent = 'Building plan…';
+    build();
+    if (!results.innerHTML) statusEl.textContent = '';
+  });
+  printBtn.addEventListener('click', function () { window.print(); });
+
+  currentMemberIsPremium().then(function (ok) {
+    if (ok) enable(); else gate.hidden = false, planner.hidden = true;
+  });
+});
+</script>
+
+<script src="/assets/js/nav-back.js?v=3" defer></script>
+</body>
+</html>

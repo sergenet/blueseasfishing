@@ -1,0 +1,13 @@
+{
+  "generated_by": "hand-maintained region definitions for the weekly bite brief + trip planner (assets/js/bsf-plan.js reads this file)",
+  "regions": [
+    { "key": "europe-east", "label": "Europe — Eastern", "match": ["poland", "hungary", "czech", "slovakia", "romania", "bulgaria", "serbia", "croatia", "slovenia", "danube", "vistula", "odra", "sava", "tisza", "hungarian", "transylvania", "baltic states", "lithuania", "latvia", "estonia"] },
+    { "key": "europe-west", "label": "Europe — Western", "match": ["france", "germany", "netherlands", "belgium", "benelux", "rhine", "loire", "seine", "moselle", "meuse", "bodensee", "lower saxony", "bavaria"] },
+    { "key": "europe-north", "label": "Europe — Northern", "match": ["sweden", "norway", "finland", "denmark", "baltic", "bothnia", "scandinavia", "lapland", "vänern", "vattern", "helsinki", "stockholm", "oslo", "karelia"] },
+    { "key": "europe-south", "label": "Europe — Southern", "match": ["italy", "spain", "portugal", "sicily", "sardinia", "po river", "ebro", "tagus", "guadalquivir", "adriatic coast", "tyrrhenian", "iberian"] },
+    { "key": "med", "label": "Mediterranean", "match": ["mediterranean", "aegean", "adriatic", "ionian", "tyrrhenian", "levantine", "corsica", "crete", "cyprus", "dalmatia", "riviera", "balearic"] },
+    { "key": "uk-ireland", "label": "UK & Ireland", "match": ["uk", "united kingdom", "england", "scotland", "wales", "ireland", "northern ireland", "british", "cornwall", "devon", "thames", "severn", "trent", "wye", "lough", "loch", "anglesey", "lake district", "yorkshire", "wessex", "kent", "sussex", "norfolk", "carrick"] },
+    { "key": "global-fresh", "label": "Global — Freshwater", "match": [], "env": "Freshwater" },
+    { "key": "global-salt", "label": "Global — Inshore/Salt", "match": [], "env": "Saltwater" }
+  ]
+}

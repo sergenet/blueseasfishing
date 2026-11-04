@@ -1,0 +1,86 @@
+{
+  "origin": "https://www.laseniorservicesdirectory.com",
+  "ranAt": "2026-10-31T19:35:31.610Z",
+  "pages": [
+    {
+      "url": "https://www.laseniorservicesdirectory.com/",
+      "status": 200,
+      "ttfbMs": 206,
+      "kb": 5,
+      "title": "Trusted Local Services in Los Angeles for Seniors",
+      "titleLen": 49,
+      "desc": "Find reliable home services, care, repairs, and transportation for seniors in Los Angeles County.",
+      "descLen": 97,
+      "canonical": "https://laseniorservicesdirectory.com/",
+      "selfCanonical": true,
+      "h1": [
+        "Trusted Local Services in Los Angeles for Seniors"
+      ],
+      "h1count": 1,
+      "h2count": 2,
+      "words": 139,
+      "imgs": 0,
+      "imgsNoAlt": 0,
+      "internalLinks": 11,
+      "externalHosts": [],
+      "jsonLdTypes": [],
+      "hasViewport": true,
+      "hasOg": false,
+      "hasTwitter": false,
+      "hasGA": true,
+      "hasAds": false,
+      "hasAffiliate": false,
+      "hreflang": [],
+      "noindex": false
+    },
+    {
+      "url": "https://laseniorservicesdirectory.com/listings.html",
+      "status": 200,
+      "ttfbMs": 881,
+      "kb": 2,
+      "title": "Los Angeles Listings | Trusted Local Services for Seniors",
+      "titleLen": 57,
+      "desc": "Browse trusted local service listings for seniors in Los Angeles County.",
+      "descLen": 72,
+      "canonical": "https://laseniorservicesdirectory.com/listings.html",
+      "selfCanonical": true,
+      "h1": [
+        "Local Services Directory"
+      ],
+      "h1count": 1,
+      "h2count": 1,
+      "words": 58,
+      "imgs": 0,
+      "imgsNoAlt": 0,
+      "internalLinks": 0,
+      "externalHosts": [
+        "laseniorservicesdirectory.com"
+      ],
+      "jsonLdTypes": [],
+      "hasViewport": true,
+      "hasOg": false,
+      "hasTwitter": false,
+      "hasGA": true,
+      "hasAds": false,
+      "hasAffiliate": false,
+      "hreflang": [],
+      "noindex": false
+    }
+  ],
+  "errors": [],
+  "extra": {
+    "robots": {
+      "status": 200,
+      "body": "User-agent: *\nAllow: /\n\nSitemap: https://laseniorservicesdirectory.com/sitemap.xml\n"
+    },
+    "sitemap": {
+      "url": "/sitemap.xml",
+      "isIndex": false,
+      "locs": [
+        "https://laseniorservicesdirectory.com/",
+        "https://laseniorservicesdirectory.com/listings.html"
+      ],
+      "approxUrls": 2
+    }
+  }
+}

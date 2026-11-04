@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+  <script src="/branding.js?v=3" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum da Comunidade - BlueSeasFishing.com</title>
+    <meta name="description" content="Conecte-se com outros pescadores, compartilhe suas experiências de pesca e receba dicas de especialistas da nossa comunidade.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/modern-styles.css?v=20261017-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <script src="/analytics-consent.js?v=2" defer></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+<style>
+  /* Forum-only styles (rest of the page uses modern-styles.css) */
+  .forum-list { display: flex; flex-direction: column; gap: 14px; }
+  .forum-row { display: flex; align-items: center; gap: 16px; padding: 16px; cursor: pointer; }
+  .forum-row .ficon { flex: 0 0 auto; width: 48px; height: 48px; border-radius: 12px;
+    background: rgba(74,144,164,.12); color: var(--mid-ocean-blue, #1a365d);
+    display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  .forum-row h3 { margin: 0 0 4px; font-size: 18px; }
+  .forum-row p { margin: 0; font-size: 15px; color: #64748b; }
+  .forum-row .counts { margin-left: auto; text-align: right; font-size: 13px; color: #64748b; white-space: nowrap; }
+  .forum-row .counts strong { display: block; font-size: 18px; color: var(--mid-ocean-blue, #1a365d); }
+  @media (max-width: 640px) { .forum-row { flex-wrap: wrap; } .forum-row .counts { margin-left: 64px; text-align: left; } }
+  .forum-table { width: 100%; border-collapse: collapse; background: #fff;
+    border: 1px solid var(--neutral-border, #e2e8f0); border-radius: 12px; overflow: hidden; }
+  .forum-table th, .forum-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #eef2f7; font-size: 15px; }
+  .forum-table th { background: #f8fafc; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #64748b; }
+  .forum-table tr:last-child td { border-bottom: 0; }
+  .forum-table a { color: #1d4ed8; font-weight: 600; text-decoration: none; }
+  .forum-table a:hover { text-decoration: underline; }
+  .forum-table .meta { color: #64748b; font-size: 13px; }
+  .forum-post { background: #fff; border: 1px solid var(--neutral-border, #e2e8f0);
+    border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+  .forum-post .phead { display: flex; justify-content: space-between; gap: 10px;
+    font-size: 13px; color: #64748b; margin-bottom: 8px; }
+  .forum-post .phead strong { color: var(--mid-ocean-blue, #1a365d); font-size: 15px; }
+  .forum-post .pbody { white-space: pre-wrap; word-break: break-word; line-height: 1.6; }
+  .forum-form textarea { width: 100%; min-height: 130px; padding: 12px; font: inherit;
+    border: 1px solid #cbd5e1; border-radius: 10px; resize: vertical; box-sizing: border-box; }
+  .forum-form input[type=text] { width: 100%; padding: 12px; font: inherit;
+    border: 1px solid #cbd5e1; border-radius: 10px; box-sizing: border-box; }
+  .forum-form label { display: block; margin: 12px 0 6px; font-weight: 600; }
+  .forum-cta { background: #fff; border: 1px solid var(--neutral-border, #e2e8f0);
+    border-radius: 12px; padding: 20px; text-align: center; }
+  .forum-cta .btn { margin: 6px 4px 0; }
+  .forum-msg { padding: 12px 14px; border-radius: 10px; margin: 12px 0; font-size: 15px; display: none; }
+  .forum-msg.ok { display: block; background: #ecfdf5; border: 1px solid #10b981; color: #065f46; }
+  .forum-msg.err { display: block; background: #fef2f2; border: 1px solid #ef4444; color: #991b1b; }
+  .forum-crumb { font-size: 14px; margin-bottom: 14px; }
+  .forum-crumb a { color: #1d4ed8; text-decoration: none; }
+  .forum-crumb a:hover { text-decoration: underline; }
+  .forum-empty { color: #64748b; padding: 24px 4px; }
+  .forum-loading { color: #64748b; padding: 24px 4px; }
+  .forum-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 14px; }
+  .forum-rules { background: #fff; border: 1px solid var(--neutral-border, #e2e8f0);
+    border-left: 4px solid #1d4ed8; border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; }
+  .forum-rules h2 { margin: 0 0 8px; font-size: 18px; }
+  .forum-rules ol { margin: 0 0 10px 20px; padding: 0; font-size: 15px; line-height: 1.7; }
+  .forum-rules .ban-warning { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px;
+    padding: 10px 12px; margin: 0; font-size: 14px; color: #991b1b; font-weight: 600; }
+  .rules-note { font-size: 13px; color: #64748b; margin: 10px 0 0; }
+  .rules-note a { color: #1d4ed8; text-decoration: none; font-weight: 600; }
+  .rules-note a:hover { text-decoration: underline; }
+</style>
+  <link rel="canonical" href="https://www.blueseasfishing.com/pt/forum.html">  <link rel="alternate" hreflang="en" href="https://www.blueseasfishing.com/forum.html">
+  <link rel="alternate" hreflang="es" href="https://www.blueseasfishing.com/es/forum.html">
+  <link rel="alternate" hreflang="fr" href="https://www.blueseasfishing.com/fr/forum.html">
+  <link rel="alternate" hreflang="de" href="https://www.blueseasfishing.com/de/forum.html">
+  <link rel="alternate" hreflang="pt" href="https://www.blueseasfishing.com/pt/forum.html">
+  <link rel="alternate" hreflang="ru" href="https://www.blueseasfishing.com/ru/forum.html">
+  <link rel="alternate" hreflang="el" href="https://www.blueseasfishing.com/el/forum.html">
+  <link rel="alternate" hreflang="ar" href="https://www.blueseasfishing.com/ar/forum.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.blueseasfishing.com/forum.html">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-fish"></i>
+                BlueSeas<span class="logo-accent">Pesca</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Alternar navegação" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="index.html" class="nav-link">Página inicial</a></li>
+                <li><a href="/pt/fish-id.html" class="nav-link">Identificar peixes</a></li>
+                <li><a href="/pt/gallery.html" class="nav-link">Banco de dados de espécies</a></li>
+                <li><a href="/pt/shop.html" class="nav-link">Dicas e Equipamentos</a></li><li><a href="/pt/recommended-fishing-gear.html" class="nav-link">Loja de equipamentos</a></li><li><a href="/pt/login.html" class="nav-link member-link">Login de membro</a></li>
+                <li><a href="/pt/community.html" class="nav-link">Galeria da comunidade</a></li>
+                <li><a href="/pt/forum.html" class="nav-link active">Fórum</a></li>
+                <li><a href="subscribe.html" class="nav-link">Inscrever-se</a></li>
+                <li><a href="/pt/fish-id.html" class="btn btn-primary btn-sm">Carregar uma foto</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="container">
+        <section class="section">
+            <div id="forum-crumb" class="forum-crumb" hidden></div>
+
+            <div id="forum-msg" class="forum-msg" role="status"></div>
+
+            <!-- View: categories (default) -->
+            <div id="view-categories">
+                <h1>Fórum da Comunidade</h1>
+                <p class="lead" style="color:#64748b">Conecte-se com outros pescadores, compartilhe suas experiências de pesca e receba dicas de especialistas da nossa comunidade.</p>
+
+                <div class="forum-rules" id="forum-rules">
+                    <h2><i class="fas fa-clipboard-list"></i> Regras do Fórum</h2>
+                    <p style="margin:0 0 8px;font-size:15px">Mantenha esta comunidade amigável e segura para famílias de pescadores. Ao publicar aqui, você concorda com estas regras:</p>
+                    <ol>
+                        <li><strong>Seja respeitoso.</strong> Não serão tolerados ataques pessoais, assédio, intimidação, discurso de ódio ou linguagem abusiva contra qualquer membro.</li>
+                        <li><strong>Mantenha limpo.</strong> Não são permitidos conteúdos vulgares, sexuais, obscenos ou explícitos de qualquer tipo — este é um fórum para toda a família.</li>
+                        <li><strong>Proibido spam ou publicidade.</strong> Não publique links promocionais não solicitados, autopromoção ou mensagens repetitivas. Empresas de fretamento e equipamentos náuticos: apresentem-se uma única vez na seção de Discussão Geral.</li>
+                        <li><strong>Mantenha-se no assunto.</strong> e publique na categoria correta. Pesquise primeiro — sua pergunta pode já ter sido respondida.</li>
+                        <li><strong>Nenhum conteúdo ilegal.</strong> Não serão toleradas discussões sobre pesca ilegal, equipamentos ilegais, guias sem licença ou qualquer outra prática que viole as normas locais de pesca.</li>
+                        <li><strong>Compartilhe com sinceridade.</strong> Dê crédito às fotos e ideias que não são suas e não publique informações pessoais de outras pessoas.</li>
+                        <li><strong>Os moderadores têm a palavra final.</strong> Postagens que violarem as regras poderão ser editadas ou removidas, e tópicos fora do assunto poderão ser fechados.</li>
+                    </ol>
+                    <p class="ban-warning">⚠ O abuso do fórum e o desrespeito a estas regras resultarão no banimento do membro infrator.</p>
+                </div>
+
+                <div id="cat-list" class="forum-list mt-4">
+                    <div class="forum-loading">Carregando discussões…</div>
+                </div>
+                <div id="guest-cta" class="forum-cta mt-4" hidden>
+                    <p><strong>Junte-se à nossa comunidade para participar das discussões!</strong></p>
+                    <a href="login.html?next=%2Fforum.html#register" class="btn btn-primary">Inscreva-se agora</a>
+                    <a href="login.html?next=%2Fforum.html" class="btn btn-secondary">Conecte-se</a>
+                </div>
+            </div>
+
+            <!-- View: topics in a category -->
+            <div id="view-topics" hidden>
+                <h1 id="topics-title">Categoria</h1>
+                <div id="topics-loading" class="forum-loading">Carregando tópicos…</div>
+                <div id="topics-wrap" hidden>
+                    <table class="forum-table">
+                        <thead><tr><th>Tópico</th><th>Respostas</th><th>Última atividade</th></tr></thead>
+                        <tbody id="topics-body"></tbody>
+                    </table>
+                    <div id="topics-empty" class="forum-empty" hidden>Ainda não há tópicos — comece o primeiro.</div>
+                </div>
+
+                <div id="new-topic-form" class="forum-form card mt-4" hidden>
+                    <h3 style="margin-top:0">Iniciar um novo tópico</h3>
+                    <label for="nt-title">Título</label>
+                    <input type="text" id="nt-title" maxlength="180" placeholder="O que está em sua mente?">
+                    <label for="nt-body">Mensagem</label>
+                    <textarea id="nt-body" maxlength="8000" placeholder="Compartilhe sua pergunta ou experiência…"></textarea>
+                    <div class="forum-actions">
+                        <button class="btn btn-primary" id="nt-submit" type="button">Tópico da postagem</button>
+                    </div>
+                    <p class="rules-note">Ao publicar, você concorda com os <a href="#forum-rules" data-rules>Regras do Fórum</a> — Conteúdo abusivo, vulgar, sexual ou spam não são permitidos. Violações das regras resultarão em banimento.</p>
+                </div>
+
+                <div id="topics-guest" class="forum-cta mt-4" hidden>
+                    <p><strong>Junte-se à nossa comunidade para participar das discussões!</strong></p>
+                    <a href="login.html?next=%2Fforum.html#register" class="btn btn-primary">Inscreva-se agora</a>
+                    <a href="login.html?next=%2Fforum.html" class="btn btn-secondary">Conecte-se</a>
+                </div>
+            </div>
+
+            <!-- View: posts in a topic -->
+            <div id="view-posts" hidden>
+                <h1 id="posts-title">Tópico</h1>
+                <div id="posts-loading" class="forum-loading">Carregando respostas…</div>
+                <div id="posts-list" hidden></div>
+
+                <div id="reply-form" class="forum-form card mt-4" hidden>
+                    <h3 style="margin-top:0">Responder</h3>
+                    <label for="rp-body">Mensagem</label>
+                    <textarea id="rp-body" maxlength="8000" placeholder="Escreva sua resposta…"></textarea>
+                    <div class="forum-actions">
+                        <button class="btn btn-primary" id="rp-submit" type="button">Responder</button>
+                    </div>
+                    <p class="rules-note">Ao publicar, você concorda com os <a href="#forum-rules" data-rules>Regras do Fórum</a> — Conteúdo abusivo, vulgar, sexual ou spam não são permitidos. Violações das regras resultarão em banimento.</p>
+                </div>
+
+                <div id="posts-guest" class="forum-cta mt-4" hidden>
+                    <p><strong>Junte-se à nossa comunidade para participar das discussões!</strong></p>
+                    <a href="login.html?next=%2Fforum.html#register" class="btn btn-primary">Inscreva-se agora</a>
+                    <a href="login.html?next=%2Fforum.html" class="btn btn-secondary">Conecte-se</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="navbar-brand">
+                    <i class="fas fa-fish"></i>
+                    BlueSeas<span class="logo-accent">Pesca</span>
+                </a>
+                <p style="margin-top: 1rem; opacity: 0.8;">Seu destino final para identificação de peixes e experiência em pesca com tecnologia de IA.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Explorar</h4>
+                <ul class="footer-links">
+                    <li><a href="/pt/fish-id.html">Identificação de Peixes</a></li>
+                    <li><a href="/pt/gallery.html">Banco de dados de espécies</a></li>
+                    <li><a href="/pt/blog.html">Dicas de pesca</a></li>
+                    <li><a href="/pt/shop.html">Análises de equipamentos</a></li>
+                    <li><a href="/pt/community.html">Galeria da comunidade</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Comunidade</h4>
+                <ul class="footer-links">
+                    <li><a href="/pt/forum.html">Fórum</a></li>
+                    <li><a href="/pt/gallery.html">Galeria de fotos</a></li>
+                    <li><a href="/pt/blog.html">Blogue</a></li>
+                    <li><a href="index.html#newsletter">Boletim informativo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Jurídico</h4>
+                <ul class="footer-links">
+                    <li><a href="/pt/privacy.html">Política de Privacidade</a></li>
+                    <li><a href="/pt/terms.html">Termos de Serviço</a></li>
+                    <li><a href="/pt/cookies.html">Política de Cookies</a></li>
+                    <li><a href="/pt/contact.html">Contate-nos</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 BlueSeasFishing.com. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* ===== Forum client — hash router over /api/forum.php =====
+   Routes:  #/               categories
+            #/cat/<id>       topics in a category
+            #/topic/<id>     posts in a topic
+   Guests can read everything; signed-in members (free or premium) get the
+   post forms. Same session as login.html, no premium gate. */
+(function () {
+  'use strict';
+  var API = '/api/forum.php';
+  var state = { user: null, categories: [] };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var views = { categories: $('view-categories'), topics: $('view-topics'), posts: $('view-posts') };
+  var msgEl = $('forum-msg');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function showMsg(kind, text) {
+    msgEl.className = 'forum-msg ' + (kind || '');
+    msgEl.textContent = text || '';
+    if (kind) msgEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function fmtDate(mysql) {
+    if (!mysql) return '';
+    // MySQL DATETIME has no zone — parse as local wall-clock so it displays
+    // exactly as stored instead of shifting through a UTC round-trip.
+    var d = new Date(String(mysql).replace(' ', 'T'));
+    if (isNaN(d)) return mysql;
+    var mon = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()];
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    return mon + ' ' + d.getDate() + ', ' + d.getFullYear() + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  function showView(name) {
+    for (var k in views) views[k].hidden = (k !== name);
+    var crumb = $('forum-crumb');
+    crumb.hidden = (name === 'categories');
+  }
+
+  function setCrumb(html) { $('forum-crumb').innerHTML = html || ''; }
+
+  function api(action, params, method) {
+    var url = API + '?action=' + encodeURIComponent(action);
+    var opts = { credentials: 'include', method: method || 'GET' };
+    if (method === 'POST') {
+      var fd = new FormData();
+      for (var k in params) fd.append(k, params[k]);
+      opts.body = fd;
+    } else if (params) {
+      for (var p in params) url += '&' + encodeURIComponent(p) + '=' + encodeURIComponent(params[p]);
+    }
+    return fetch(url, opts).then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.ok) throw new Error(j.error || 'Request failed'); return j.data; });
+  }
+
+  /* ---------- categories ---------- */
+  function loadCategories() {
+    showView('categories');
+    setCrumb('');
+    api('categories').then(function (data) {
+      state.user = data.user;
+      state.categories = data.categories || [];
+      var list = $('cat-list');
+      if (!state.categories.length) {
+        list.innerHTML = '<div class="forum-empty">No categories yet.</div>';
+      } else {
+        list.innerHTML = state.categories.map(function (c) {
+          return '<div class="card forum-row" data-cat="' + c.id + '" role="button" tabindex="0">' +
+            '<div class="ficon"><i class="fas ' + esc(c.icon) + '"></i></div>' +
+            '<div style="min-width:0"><h3>' + esc(c.name) + '</h3><p>' + esc(c.description) + '</p></div>' +
+            '<div class="counts"><strong>' + (+c.topics) + '</strong> topics · ' + (+c.posts) + ' posts</div>' +
+            '</div>';
+        }).join('');
+        Array.prototype.forEach.call(list.querySelectorAll('[data-cat]'), function (el) {
+          var go = function () { location.hash = '#/cat/' + el.getAttribute('data-cat'); };
+          el.addEventListener('click', go);
+          el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+        });
+      }
+      $('guest-cta').hidden = !!state.user;
+    }).catch(function (e) {
+      $('cat-list').innerHTML = '<div class="forum-empty">Could not load the forum: ' + esc(e.message) + '</div>';
+    });
+  }
+
+  /* ---------- topics ---------- */
+  function loadTopics(catId) {
+    showView('topics');
+    setCrumb('<a href="#/">← All categories</a>');
+    $('topics-loading').hidden = false;
+    $('topics-wrap').hidden = true;
+
+    var cat = null;
+    state.categories.forEach(function (c) { if (+c.id === +catId) cat = c; });
+    $('topics-title').textContent = cat ? cat.name : 'Category';
+
+    Promise.all([
+      api('topics', { cat: catId }),
+      state.user !== null || api('categories').then(function (d) { state.user = d.user; state.categories = d.categories || []; })
+    ]).then(function (res) {
+      var topics = res[0].topics || [];
+      $('topics-loading').hidden = true;
+      $('topics-wrap').hidden = false;
+      var body = $('topics-body');
+      $('topics-empty').hidden = topics.length > 0;
+      body.innerHTML = topics.map(function (t) {
+        var last = t.last_activity || t.created_at;
+        return '<tr><td><a href="#/topic/' + t.id + '">' + esc(t.title) + '</a>' +
+          '<div class="meta">by ' + esc(t.author_name || 'Member') + '</div></td>' +
+          '<td>' + Math.max(0, (+t.replies) - 1) + '</td>' +
+          '<td class="meta">' + esc(fmtDate(last)) + '</td></tr>';
+      }).join('');
+      var signedIn = !!state.user;
+      $('new-topic-form').hidden = !signedIn;
+      $('topics-guest').hidden = signedIn;
+    }).catch(function (e) {
+      $('topics-loading').hidden = true;
+      $('topics-wrap').hidden = false;
+      $('topics-body').innerHTML = '<tr><td colspan="3" class="forum-empty">' + esc(e.message) + '</td></tr>';
+    });
+  }
+
+  /* ---------- posts ---------- */
+  function loadPosts(topicId) {
+    showView('posts');
+    setCrumb('<a href="#/">← All categories</a>');
+    $('posts-loading').hidden = false;
+    $('posts-list').hidden = true;
+
+    Promise.all([
+      api('posts', { topic: topicId }),
+      state.user !== null || api('categories').then(function (d) { state.user = d.user; })
+    ]).then(function (res) {
+      var data = res[0];
+      $('posts-loading').hidden = true;
+      $('posts-list').hidden = false;
+      $('posts-title').textContent = data.title || 'Topic';
+      var list = $('posts-list');
+      var posts = data.posts || [];
+      list.innerHTML = posts.length ? posts.map(function (p) {
+        return '<div class="forum-post"><div class="phead"><strong>' + esc(p.author_name || 'Member') + '</strong>' +
+          '<span>' + esc(fmtDate(p.created_at)) + '</span></div>' +
+          '<div class="pbody">' + esc(p.body) + '</div></div>';
+      }).join('') : '<div class="forum-empty">No posts yet.</div>';
+      var signedIn = !!state.user;
+      $('reply-form').hidden = !signedIn;
+      $('posts-guest').hidden = signedIn;
+      list.setAttribute('data-topic', topicId);
+    }).catch(function (e) {
+      $('posts-loading').hidden = true;
+      $('posts-list').hidden = false;
+      $('posts-title').textContent = 'Topic';
+      $('posts-list').innerHTML = '<div class="forum-empty">' + esc(e.message) + '</div>';
+    });
+  }
+
+  /* ---------- posting ---------- */
+  function busy(btn, on, label) {
+    btn.disabled = on;
+    if (on) { btn.dataset.label = btn.textContent; btn.textContent = 'Posting…'; }
+    else btn.textContent = btn.dataset.label || label;
+  }
+
+  function submitNewTopic() {
+    var btn = $('nt-submit');
+    var title = $('nt-title').value.trim();
+    var body = $('nt-body').value.trim();
+    if (title.length < 3) return showMsg('err', 'Please enter a title (at least 3 characters).');
+    if (!body) return showMsg('err', 'Please write a message.');
+    var cat = (location.hash.match(/#\/cat\/(\d+)/) || [])[1];
+    if (!cat) return showMsg('err', 'Missing category.');
+    busy(btn, true);
+    api('new_topic', { cat: cat, title: title, body: body }, 'POST').then(function (d) {
+      busy(btn, false);
+      $('nt-title').value = ''; $('nt-body').value = '';
+      showMsg('ok', 'Topic posted.');
+      location.hash = '#/topic/' + d.topic_id;
+    }).catch(function (e) { busy(btn, false); showMsg('err', e.message); });
+  }
+
+  function submitReply() {
+    var btn = $('rp-submit');
+    var body = $('rp-body').value.trim();
+    var topic = (location.hash.match(/#\/topic\/(\d+)/) || [])[1];
+    if (!topic) return showMsg('err', 'Missing topic.');
+    if (!body) return showMsg('err', 'Please write a reply.');
+    busy(btn, true);
+    api('reply', { topic: topic, body: body }, 'POST').then(function () {
+      busy(btn, false);
+      $('rp-body').value = '';
+      showMsg('ok', 'Reply posted.');
+      loadPosts(topic);
+    }).catch(function (e) { busy(btn, false); showMsg('err', e.message); });
+  }
+
+  $('nt-submit').addEventListener('click', submitNewTopic);
+  $('rp-submit').addEventListener('click', submitReply);
+
+  /* ---------- router ---------- */
+  function route() {
+    showMsg(null, '');
+    var h = location.hash || '#/';
+    var m;
+    if (h === '#forum-rules') {
+      // rules link inside a topic/post view: go home, then scroll to the card
+      loadCategories();
+      setTimeout(function () {
+        var el = document.getElementById('forum-rules');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 60);
+      return;
+    }
+    if ((m = h.match(/^#\/cat\/(\d+)/))) return loadTopics(m[1]);
+    if ((m = h.match(/^#\/topic\/(\d+)/))) return loadPosts(m[1]);
+    loadCategories();
+  }
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+
+<script>
+function toggleMobileMenu() {
+    const nav = document.getElementById('navbar-nav');
+    nav.classList.toggle('active');
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    if (anchor.getAttribute('href').startsWith('#/')) return; // forum router owns these
+    if (anchor.hasAttribute('data-rules')) { // rules link inside topic/post view: let the router load categories + scroll
+        anchor.addEventListener('click', function () { location.hash = '#forum-rules'; });
+        return;
+    }
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(26, 54, 93, 0.98)';
+    } else {
+        header.style.background = 'rgba(26, 54, 93, 0.95)';
+    }
+});
+</script>
+
+<script src="/assets/js/nav-back.js?v=3" defer></script>  <script src="/assets/js/lang-switch.js?v=5" defer></script>
+</body>
+</html>

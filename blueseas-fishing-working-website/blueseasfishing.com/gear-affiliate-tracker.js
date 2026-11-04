@@ -1,0 +1,1 @@
+/* Retired click tracker. No external shopping links are tracked. */

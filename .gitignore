@@ -1,0 +1,48 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+mail_creds.py
+
+# --- added 2026-11-04: keep credentials, media masters and scratch copies out of the public repo ---
+.blueseasfishing-secrets.php
+.gcloud-translate-key.txt
+PRIVATE_DB_CONFIG.php
+**/PRIVATE_DB_CONFIG.php
+**/.env
+**/.env.*
+!**/.env.example
+
+# video masters (large, not web assets)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+
+# Windows junctions to every other project (incl. one pointing back here) —
+# git follows them and recurses forever, so the shared workspace stays out.
+projects/
+
+# generated / backup / scratch
+__pycache__/
+*.pyc
+_attic/
+logs/
+tmp/
+_freebuff/
+.freebuff/
+node_modules/
+_deployed/
+backup*/
+**/backup-*/
+pre-*-backup/
+_originals-webp/
+**/_originals-webp/
+*.bak
+*.orig
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

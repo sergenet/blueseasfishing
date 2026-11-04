@@ -1,0 +1,458 @@
+African Pompano
+Alaska Blackfish
+Albacore Tuna
+Alewife
+Alligator Gar
+Almaco Jack
+American Eel
+American Paddlefish
+American Pickerel
+American Plaice
+American Shad (inland runs)
+American Smelt
+Arapaima
+Arctic Char
+Arctic Grayling
+Arrowtooth Flounder
+Atlantic Bonito
+Atlantic Cod
+Atlantic Croaker
+Atlantic Cutlassfish
+Atlantic Flyingfish
+Atlantic Halibut
+Atlantic Herring
+Atlantic Lizardfish
+Atlantic Lumpfish
+Atlantic Mackerel
+Atlantic Menhaden
+Atlantic Moonfish
+Atlantic Needlefish
+Atlantic Pomfret
+Atlantic Salmon
+Atlantic Saury
+Atlantic Spadefish
+Atlantic Stargazer
+Atlantic Sturgeon
+Atlantic Tarpon
+Atlantic Threadfin
+Atlantic Wolffish
+Australian Bass
+Ballan Wrasse
+Balloonfish
+Ballyhoo
+Banded Killifish
+Bank Rockfish
+Bantam Sunfish
+Barbel
+Barramundi
+Barred Sand Bass
+Barred Surfperch
+Basking Shark
+Bigeye Thresher
+Bigeye Tuna
+Bigmouth Buffalo
+Black Acara
+Black Bullhead
+Black Crappie
+Black Drum
+Black Grouper
+Black Marlin
+Black Redhorse
+Black Rockfish
+Black Sea Bass
+Blackfin Tuna
+Blackgill Rockfish
+Blacknose Dace
+Blackside Darter
+Blue Acara
+Blue Catfish
+Blue Ling
+Blue Marlin
+Blue Rockfish
+Blue Runner
+Blue Shark
+Blue Sucker
+Blue Tilapia
+Bluefin Killifish
+Bluefin Tuna
+Bluefish
+Bluegill
+Blueline Tilefish
+Bluestreak Cleaner Wrasse
+Bocaccio
+Bonefish
+Bowfin
+Brook Silverside
+Brook Trout
+Brown Bullhead
+Brown Rockfish
+Brown Trout
+Bull Trout
+Bumphead Parrotfish
+Burbot
+Butterfly Peacock Bass
+Cabezon
+California Corbina
+California Flyingfish
+California Halibut
+California Sheephead
+Canary Rockfish
+Capelin
+Central Mudminnow
+Central Stoneroller
+Chain Pickerel
+Channel Catfish
+Channel Darter
+Checkered Puffer
+Chilean Devil Ray
+Chilipepper Rockfish
+China Rockfish
+Chinook Salmon
+Chum Salmon
+Cisco
+Clown Knifefish
+Cobia
+Coho Salmon
+Common Carp
+Common Shiner
+Common Snook
+Common Thresher
+Convict Cichlid
+Copper Rockfish
+Copperband Butterflyfish
+Cowcod
+Creek Chub
+Crevalle Jack
+Cubera Snapper
+Cuckoo Wrasse
+Cusk
+Cutthroat Trout
+Darkblotched Rockfish
+Discus
+Dog Snapper
+Dollar Sunfish
+Dolly Varden
+Dover Sole
+Dusky Flathead
+Emerald Shiner
+Emperor Angelfish
+English Sole
+Escolar
+European Chub
+European Eel
+European Perch
+European Pilchard
+European Seabass
+Fallfish
+False Albacore (Little Tunny)
+Fantail Darter
+Fat Snook
+Fathead Minnow
+Flag Rockfish
+Flathead Catfish
+Flier
+French Angelfish
+Freshwater Angelfish
+Freshwater Drum
+Gag Grouper
+Galjoen
+Giant Gourami
+Giant Mekong Catfish
+Giant Trevally (GT)
+Gilthead Seabream
+Gizzard Shad
+Golden Dorado
+Golden Redhorse
+Golden Shiner
+Golden Trout
+Goldeye
+Goliath Grouper
+Goliath Tigerfish
+Gopher Rockfish
+Grass Carp
+Grass Rockfish
+Gray Angelfish
+Gray Triggerfish
+Great Barracuda
+Greater Amberjack
+Greater Redhorse
+Green Sturgeon
+Green Sunfish
+Greenland Halibut
+Greenside Darter
+Gulf Menhaden
+Gulf Sturgeon
+Haddock
+Hogfish
+Hornyhead Chub
+Horse-eye Jack
+Houndfish
+Indo-Pacific Sailfish
+Indo-Pacific Tarpon
+Inland Silverside
+Inshore Lizardfish
+Iowa Darter
+Iridescent Shark Catfish
+Jack Mackerel
+Jaguar Cichlid
+Japanese Eel
+Johnny Darter
+Kelp Bass
+Kelp Rockfish
+King Mackerel
+King-of-the-Salmon
+Kissing Gourami
+Kob (Dusky/Spotted)
+Kokanee Salmon
+Ladyfish
+Lake Sturgeon
+Lake Trout
+Lake Whitefish
+Lane Snapper
+Largemouth Bass
+Lesser Amberjack
+Lingcod
+Logperch
+Longbill Spearfish
+Longear Sunfish
+Longfin Mako
+Longhorn Sculpin
+Longnose Dace
+Longnose Gar
+Longnose Sucker
+Longtail Tuna
+Lookdown
+Louvar
+Mahi-Mahi (Dolphinfish)
+Mahogany Snapper
+Mahseer (Golden)
+Mangrove Snapper
+Manta Ray
+Mayan Cichlid
+Mediterranean Spearfish
+Midas Cichlid
+Midnight Parrotfish
+Mooneye
+Mosquitofish
+Mountain Whitefish
+Mozambique Tilapia
+Mud Sunfish
+Mummichog
+Murray Cod
+Muskellunge
+Mutton Snapper
+Napoleon Wrasse
+Nassau Grouper
+Nile Perch
+Nile Tilapia
+North African Catfish
+Northern Anchovy
+Northern Hogsucker
+Northern Pike
+Northern Puffer
+Northern Redbelly Dace
+Northern Snakehead
+Northern Stargazer
+Oarfish
+Ocean Pout
+Ocean Sunfish
+Ocean Triggerfish
+Oceanic Whitetip Shark
+Oilfish
+Olive Rockfish
+Olympic Mudminnow
+Opah
+Orangespotted Sunfish
+Oscar
+Ozark Minnow
+Pacific Barracuda
+Pacific Bonito
+Pacific Chub Mackerel
+Pacific Cod
+Pacific Hake
+Pacific Halibut
+Pacific Herring
+Pacific Ocean Perch
+Pacific Pomfret
+Pacific Sand Lance
+Pacific Sanddab
+Pacific Sardine
+Pacific Saury
+Pacific Spadefish
+Pacific Spiny Lumpsucker
+Pacific Staghorn Sculpin
+Pacu
+Pallid Sturgeon
+Palometa
+Payara (Vampire Fish)
+Peacock Bass
+Pelagic Stingray
+Pelagic Thresher
+Permit
+Petrale Sole
+Picasso Triggerfish
+Pictus Catfish
+Pink Salmon
+Pirate Perch
+Piraíba (Lau Lau)
+Pollack
+Pollock
+Pompano
+Porbeagle
+Porcupinefish
+Princess Parrotfish
+Pumpkinseed
+Queen Angelfish
+Queen Parrotfish
+Queen Triggerfish
+Quillback
+Quillback Rockfish
+Rainbow Darter
+Rainbow Parrotfish
+Rainbow Trout
+Rainwater Killifish
+Red Drum (Redfish)
+Red Grouper
+Red Hake
+Red-bellied Piranha
+Redbelly Tilapia
+Redbreast Sunfish
+Redear Sunfish
+Redtail Catfish
+Redtail Surfperch
+Redtail Triggerfish
+Reef Croaker
+Remora
+Rex Sole
+Ribbonfish
+Ripsaw Catfish
+River Carpsucker
+River Chub
+Rock Bass
+Rock Beauty
+Rock Sole
+Rohu
+Rosy Rockfish
+Rosyface Shiner
+Round Whitefish
+Sablefish (Black Cod)
+Sacramento Perch
+Sailfin Molly
+Sailfish
+Salmon Shark
+Sand Lance
+Sand Tilefish
+Sauger
+Scamp Grouper
+Schoolmaster Snapper
+Scrawled Cowfish
+Sculpin
+Scup (Porgy)
+Sea Raven
+Shadow Bass
+Sharksucker
+Sharptail Mola
+Sheepshead
+Sheepshead Minnow
+Shortbill Spearfish
+Shortfin Mako
+Shorthead Redhorse
+Shortnose Gar
+Shortnose Sturgeon
+Shortraker Rockfish
+Shovelnose Sturgeon
+Siamese Carp
+Silk Snapper
+Silky Shark
+Silver Arowana
+Silver Hake
+Silver Redhorse
+Silvergray Rockfish
+Skipjack Herring
+Skipjack Tuna
+Slender Sunfish
+Smallmouth Bass
+Smallmouth Buffalo
+Smooth Trunkfish
+Snail Bullhead
+Snakehead (Giant)
+Snakeskin Gourami
+Snapper (Australasian)
+Snowy Grouper
+Sockeye Salmon
+Southern Bluefin Tuna
+Southern Flounder
+Southern Puffer
+Spanish Mackerel
+Spot
+Spotfin Shiner
+Spotted Bass
+Spotted Bay Bass
+Spotted Seatrout
+Spotted Sucker
+Spotted Trunkfish
+Spotted Wolffish
+Starry Flounder
+Starry Rockfish
+Steelhead (Anadromous Rainbow)
+Stonecat
+Stoplight Parrotfish
+Striped Bass (Coastal)
+Striped Bass (Inland)
+Striped Marlin
+Striped Mullet
+Striped Snakehead
+Stripetail Rockfish
+Summer Flounder (Fluke)
+Swampfish
+Swordfish
+Swordspine Snook
+Tadpole Madtom
+Tambaqui
+Tautog (Blackfish)
+Tench
+Threadfin Shad
+Tiger Rockfish
+Tiger Shovelnose Catfish
+Tigerfish
+Tilefish
+Titan Triggerfish
+Treefish
+Tripletail
+Turbot
+Vermilion Rockfish
+Vermilion Snapper
+Wahoo
+Walking Catfish
+Walleye
+Warmouth
+Warsaw Grouper
+Weakfish
+Wels Catfish
+Whale Shark
+White Bass
+White Catfish
+White Crappie
+White Hake
+White Marlin
+White Mullet
+White Perch
+White Seabass
+White Sturgeon
+White Sucker
+Widow Rockfish
+Winter Flounder
+Witch Flounder
+Yellow Bullhead
+Yellow Perch
+Yellowedge Grouper
+Yelloweye Rockfish
+Yellowfin Shiner
+Yellowfin Tuna
+Yellowfish (Smallmouth)
+Yellowmouth Rockfish
+Yellowtail (California)
+Yellowtail Flounder
+Yellowtail Kingfish
+Yellowtail Rockfish
+Zander

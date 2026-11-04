@@ -1,0 +1,34 @@
+# --- Consolidate near-duplicate destination pages (region-merges.json) ---
+# The upstream region data held near-synonyms for the same fishery (Georges
+# Bank, Georges Bank (US), Georges Bank (MA)), each with its own page: 28
+# near-duplicate pages splitting crawl budget. They are merged into one
+# canonical page carrying the full species union; these 301s preserve link
+# equity. Source of truth: tools/region-merges.json.
+Redirect 301 /destinations/atlantic-coast-runs-us.html /destinations/atlantic-coast-us-ca.html
+Redirect 301 /destinations/atlantic-europe-fr-es-pt.html /destinations/atlantic-europe.html
+Redirect 301 /destinations/california-offshore.html /destinations/california-banks-ca.html
+Redirect 301 /destinations/channel-islands-ca.html /destinations/channel-islands.html
+Redirect 301 /destinations/chesapeake-md.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/chesapeake-tributaries.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/chesapeake-va-md.html /destinations/chesapeake-md-va.html
+Redirect 301 /destinations/florida-beaches.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-coasts.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-reefs.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/florida-us.html /destinations/florida-reefs-us.html
+Redirect 301 /destinations/georges-bank.html /destinations/georges-bank-us.html
+Redirect 301 /destinations/georges-bank-ma.html /destinations/georges-bank-us.html
+Redirect 301 /destinations/great-lakes.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/great-lakes-bays.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/great-lakes-tributaries.html /destinations/great-lakes-us-ca.html
+Redirect 301 /destinations/gulf-of-mexico-fl-tx.html /destinations/gulf-of-mexico.html
+Redirect 301 /destinations/gulf-of-mexico-fl-tx-la.html /destinations/gulf-of-mexico.html
+Redirect 301 /destinations/iwp.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-offshore.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-reefs-aus-pac.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/iwp-reefs-aus-pac-ind.html /destinations/iwp-reefs.html
+Redirect 301 /destinations/mediterranean-estuaries.html /destinations/mediterranean.html
+Redirect 301 /destinations/monterey-bay-ca.html /destinations/monterey-bay.html
+Redirect 301 /destinations/pacific-northwest.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/pacific-northwest-beaches-wa-or.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/pacific-northwest-deepwater.html /destinations/pacific-northwest-wa-or.html
+Redirect 301 /destinations/south-atlantic-reefs-fl-nc.html /destinations/south-atlantic-fl-nc.html

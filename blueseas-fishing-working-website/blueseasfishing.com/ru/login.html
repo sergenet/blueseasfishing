@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0467059729557007"
+     crossorigin="anonymous"></script>
+<script src="/assets/js/ad-gate.js?v=1" defer></script>
+<meta charset="utf-8">
+<title>Вход участника — Blue Seas Fishing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="/assets/images/favicon.ico">
+<style>
+  :root{--bg:#f8fafc;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--brand:#1d4ed8}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  a{color:#1d4ed8;text-decoration:none}
+  .wrap{max-width:560px;margin:0 auto;padding:24px 16px}
+  .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+  .btn{display:inline-block;background:#1d4ed8;color:#fff;border-radius:10px;padding:10px 14px;font-weight:600;border:0;cursor:pointer}
+  .btn.ghost{background:#e5e7eb;color:#111;border:1px solid #d1d5db}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:14px}
+  .tabs{display:flex;gap:6px;margin:6px 0 10px}
+  .tab{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer}
+  .tab.active{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+  label{display:block;margin:8px 0 4px}
+  input{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px}
+  .muted{color:var(--muted)}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .ok{background:#ecfdf5;border:1px solid #10b981;color:#065f46;padding:10px;border-radius:10px}
+  .err{background:#fef2f2;border:1px solid #ef4444;color:#991b1b;padding:10px;border-radius:10px}
+  .hidden{display:none}
+</style>
+  <script src="/analytics-consent.js?v=2" defer></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    });
+  }
+</script>
+  <link rel="canonical" href="https://www.blueseasfishing.com/ru/login.html">
+</head>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <a class="btn ghost" href="javascript:history.length>1?history.back():location.assign('/index.html')">← Назад</a> <a href="/ru/recommended-fishing-gear.html">Магазинное снаряжение</a> <a href="/ru/forum.html">Форум</a> <a href="/ru/subscribe.html">Подписаться</a>
+      <strong>Blue Seas Fishing</strong>
+    </div>
+
+    <div id="who-card" class="card hidden">
+      <h2>Вы вошли как</h2>
+      <p class="muted">Адреса электронной почты <span id="who-email">—</span></p>
+      <p class="muted">Состояние: <span id="who-status">—</span></p>
+      <div class="row">
+        <a class="btn" href="/ru/fish-id.html">Идентификация рыбы</a>
+        <a class="btn ghost" href="/ru/members-area.html">Личный кабинет</a>
+        <a class="btn ghost" href="/ru/premium.html" id="see-premium">Посмотреть премиум</a>
+        <button id="logout" class="btn ghost">Выйти из учетной записи</button>
+      </div>
+    </div>
+
+    <div id="auth-card" class="card">
+      <h2>Доступ для участников</h2>
+      <div class="tabs">
+        <button id="tab-login" class="tab active">Войти</button>
+        <button id="tab-register" class="tab">Создать учетную запись</button>
+      </div>
+
+      <div id="msg" class="hidden"></div>
+
+      <!-- LOGIN FORM -->
+      <form id="form-login" class="">
+        <label>Эл. почта</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Ваш пароль" required>
+        <div class="row">
+          <button class="btn" type="submit">Войти</button>
+        </div>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="form-register" class="hidden">
+        <label>ФИО</label>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <label>Эл. почта</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Не менее 8 символов" required minlength="8">
+        <div class="row">
+          <button class="btn" type="submit">Создать учетную запись</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+<script>
+(function(){
+  const API = '/api/membership.php';
+  const whoCard = document.getElementById('who-card');
+  const authCard= document.getElementById('auth-card');
+  const whoEmail= document.getElementById('who-email');
+  const whoStatus=document.getElementById('who-status');
+  const msg = document.getElementById('msg');
+
+  const tabLogin = document.getElementById('tab-login');
+  const tabReg   = document.getElementById('tab-register');
+  const formLogin= document.getElementById('form-login');
+  const formReg  = document.getElementById('form-register');
+
+  function showMsg(kind, text){
+    msg.className = kind ? (kind==='ok'?'ok':'err') : 'hidden';
+    msg.textContent = text || '';
+  }
+
+  function setTabs(which){
+    if (which==='login'){ tabLogin.classList.add('active'); tabReg.classList.remove('active'); formLogin.classList.remove('hidden'); formReg.classList.add('hidden'); }
+    else { tabReg.classList.add('active'); tabLogin.classList.remove('active'); formReg.classList.remove('hidden'); formLogin.classList.add('hidden'); }
+    showMsg(null,'');
+  }
+
+  tabLogin.onclick = ()=> setTabs('login');
+  tabReg.onclick   = ()=> setTabs('register');
+  if (location.hash === '#register') setTabs('register');
+
+  // ?next=/forum.html — return the visitor to the page that sent them here
+  // (forum CTAs, gated pages). Only same-site absolute paths are honoured so
+  // this can't be used as an open redirect.
+  const NEXT = (function () {
+    const n = new URLSearchParams(location.search).get('next');
+    return (n && n.startsWith('/') && !n.startsWith('//') && !n.startsWith('/\/') ) ? n : '';
+  })();
+  function goNext() { if (NEXT) location.replace(NEXT); }
+
+  async function api(action, data){
+    const fd = new FormData();
+    fd.append('action', action);
+    if (data) for (const [k,v] of Object.entries(data)) fd.append(k,v);
+    const res = await fetch(API, { method:'POST', body:fd, credentials:'include' });
+    const json = await res.json().catch(()=>({ok:false,error:'Invalid server response'}));
+    return json;
+  }
+
+  function renderMe(me){
+    if (me && me.user){
+      whoEmail.textContent  = me.user.email || '—';
+      whoStatus.textContent = me.user.status || 'member';
+      // Premium members don't need the "See Premium" upsell
+      const sp = document.getElementById('see-premium');
+      if (sp && me.user.status === 'premium') sp.style.display = 'none';
+      whoCard.classList.remove('hidden');
+      authCard.classList.add('hidden');
+
+      // Optional: sync front-end membership helper if you use it elsewhere
+      try {
+        if (window.BSF && BSF.login) {
+          BSF.login({ email: me.user.email || '', name: me.user.name || '', status: me.user.status || 'member' });
+        }
+      } catch(e){}
+    } else {
+      whoCard.classList.add('hidden');
+      authCard.classList.remove('hidden');
+    }
+  }
+
+  // Initial load: who am I?
+  (async function(){
+    try{
+      const q = await fetch(API+'?action=me', { credentials:'include' });
+      const j = await q.json();
+      renderMe(j.data);
+    }catch(e){
+      renderMe(null);
+    }
+  })();
+
+  // Login submit
+  formLogin.onsubmit = async (e)=>{
+    e.preventDefault();
+    showMsg(null,'');
+    const email = e.target.email.value.trim();
+    const password = e.target.password.value;
+    if (!email || !password) return showMsg('err','Please fill in email and password.');
+    const r = await api('login', { email, password });
+    if (!r.ok) return showMsg('err', r.error || 'Login failed');
+    if (NEXT) { showMsg('ok','Logged in successfully. Taking you back…'); setTimeout(goNext, 400); return; }
+    showMsg('ok','Logged in successfully.');
+    renderMe(r.data);
+  };
+
+  // Register submit
+  formReg.onsubmit = async (e)=>{
+    e.preventDefault();
+    showMsg(null,'');
+    const name = e.target.name.value.trim();
+    const email= e.target.email.value.trim();
+    const password = e.target.password.value;
+    if (!name || !email || !password) return showMsg('err','Please complete all fields.');
+    const r = await api('register', { name, email, password });
+    if (!r.ok) return showMsg('err', r.error || 'Registration failed');
+    if (NEXT) { showMsg('ok','Account created. Taking you back…'); setTimeout(goNext, 400); return; }
+    showMsg('ok','Account created and logged in.');
+    renderMe(r.data);
+  };
+
+  // Logout
+  document.getElementById('logout').onclick = async ()=>{
+    await fetch(API+'?action=logout', { credentials:'include' });
+    showMsg('ok','Logged out.');
+    renderMe(null);
+  };
+
+})();
+</script>
+<script src="/assets/js/nav-back.js?v=3" defer></script>  <script src="/assets/js/lang-switch.js?v=5" defer></script>
+</body>
+</html>

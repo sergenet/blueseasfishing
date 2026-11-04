@@ -1,0 +1,86 @@
+{
+  "note": "Hand-curated all-tackle world records (widely reported figures, IGFA is the authoritative source). avgLb = typical catch, trophyLb = benchmark for a memorable fish. Species must match species-db.js names (lowercased) exactly.",
+  "families": [
+    {
+      "name": "Bass & Sunfish",
+      "slug": "bass-sunfish",
+      "blurb": "The everyday freshwater quarry. The gap between an average bluegill and the record book is smaller than you think — and the largemouth record has stood, tied, for decades.",
+      "rows": [
+        { "species": "Largemouth Bass", "recordLb": 22.4, "recordWhere": "Lake Biwa, Japan (2009) — ties George Perry's 1932 Georgia fish", "avgLb": 2, "trophyLb": 8 },
+        { "species": "Smallmouth Bass", "recordLb": 11.9, "recordWhere": "Dale Hollow Lake, TN (1955)", "avgLb": 1.5, "trophyLb": 5 },
+        { "species": "Spotted Bass", "recordLb": 10.3, "recordWhere": "Pine Flat Lake, CA (1994)", "avgLb": 1, "trophyLb": 4 },
+        { "species": "White Bass", "recordLb": 6.8, "recordWhere": "Virginia, USA", "avgLb": 1, "trophyLb": 3 },
+        { "species": "White Crappie", "recordLb": 5.2, "recordWhere": "Enid Dam, MS (1957)", "avgLb": 0.75, "trophyLb": 2 },
+        { "species": "Black Crappie", "recordLb": 5, "recordWhere": "Tennessee, USA (2018)", "avgLb": 0.75, "trophyLb": 2 },
+        { "species": "Bluegill", "recordLb": 4.8, "recordWhere": "Ketona Lake, AL (1950)", "avgLb": 0.4, "trophyLb": 1 }
+      ]
+    },
+    {
+      "name": "Pike, Walleye & Rough Fish",
+      "slug": "pike-walleye",
+      "blurb": "Cool-water predators and river giants. The muskellunge record has survived 75 years of better gear and sonar; the alligator gar record is older than most living anglers.",
+      "rows": [
+        { "species": "Walleye", "recordLb": 25, "recordWhere": "Old Hickory Lake, TN (1960)", "avgLb": 2.5, "trophyLb": 10 },
+        { "species": "Northern Pike", "recordLb": 55.1, "recordWhere": "Lake Grefeern, Germany (1986)", "avgLb": 3, "trophyLb": 15 },
+        { "species": "Muskellunge", "recordLb": 67.5, "recordWhere": "Chippewa Flowage, WI (1949)", "avgLb": 8, "trophyLb": 30 },
+        { "species": "Chain Pickerel", "recordLb": 9.4, "recordWhere": "Georgia, USA (1961)", "avgLb": 1.5, "trophyLb": 5 },
+        { "species": "Yellow Perch", "recordLb": 4.2, "recordWhere": "New Jersey, USA (1865)", "avgLb": 0.4, "trophyLb": 1.5 },
+        { "species": "Striped Bass (inland)", "recordLb": 69.6, "recordWhere": "Black Warrior River, AL (2013)", "avgLb": 4, "trophyLb": 20 },
+        { "species": "Alligator Gar", "recordLb": 279, "recordWhere": "Rio Grande, TX (1951)", "avgLb": 20, "trophyLb": 100 }
+      ]
+    },
+    {
+      "name": "Trout, Salmon & Catfish",
+      "slug": "trout-salmon-catfish",
+      "blurb": "Cold-water icons and the catfish that outgrow them. The Kenai chinook and the Buggs Island blue cat show how far a big river system can stretch a species.",
+      "rows": [
+        { "species": "Brook Trout", "recordLb": 14.5, "recordWhere": "Nipigon River, ON, Canada (1916)", "avgLb": 0.75, "trophyLb": 4 },
+        { "species": "Brown Trout", "recordLb": 42.1, "recordWhere": "Little Red River, AR (1992)", "avgLb": 1, "trophyLb": 10 },
+        { "species": "Rainbow Trout", "recordLb": 48, "recordWhere": "Lake Diefenbaker, SK, Canada (2009)", "avgLb": 1.5, "trophyLb": 8 },
+        { "species": "Cutthroat Trout", "recordLb": 41, "recordWhere": "Pyramid Lake, NV (1925)", "avgLb": 1, "trophyLb": 8 },
+        { "species": "Lake Trout", "recordLb": 72, "recordWhere": "Great Bear Lake, NT, Canada (1995)", "avgLb": 4, "trophyLb": 20 },
+        { "species": "Chinook Salmon", "recordLb": 97.4, "recordWhere": "Kenai River, AK (1985)", "avgLb": 10, "trophyLb": 40 },
+        { "species": "Coho Salmon", "recordLb": 33.4, "recordWhere": "New York, USA", "avgLb": 5, "trophyLb": 15 },
+        { "species": "Atlantic Salmon", "recordLb": 79.2, "recordWhere": "Tana River, Norway", "avgLb": 8, "trophyLb": 25 },
+        { "species": "Channel Catfish", "recordLb": 58, "recordWhere": "Santee-Cooper Reservoir, SC (1964)", "avgLb": 3, "trophyLb": 15 },
+        { "species": "Blue Catfish", "recordLb": 143, "recordWhere": "Kerr Reservoir (Buggs Island), VA (2011)", "avgLb": 5, "trophyLb": 50 },
+        { "species": "Flathead Catfish", "recordLb": 123.6, "recordWhere": "Elk City Reservoir, KS (1998)", "avgLb": 6, "trophyLb": 40 }
+      ]
+    },
+    {
+      "name": "Inshore Saltwater",
+      "slug": "inshore-saltwater",
+      "blurb": "Bays, beaches and jetties. Red drum, halibut and cobia — the records here came from water you can reach in a bay boat or from shore.",
+      "rows": [
+        { "species": "Red Drum (redfish)", "recordLb": 94.1, "recordWhere": "Cape Hatteras, NC (1984)", "avgLb": 5, "trophyLb": 40 },
+        { "species": "Black Drum", "recordLb": 113, "recordWhere": "Delaware, USA", "avgLb": 8, "trophyLb": 60 },
+        { "species": "Spotted Seatrout", "recordLb": 17.4, "recordWhere": "Fort Pierce, FL (1995)", "avgLb": 2, "trophyLb": 8 },
+        { "species": "Snook", "recordLb": 53.6, "recordWhere": "Costa Rica (1978)", "avgLb": 5, "trophyLb": 25 },
+        { "species": "Tarpon", "recordLb": 286.6, "recordWhere": "Guinea-Bissau (2003)", "avgLb": 60, "trophyLb": 150 },
+        { "species": "Sheepshead", "recordLb": 21.3, "recordWhere": "Louisiana, USA (1992)", "avgLb": 2.5, "trophyLb": 10 },
+        { "species": "Summer Flounder (fluke)", "recordLb": 26.6, "recordWhere": "Montauk, NY (1975)", "avgLb": 3, "trophyLb": 12 },
+        { "species": "Pacific Halibut", "recordLb": 459, "recordWhere": "Dutch Harbor, AK (1996)", "avgLb": 25, "trophyLb": 150 },
+        { "species": "Striped Bass (coastal)", "recordLb": 78.5, "recordWhere": "Atlantic City, NJ (1982)", "avgLb": 10, "trophyLb": 40 },
+        { "species": "King Mackerel", "recordLb": 90, "recordWhere": "Puerto Rico (1998)", "avgLb": 10, "trophyLb": 50 },
+        { "species": "Spanish Mackerel", "recordLb": 13, "recordWhere": "North Carolina, USA (1983)", "avgLb": 2, "trophyLb": 6 },
+        { "species": "Cobia", "recordLb": 135.6, "recordWhere": "Shark Bay, Australia (1985)", "avgLb": 20, "trophyLb": 70 },
+        { "species": "Red Snapper", "recordLb": 50.3, "recordWhere": "Gulf of Mexico, USA", "avgLb": 5, "trophyLb": 20 }
+      ]
+    },
+    {
+      "name": "Offshore & Billfish",
+      "slug": "offshore-billfish",
+      "blurb": "Bluewater legends. The 1979 Nova Scotia bluefin and the 1953 Chilean swordfish have outlived every 'unsinkable' record that followed them.",
+      "rows": [
+        { "species": "Wahoo", "recordLb": 184, "recordWhere": "Bahamas (1980)", "avgLb": 25, "trophyLb": 100 },
+        { "species": "Mahi-Mahi (dolphinfish)", "recordLb": 87.9, "recordWhere": "Costa Rica (1976)", "avgLb": 8, "trophyLb": 30 },
+        { "species": "Yellowfin Tuna", "recordLb": 388.8, "recordWhere": "Panama (1977)", "avgLb": 60, "trophyLb": 200 },
+        { "species": "Bluefin Tuna", "recordLb": 1496, "recordWhere": "Aulac, Nova Scotia, Canada (1979)", "avgLb": 200, "trophyLb": 800 },
+        { "species": "Swordfish", "recordLb": 1182, "recordWhere": "Chile (1953)", "avgLb": 100, "trophyLb": 400 },
+        { "species": "Blue Marlin", "recordLb": 1402.1, "recordWhere": "Vitória, Brazil (1992)", "avgLb": 200, "trophyLb": 800 },
+        { "species": "Striped Marlin", "recordLb": 494, "recordWhere": "New Zealand (1986)", "avgLb": 100, "trophyLb": 250 },
+        { "species": "Sailfish", "recordLb": 221, "recordWhere": "Atlantic Ocean", "avgLb": 50, "trophyLb": 150 }
+      ]
+    }
+  ]
+}

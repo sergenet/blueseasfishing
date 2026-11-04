@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 428px;
+    height: 926px;
+    background-color: #F4F8FB;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1D3446;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .status-bar {
+    height: 48px;
+    background-color: #0B1F3E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .header {
+    background-color: #0B1F3E;
+    padding: 8px 16px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header-pill {
+    background-color: #FF9130;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: #0B1F3E;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .content {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+  }
+  .card {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #D8E2EA;
+  }
+  .about-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .about-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #0B1F3E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1D3446;
+    margin-bottom: 4px;
+  }
+  .body-text {
+    font-size: 13.5px;
+    color: #1D3446;
+    line-height: 19px;
+  }
+  .upgrade-eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    color: #FF9130;
+    letter-spacing: 0.7px;
+    margin-bottom: 2px;
+  }
+  .benefit-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .benefit-check {
+    color: #15803D;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .benefit-text {
+    flex: 1;
+    font-size: 13px;
+    color: #1D3446;
+    line-height: 17px;
+  }
+  .plan-button {
+    background-color: #0B1F3E;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .plan-title {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .plan-detail {
+    color: #CBD5E1;
+    font-size: 11.5px;
+    margin-top: 2px;
+  }
+  .plan-price {
+    color: #FF9130;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .secondary-btn {
+    background-color: #EEF4F8;
+    border-radius: 12px;
+    border: 1px solid #D8E2EA;
+    padding: 10px 14px;
+    text-align: center;
+    margin: 8px 0 4px;
+    color: #0B387C;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .manage-link {
+    color: #0B387C;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 6px;
+  }
+  .legal-small {
+    font-size: 10px;
+    color: #5A7184;
+    line-height: 14px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .legal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .legal-link {
+    font-size: 11px;
+    color: #0B387C;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .tabbar {
+    height: 72px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #D8E2EA;
+    display: flex;
+    padding-bottom: 16px;
+  }
+  .tab-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .tab-icon {
+    font-size: 18px;
+  }
+  .tab-label {
+    font-size: 10px;
+    color: #5A7184;
+    font-weight: 600;
+  }
+  .tab-active {
+    color: #FF9130 !important;
+  }
+</style>
+</head>
+<body>
+  <div class="status-bar">
+    <span>9:41</span>
+    <span>5G &nbsp; 100%</span>
+  </div>
+
+  <div class="header">
+    <div class="header-title">Blue Seas Fishing</div>
+    <div class="header-pill">Upgrade · Premium</div>
+  </div>
+
+  <div class="content">
+    <div class="card">
+      <div class="upgrade-eyebrow">BLUE SEAS PREMIUM</div>
+      <div class="h2">Unlock Unlimited AI Fish ID &amp; Trip Plans</div>
+      <div class="body-text" style="margin-bottom: 8px;">
+        Free users get 3 AI fish identifications per day plus full offline access to 548 species profiles. Upgrade via App Store for unlimited daily AI identifications and seasonal destination trip plans.
+      </div>
+
+      <div style="margin: 8px 0;">
+        <div class="benefit-row">
+          <span class="benefit-check">✓</span>
+          <span class="benefit-text">Unlimited AI fish photo identifications (no daily cap)</span>
+        </div>
+        <div class="benefit-row">
+          <span class="benefit-check">✓</span>
+          <span class="benefit-text">Multi-fish destination trip plans with seasonal bait checklists</span>
+        </div>
+        <div class="benefit-row">
+          <span class="benefit-check">✓</span>
+          <span class="benefit-text">Full offline database of 548 species &amp; 20 comparison guides</span>
+        </div>
+        <div class="benefit-row">
+          <span class="benefit-check">✓</span>
+          <span class="benefit-text">Cancel anytime in your App Store account settings</span>
+        </div>
+      </div>
+
+      <div class="plan-button">
+        <div>
+          <div class="plan-title">Blue Seas Premium · Monthly</div>
+          <div class="plan-detail">Unlimited AI fish identifications &amp; destination trip plans</div>
+        </div>
+        <div class="plan-price">$7.99 / mo</div>
+      </div>
+
+      <div class="plan-button">
+        <div>
+          <div class="plan-title">Blue Seas Premium · Yearly</div>
+          <div class="plan-detail">Full year of unlimited AI fish IDs &amp; trip plans (save 37%)</div>
+        </div>
+        <div class="plan-price">$59.99 / yr</div>
+      </div>
+
+      <div class="secondary-btn">Restore App Store Purchase</div>
+      <div class="manage-link">Manage subscriptions in App Store</div>
+
+      <div class="legal-small">
+        Blue Seas Premium Monthly and Yearly are auto-renewing subscriptions. Payment is charged to your App Store account at confirmation of purchase and renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in your App Store account settings.
+      </div>
+
+      <div class="legal-row">
+        <span class="legal-link">Terms of Use (EULA)</span>
+        <span style="color:#5A7184">·</span>
+        <span class="legal-link">Privacy Policy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabbar">
+    <div class="tab-item">
+      <span class="tab-icon">📷</span>
+      <span class="tab-label">Identify</span>
+    </div>
+    <div class="tab-item">
+      <span class="tab-icon">🐟</span>
+      <span class="tab-label">Species</span>
+    </div>
+    <div class="tab-item">
+      <span class="tab-icon">⚖️</span>
+      <span class="tab-label">Compare</span>
+    </div>
+    <div class="tab-item">
+      <span class="tab-icon">📍</span>
+      <span class="tab-label">Destinations</span>
+    </div>
+    <div class="tab-item">
+      <span class="tab-icon tab-active">⭐</span>
+      <span class="tab-label tab-active">Premium</span>
+    </div>
+  </div>
+</body>
+</html>

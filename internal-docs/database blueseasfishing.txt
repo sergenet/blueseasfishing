@@ -1,0 +1,2 @@
+Database credentials are deployment-only.
+Use DB_NAME, DB_USER, and DB_PASS environment variables.

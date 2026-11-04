@@ -1,0 +1,171 @@
+{
+  "intros": {
+    "Caribbean": "From Bahamas-style bonefish flats to coral drop-offs where wahoo and mahi patrol the blue, the Caribbean mixes light-tackle variety with serious offshore chances. The islands share one big advantage: many of the region's marquee species — tarpon, snapper, grouper, barracuda — stay catchable year-round, so timing is about weather seasons more than fish seasons.",
+    "Gulf of Mexico": "The Gulf is a snapper-and-grouper machine: petroleum platforms and natural ledges hold stacking reefs of red snapper, gag, and gray triggerfish, while spring brings cobia and king mackerel to the nearshore fleets from Texas to the Florida Panhandle. It is one of the easiest places in the world to turn a half-day charter into a cooler of dinner fish.",
+    "Hawaii": "Hawaii's deep water starts close to shore — that's why the islands built big-game trolling into a way of life. Blue marlin, yellowfin ahi, wahoo (ono), and mahi run the FAD lines, while shore anglers chase ulua and goatfish off lava rock. Every fish here has a Hawaiian name worth learning before you go.",
+    "IWP reefs": "The Indo-West Pacific holds the richest reef-fish diversity on Earth, and its locals-only icons — giant trevally, coral trout, maori wrasse — have made it the benchmark destination for saltwater fly and popper anglers. From Indonesian atolls to the Great Barrier Reef, expect ferocious fish and a long species list.",
+    "Alaska (Sitka/Homer)": "Southeast and south-central Alaska are built around two fisheries that overlap perfectly: hard-pulling bottomfish (halibut, lingcod, rockfish) over nearshore banks and all five Pacific salmon passing through on schedule. Sitka and Homer charters routinely combine both in a single day.",
+    "British Columbia (BC)": "BC pairs the world's most storied steelhead and salmon rivers — the Skeena and its tributaries — with a saltwater edge where halibut and feeder chinook live a short boat ride from Vancouver and Tofino. Few regions offer such a clean split between river wading and ocean trolling.",
+    "California banks (CA)": "California's offshore banks and islands — the Channel Islands, Cordell Bank, the Farallones — hold some of the most diverse rockfish complexes anywhere, plus lingcod, halibut, and seasonal salmon. Bank fishing here is a precise game of drifts over high-relief bottom.",
+    "Pacific Northwest (WA/OR)": "The Pacific Northwest runs on salmon: Columbia River fall chinook, Puget Sound blackmouth, and the coastal steelhead runs that define winter for two states. Add surf perch, sturgeon, and package-protecting rockfish, and the region fishes 12 months a year.",
+    "Florida reefs (US)": "South Florida and the Keys sit against the only living coral barrier reef in the continental US, and the reef line delivers: yellowtail, mangrove, and mutton snapper, black grouper, plus sailfish and dolphin just past the edge. It's the rare place where a light-spinning angler and a offshore troll can share the same charter.",
+    "Mediterranean": "The Mediterranean is an undersung inshore fishery — gilthead and annular seabream, dentex, amberjack, and bluefish over a mix of rocky points and seagrass meadows. Fishing pressure varies hugely by country, which is why the best Mediterranean angling often hides near marine reserves.",
+    "Southern US rivers": "The South's big rivers — the Mississippi system above all — produce a freshwater big-game list few anglers expect: 60-pound flathead and blue catfish, alligator gar, drum, and buffalo. Summer night fishing and winter trotline country, this is river fishing on an industrial scale.",
+    "Atlantic Europe": "Atlantic Europe's Bay of Biscay-to-Portugal shoreline offers classic European salt fishing: sea bass over estuary marks, pollack and conger around wrecks, and summer bonito runs. Short crossings and deep water close to port keep trip logistics easy.",
+    "California offshore": "California's offshore season is a summer-to-fall moving target: yellowtail on kelp paddies, bluefin on the nine-mile bank and beyond, and occasional albacore years that remind everyone why San Diego became a tuna town. Follow the temperature breaks and the fleet.",
+    "Carolinas": "The Carolinas do seasons in earnest — winter bluefin off Cape Lookout, spring false albacore and cobia, summer king mackerel close to the beach, and year-round redfish on the flats and creeks. Between the sounds and the Gulf Stream, almost every month has a headline fish.",
+    "California/Baja": "The California–Baja border is one fishery, not two: yellowtail and white seabass move across it with the current, halibut grub in the surf on both sides, and the Coronado Islands turn a San Diego day-trip into a border-crossing adventure. Passports and Mexican licences required for the south side.",
+    "Florida coasts": "Florida's coasts concentrate more iconic inshore species into reach of a small boat than anywhere in the US: snook under dock lights, redfish tailing on flood-tide flats, tarpon rolling in summer passes. The state is a masterclass in habitat variety — mangroves, oyster bars, and passes within minutes of each other.",
+    "Great Lakes (US/CA)": "The Great Lakes are an inland ocean with a stocked salmon and trout fishery to match — chinook, coho, steelhead, and lake trout over deep water, plus a walleye scene that anchors entire towns. When the lake is flat, the salmon trolling is as close to ocean fishing as fresh water gets.",
+    "UK coasts (where legal)": "British sea fishing runs on marks and tides: bass from surf and estuary, cod in winter, pollack and coalfish over kelp, and conger from charter wrecks in the Channel. No licence is needed for sea angling in England, Scotland, or Wales — the rules that matter are bass size and bag limits and local bylaws.",
+    "Australian estuaries": "Australia's estuary systems — from the NSW lakes to Queensland's mangrove creeks — are the world's benchmark for light-tackle diversity: barramundi, mangrove jack, bream, flathead, and whiting share water that is accessible to a tinny and a spinning rod. Jacks and barra justify the tropical trips; bream justify everything else.",
+    "Chesapeake (MD/VA)": "The Chesapeake is striped bass water — the East Coast's rockfish nursery and its best light-tackle fishery, joined by speckled trout, redfish, and a croaker-and-spot scene that keeps piers busy all summer. Work the bridgeworks and grass lines on moving tides."
+  },
+  "licences": {
+    "UK coasts (where legal)": {
+      "region": "United Kingdom",
+      "items": [
+        "Sea angling from the shore or a boat needs no rod licence in England, Scotland, or Wales.",
+        "Bass fishing is seasonal and slot-limited; obey national size and bag limits and local bylaws.",
+        "Freshwater (rivers, canals, stillwaters) in England & Wales requires an Environment Agency rod licence."
+      ],
+      "sources": ["https://www.gov.uk/fishing-licences"]
+    },
+    "Bristol Channel (UK)": {
+      "region": "England & Wales",
+      "items": [
+        "No rod licence for sea fishing from shore or boat; local bylaws and national bass rules apply.",
+        "A rod licence is required for the freshwater stretches and tributaries — buy online from the Environment Agency."
+      ],
+      "sources": ["https://www.gov.uk/fishing-licences"]
+    },
+    "Cornwall (UK)": {
+      "region": "England",
+      "items": [
+        "Sea angling needs no licence; bass size and bag limits are strictly enforced.",
+        "Check Cornwall IFCA bylaws for minimum sizes and protected areas before keeping fish."
+      ],
+      "sources": ["https://www.gov.uk/fishing-licences"]
+    },
+    "UK south coast": {
+      "region": "England",
+      "items": [
+        "No licence for sea fishing; national bass limits and local IFCA bylaws apply.",
+        "Freshwater beats and canals require an EA rod licence."
+      ],
+      "sources": ["https://www.gov.uk/fishing-licences"]
+    },
+    "English Channel": {
+      "region": "England / France",
+      "items": [
+        "England: no sea-angling licence; bass and minimum-size rules apply.",
+        "France: recreational sea fishing is licence-free, but minimum sizes and seasonal rules apply."
+      ],
+      "sources": []
+    },
+    "North Sea (EU)": {
+      "region": "Multiple (NL/DE/DK)",
+      "items": [
+        "Shore sea fishing is licence-free in the Netherlands and Denmark; German rules vary by state (Bundesland).",
+        "Freshwater licences are country- and region-specific — always check before fishing inland."
+      ],
+      "sources": []
+    },
+    "North Sea (NOR/UK)": {
+      "region": "Norway / UK",
+      "items": [
+        "Norway: sea fishing is free for everyone; the national fishing fee (fiskeavgift) applies to freshwater.",
+        "UK: no sea licence; freshwater requires the national rod licence in England or Scotland permits per water."
+      ],
+      "sources": ["https://www.miljodirektoratet.no/ansvarsomrader/jakt-og-fiske/fiskeavgiften/"]
+    },
+    "Atlantic Europe": {
+      "region": "FR/ES/PT coasts",
+      "items": [
+        "France: sea angling is licence-free; freshwater requires a Carte de pêche.",
+        "Spain & Portugal: regional (autonomous) licences govern inshore and freshwater fishing."
+      ],
+      "sources": []
+    },
+    "Atlantic Europe (FR/ES/PT)": {
+      "region": "FR/ES/PT coasts",
+      "items": [
+        "France: sea angling is licence-free; freshwater requires a Carte de pêche.",
+        "Spain & Portugal: regional (autonomous) licences govern inshore and freshwater fishing."
+      ],
+      "sources": []
+    },
+    "Mediterranean": {
+      "region": "Multiple",
+      "items": [
+        "Rules are country-specific: Spain and Italy require regional or national licences for most saltwater fishing from shore.",
+        "Marine protected areas across the basin ban fishing or restrict gear — check locally before fishing any reserve."
+      ],
+      "sources": []
+    },
+    "Mediterranean estuaries": {
+      "region": "Multiple",
+      "items": [
+        "Estuary and lagoon fishing usually falls under national freshwater or shellfish rules — licences vary by country and region.",
+        "Some lagoons (e.g. Venice, Thau) are managed separately with their own permits."
+      ],
+      "sources": []
+    },
+    "Canary Islands": {
+      "region": "Spain (Canary Islands)",
+      "items": [
+        "Shore fishing requires the Canary Islands regional licence (licencia de pesca); spearfishing has separate rules.",
+        "Marine reserves around the islands prohibit all fishing."
+      ],
+      "sources": []
+    },
+    "Iceland": {
+      "region": "Iceland",
+      "items": [
+        "There is no national rod licence: fishing rights are private and you buy a permit per river or lake.",
+        "Fishing cards (veiðikortið) cover many lakes and smaller rivers; salmon rivers sell beats individually."
+      ],
+      "sources": []
+    },
+    "Ireland": {
+      "region": "Ireland",
+      "items": [
+        "A State licence is required for salmon and sea trout, sold by Inland Fisheries Ireland.",
+        "Most coarse and sea fishing is licence-free, but bylaws and closed seasons apply."
+      ],
+      "sources": ["https://fishinginireland.com/"]
+    },
+    "Danube (HU/RS)": {
+      "region": "Hungary / Serbia",
+      "items": [
+        "Hungary: a national state licence (horgászjegy) plus a regional daily/weekly ticket are required.",
+        "Serbia: licences are issued per water district; buy locally or through angling associations."
+      ],
+      "sources": []
+    },
+    "European stillwaters": {
+      "region": "Multiple",
+      "items": [
+        "Permits are water-by-water: private lakes sell day tickets; national rod licences apply in most countries.",
+        "France, Germany, and the Netherlands all require a national or regional freshwater licence in addition to any lake permit."
+      ],
+      "sources": []
+    },
+    "European stocked ponds": {
+      "region": "Multiple",
+      "items": [
+        "Stocked ponds usually sell their own day ticket that includes the right to keep fish — confirm whether a national licence is additionally required.",
+        "Catch-and-release-only waters are increasingly common; check the rules board on site."
+      ],
+      "sources": []
+    },
+    "UK canals": {
+      "region": "England",
+      "items": [
+        "An Environment Agency rod licence is required on all canals.",
+        "Most canal stretches also need a Canal & River Trust permit or are covered by it — check the waterway before fishing."
+      ],
+      "sources": ["https://www.gov.uk/fishing-licences", "https://canalrivertrust.org.uk/"]
+    }
+  }
+}

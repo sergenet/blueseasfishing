@@ -1,0 +1,38 @@
+/* rtl.css — Arabic locale overrides. Loaded only on /ar/ pages. */
+html[dir="rtl"], html[dir="rtl"] body {
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: right;
+}
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .newsletter-consent {
+  text-align: right;
+}
+html[dir="rtl"] .navbar-nav,
+html[dir="rtl"] .guide-nav-inner,
+html[dir="rtl"] .footer-content,
+html[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+html[dir="rtl"] .breadcrumbs { text-align: right; }
+html[dir="rtl"] ul, html[dir="rtl"] ol { padding-right: 1.4em; padding-left: 0; }
+html[dir="rtl"] .sp-facts div,
+html[dir="rtl"] .guide-wrap blockquote { text-align: right; }
+html[dir="rtl"] .guide-footer { text-align: right; }
+/* numbers/Latin species names should keep LTR flow inline */
+html[dir="rtl"] .scientific { direction: ltr; unicode-bidi: embed; text-align: right; }
+/* Language switcher stays TOP-RIGHT in RTL too (site-wide convention).
+   Explicit right reset overrides any inherited/dir-flipped positioning, and
+   right padding on the header container keeps the brand title from colliding. */
+html[dir="rtl"] .bsf-lang { right: 14px; left: auto; }
+html[dir="rtl"] .navbar,
+html[dir="rtl"] nav.guide-nav,
+html[dir="rtl"] .topbar .topwrap,
+html[dir="rtl"] .top { padding-right: 110px; }
+@media (max-width:600px){
+  html[dir="rtl"] .bsf-lang { right: 8px; left: auto; top: 10px; transform: none; }
+  html[dir="rtl"] .navbar,
+  html[dir="rtl"] nav.guide-nav,
+  html[dir="rtl"] .topbar .topwrap,
+  html[dir="rtl"] .top { padding-right: 84px !important; }
+}
