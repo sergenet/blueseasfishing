@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Seas Fishing - Social Campaign Control Room</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    :root {
+      --bg-dark: #0a1118;
+      --bg-card: #121e2b;
+      --bg-card-hover: #1a2a3c;
+      --bg-accent: #1e3a5f;
+      --primary: #00a8ff;
+      --primary-hover: #0090db;
+      --accent-cyan: #00e5ff;
+      --accent-green: #00e676;
+      --accent-amber: #ffb300;
+      --accent-purple: #b388ff;
+      --text-main: #f0f4f8;
+      --text-muted: #8b9eb3;
+      --border-color: #22374d;
+      --border-focus: #00a8ff;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      padding: 24px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-icon {
+      font-size: 32px;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 180, 216, 0.3);
+    }
+
+    .brand h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--bg-card-hover);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0077b6, #00a8ff);
+      border-color: #00a8ff;
+      color: #fff;
+    }
+
+    /* Navigation Mode Tabs */
+    .view-mode-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    .mode-tab {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .mode-tab.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 168, 255, 0.3);
+    }
+
+    /* Campaign Status Banner */
+    .status-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: var(--primary);
+    }
+
+    .stat-card.stat-green::before { background-color: var(--accent-green); }
+    .stat-card.stat-amber::before { background-color: var(--accent-amber); }
+    .stat-card.stat-cyan::before { background-color: var(--accent-cyan); }
+    .stat-card.stat-purple::before { background-color: var(--accent-purple); }
+
+    .stat-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .stat-val {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Main Inspector Panel */
+    .inspector-grid {
+      display: grid;
+      grid-template-columns: 460px 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .inspector-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .panel-title {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-video { background: rgba(0, 229, 255, 0.15); color: var(--accent-cyan); border: 1px solid rgba(0, 229, 255, 0.4); }
+    .badge-image { background: rgba(0, 230, 118, 0.15); color: var(--accent-green); border: 1px solid rgba(0, 230, 118, 0.4); }
+    .badge-posted { background: rgba(0, 230, 118, 0.2); color: var(--accent-green); }
+    .badge-profile { background: rgba(179, 136, 255, 0.18); color: var(--accent-purple); border: 1px solid rgba(179, 136, 255, 0.4); font-size: 12px; }
+
+    /* Media Preview */
+    .media-preview-container {
+      width: 100%;
+      height: 380px;
+      background: #060b10;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: 14px;
+      position: relative;
+    }
+
+    .media-preview-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .media-preview-container video {
+      max-width: 100%;
+      max-height: 100%;
+      outline: none;
+    }
+
+    .media-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .media-meta strong {
+      color: #fff;
+    }
+
+    .media-toggles {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .toggle-btn {
+      background: var(--bg-accent);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .toggle-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Target Profile Callout Box */
+    .profile-target-callout {
+      background: rgba(179, 136, 255, 0.08);
+      border: 1px solid rgba(179, 136, 255, 0.3);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .profile-target-info {
+      font-size: 13px;
+    }
+
+    .profile-target-info strong {
+      color: var(--accent-purple);
+    }
+
+    /* Tabs for Platforms */
+    .tab-bar {
+      display: flex;
+      gap: 6px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 16px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text-muted);
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: #fff;
+    }
+
+    .tab-btn.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+
+    .copy-box {
+      background: #081018;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      font-family: inherit;
+      font-size: 13px;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      max-height: 220px;
+      overflow-y: auto;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .url-preview {
+      background: rgba(0, 168, 255, 0.08);
+      border: 1px solid rgba(0, 168, 255, 0.25);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #90caf9;
+      word-break: break-all;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .url-preview a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    .url-preview a:hover {
+      text-decoration: underline;
+    }
+
+    .action-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .copy-btn {
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--primary-hover);
+    }
+
+    .toast {
+      font-size: 12px;
+      color: var(--accent-green);
+      display: none;
+      font-weight: 700;
+    }
+
+    /* 30-Day Grid */
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .filter-chip {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .filter-chip.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .day-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+    }
+
+    .day-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      background: var(--bg-card-hover);
+    }
+
+    .day-card.selected {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 2px rgba(0, 229, 255, 0.4);
+      background: var(--bg-accent);
+    }
+
+    .day-card.is-today {
+      border-color: var(--accent-green);
+    }
+
+    .day-card.is-today::after {
+      content: "TODAY";
+      position: absolute;
+      top: -8px;
+      right: 10px;
+      background: var(--accent-green);
+      color: #000;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    .day-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .day-num {
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .day-date {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .day-thumb {
+      height: 90px;
+      background: #070e14;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      overflow: hidden;
+      border: 1px solid #1a2a3a;
+      position: relative;
+    }
+
+    .day-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-play-indicator {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      background: rgba(0, 0, 0, 0.65);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-cyan);
+      font-size: 14px;
+    }
+
+    .day-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 4px;
+    }
+
+    .day-dest {
+      font-size: 10px;
+      color: var(--accent-cyan);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Portfolio Matrix View */
+    .portfolio-view {
+      display: none;
+    }
+
+    .brand-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .brand-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 14px;
+    }
+
+    .profile-item {
+      background: #081018;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px;
+    }
+
+    .profile-plat-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .profile-bio-box {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      white-space: pre-wrap;
+    }
+
+    .profile-link-row {
+      background: rgba(0, 168, 255, 0.08);
+      border: 1px solid rgba(0, 168, 255, 0.2);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .profile-link-row a {
+      color: #90caf9;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <img src="profile-icon.png" alt="Blue Seas Fishing Icon" style="width: 52px; height: 52px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 14px rgba(0, 180, 216, 0.4); border: 2px solid #00a8ff;">
+      <div>
+        <h1>Blue Seas Fishing — Campaign Control Room</h1>
+        <p>Multi-Platform Social Rotation, Dedicated Profiles & Attribution Engine</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a href="https://www.facebook.com/profile.php?id=61596155766812" target="_blank" class="btn" style="border-color: #1877f2; color: #70b5ff;">📘 Facebook Page</a>
+      <a href="https://business.facebook.com/latest/planner?asset_id=61596155766812" target="_blank" class="btn">📅 Meta Planner</a>
+      <a href="https://analytics.google.com" target="_blank" class="btn">📊 GA4 Analytics</a>
+      <a href="https://clarity.microsoft.com" target="_blank" class="btn">👁️ Clarity</a>
+      <a href="https://www.blueseasfishing.com/admin" target="_blank" class="btn">🔒 Site Admin</a>
+      <a href="https://www.blueseasfishing.com/fish-id.html" target="_blank" class="btn">🐟 AI Fish ID</a>
+    </div>
+  </header>
+
+  <!-- View Mode Switcher -->
+  <div class="view-mode-bar">
+    <button class="mode-tab active" id="tab-mode-campaign" onclick="switchViewMode('campaign')">
+      📅 30-Day Campaign & Daily Post Inspector
+    </button>
+    <button class="mode-tab" id="tab-mode-portfolio" onclick="switchViewMode('portfolio')">
+      🌐 Portfolio Profiles & Bio Links (6 Websites)
+    </button>
+  </div>
+
+  <!-- VIEW 1: CAMPAIGN INSPECTOR -->
+  <div id="view-campaign">
+    <!-- Status Banner -->
+    <div class="status-banner">
+      <div class="stat-card stat-cyan">
+        <div class="stat-title">Campaign Timeline</div>
+        <div class="stat-val" id="stat-timeline">Nov 6 – Dec 5</div>
+        <div class="stat-sub">30 Scheduled Days (Q4 2026)</div>
+      </div>
+      <div class="stat-card stat-green">
+        <div class="stat-title">Current Day</div>
+        <div class="stat-val" id="stat-day">Day 1 of 30</div>
+        <div class="stat-sub" id="stat-today-date">2026-11-06 (Friday)</div>
+      </div>
+      <div class="stat-card stat-purple">
+        <div class="stat-title">Posting Profile</div>
+        <div class="stat-val" style="font-size: 20px;">@BlueSeasFishing</div>
+        <div class="stat-sub">Strict Brand Isolation Active</div>
+      </div>
+      <div class="stat-card stat-amber">
+        <div class="stat-title">Daily Automation</div>
+        <div class="stat-val">08:30 AM</div>
+        <div class="stat-sub">Windows Task Scheduler: Ready</div>
+      </div>
+    </div>
+
+    <!-- Main Inspector Grid -->
+    <div class="inspector-grid">
+      <!-- Left: Media Preview -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span id="insp-day-badge">Day 1</span>: <span id="insp-theme">Theme Title</span>
+          </div>
+          <span class="badge" id="insp-type-badge">VIDEO</span>
+        </div>
+
+        <div class="media-preview-container" id="media-container">
+          <!-- Dynamically injected img or video -->
+        </div>
+
+        <div class="media-toggles" id="media-toggles" style="display: none;">
+          <button class="toggle-btn active" id="btn-toggle-primary" onclick="switchMedia('primary')">1:1 Feed View</button>
+          <button class="toggle-btn" id="btn-toggle-secondary" onclick="switchMedia('secondary')">9:16 Story View</button>
+        </div>
+
+        <div class="media-meta">
+          <div><strong>Primary Asset:</strong> <span id="insp-asset-name">blueseasfishing-ai-id-reel.mp4</span></div>
+          <div><strong>Hook:</strong> <em id="insp-hook">"Snap. Scan. Identified in 3 seconds."</em></div>
+          <div><strong>Target Landing Page:</strong> <a href="#" id="insp-dest-link" target="_blank" style="color: var(--accent-cyan);">https://www.blueseasfishing.com/fish-id.html</a></div>
+        </div>
+      </div>
+
+      <!-- Right: Platform Copy & Tracking URL -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Platform Copy & Profile Dispatch</div>
+          <div class="badge badge-posted" id="insp-status-badge">Day Active</div>
+        </div>
+
+        <!-- Target Profile Callout -->
+        <div class="profile-target-callout" id="profile-target-box">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="profile-icon.png" alt="Profile Picture" style="width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--accent-cyan); object-fit: cover; box-shadow: 0 2px 8px rgba(0,229,255,0.3);">
+            <div class="profile-target-info">
+              <div style="font-size: 11px; text-transform: uppercase; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.5px;">Active Posting Profile & Avatar</div>
+              <span>Post as: </span><strong id="callout-profile-name">Blue Seas Fishing (@blueseasfishing)</strong>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <span class="badge badge-profile">Isolated Brand Profile</span>
+            <button class="btn" style="padding: 3px 8px; font-size: 11px;" onclick="copyString('C:\\blueseasfishing\\Assets\\android\\icon-new-512.png')">Copy Icon Path</button>
+          </div>
+        </div>
+
+        <!-- Tab bar -->
+        <div class="tab-bar">
+          <button class="tab-btn active" onclick="selectPlatform('facebook')">📘 Facebook</button>
+          <button class="tab-btn" onclick="selectPlatform('instagram')">📸 Instagram</button>
+          <button class="tab-btn" onclick="selectPlatform('twitter')">🐦 X / Twitter</button>
+          <button class="tab-btn" onclick="selectPlatform('tiktok')">🎵 TikTok / Shorts</button>
+          <button class="tab-btn" onclick="selectPlatform('pinterest')">📌 Pinterest</button>
+        </div>
+
+        <!-- Copy Box -->
+        <div class="copy-box" id="copy-text">Loading copy...</div>
+
+        <!-- URL Preview -->
+        <div class="url-preview">
+          <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <strong>Target Link: </strong><a href="#" id="platform-url" target="_blank">Loading...</a>
+          </div>
+          <button class="btn" style="padding: 4px 10px; font-size: 11px;" onclick="copyCurrentUrl()">Copy URL</button>
+        </div>
+
+        <!-- Action Row -->
+        <div class="action-row">
+          <button class="copy-btn" onclick="copyCurrentPost()">📋 Copy Full Post Text & Link</button>
+          <button class="btn" onclick="openTargetUrl()">🔗 Open Link in New Tab</button>
+          <button class="btn" onclick="copyCurrentProfileBioLink()">📎 Copy Profile Bio Link</button>
+          <span class="toast" id="copy-toast">✓ Copied to clipboard!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 30-Day Master Schedule -->
+    <div class="section-title">
+      <div>30-Day Master Campaign Calendar (Click any day to inspect)</div>
+      <div class="filter-group">
+        <button class="filter-chip active" onclick="filterCalendar('all')">All (30)</button>
+        <button class="filter-chip" onclick="filterCalendar('video')">Videos (15)</button>
+        <button class="filter-chip" onclick="filterCalendar('image')">Images (15)</button>
+      </div>
+    </div>
+
+    <div class="calendar-grid" id="calendar-grid">
+      <!-- Day cards rendered dynamically -->
+    </div>
+  </div>
+
+  <!-- VIEW 2: PORTFOLIO PROFILE MATRIX -->
+  <div id="view-portfolio" class="portfolio-view">
+    <div class="section-title" style="margin-bottom: 8px;">
+      <div>Multi-Brand Profile & Bio Links Architecture</div>
+      <span class="badge badge-profile">6 Websites Managed</span>
+    </div>
+    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 24px;">
+      Ensure each website has its own dedicated profile on each platform so campaigns post into the correct audience channel. Copy the tailored bio links below:
+    </p>
+
+    <div id="portfolio-brands-container">
+      <!-- Injected from portfolio-profiles.json -->
+    </div>
+  </div>
+
+  <footer>
+    Blue Seas Fishing & Serge Portfolio Social Control Room &copy; 2026. Automated via Windows Task Scheduler.
+  </footer>
+</div>
+
+<!-- Load Campaign Data -->
+<script src="campaign-data.js"></script>
+<script>
+  let currentDay = 1;
+  let currentPlatform = 'facebook';
+  let activeMediaView = 'primary';
+  let activeFilter = 'all';
+
+  const schedule = window.CAMPAIGN_DATA ? window.CAMPAIGN_DATA.schedule : [];
+  const state = window.CAMPAIGN_STATE || { posts: [] };
+  const portfolio = window.PORTFOLIO_PROFILES ? window.PORTFOLIO_PROFILES.brands : {};
+
+  function init() {
+    if (window.CAMPAIGN_DATA && window.CAMPAIGN_DATA.start_date) {
+      const start = new Date(window.CAMPAIGN_DATA.start_date);
+      const today = new Date();
+      const diffTime = today - start;
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+      if (diffDays >= 1 && diffDays <= 30) {
+        currentDay = diffDays;
+      }
+    }
+
+    renderCalendar();
+    inspectDay(currentDay);
+    renderPortfolio();
+  }
+
+  function switchViewMode(mode) {
+    document.getElementById('tab-mode-campaign').classList.toggle('active', mode === 'campaign');
+    document.getElementById('tab-mode-portfolio').classList.toggle('active', mode === 'portfolio');
+
+    document.getElementById('view-campaign').style.display = (mode === 'campaign') ? 'block' : 'none';
+    document.getElementById('view-portfolio').style.display = (mode === 'portfolio') ? 'block' : 'none';
+  }
+
+  function renderCalendar() {
+    const grid = document.getElementById('calendar-grid');
+    grid.innerHTML = '';
+
+    schedule.forEach(item => {
+      if (activeFilter !== 'all' && item.asset_type !== activeFilter) return;
+
+      const isToday = item.day === currentDay;
+      const card = document.createElement('div');
+      card.className = `day-card ${isToday ? 'is-today' : ''} ${item.day === currentDay ? 'selected' : ''}`;
+      card.id = `card-day-${item.day}`;
+      card.onclick = () => inspectDay(item.day);
+
+      const isVideo = item.asset_type === 'video';
+      const thumbSrc = isVideo ? 'assets/blueseasfishing-social-creative.png' : `assets/${item.primary_asset}`;
+
+      card.innerHTML = `
+        <div class="day-card-header">
+          <span class="day-num">Day ${item.day}</span>
+          <span class="day-date">${item.date.slice(5)}</span>
+        </div>
+        <div class="day-thumb">
+          <img src="${thumbSrc}" onerror="this.src='assets/A-fishid-1080x1080.jpg'" alt="thumb">
+          ${isVideo ? '<div class="video-play-indicator">▶</div>' : ''}
+        </div>
+        <div class="day-title">${item.theme}</div>
+        <div class="day-dest">${item.target_landing_page.split('/').pop()}</div>
+      `;
+
+      grid.appendChild(card);
+    });
+  }
+
+  function filterCalendar(type) {
+    activeFilter = type;
+    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+    event.target.classList.add('active');
+    renderCalendar();
+  }
+
+  function inspectDay(dayNum) {
+    currentDay = dayNum;
+    activeMediaView = 'primary';
+    const item = schedule.find(s => s.day === dayNum);
+    if (!item) return;
+
+    document.querySelectorAll('.day-card').forEach(c => c.classList.remove('selected'));
+    const targetCard = document.getElementById(`card-day-${dayNum}`);
+    if (targetCard) targetCard.classList.add('selected');
+
+    document.getElementById('insp-day-badge').innerText = `Day ${item.day} (${item.date})`;
+    document.getElementById('insp-theme').innerText = item.theme;
+    document.getElementById('insp-asset-name').innerText = item.primary_asset;
+    document.getElementById('insp-hook').innerText = `"${item.hook}"`;
+    document.getElementById('insp-dest-link').innerText = item.target_landing_page;
+    document.getElementById('insp-dest-link').href = item.target_landing_page;
+
+    const typeBadge = document.getElementById('insp-type-badge');
+    typeBadge.innerText = item.asset_type.toUpperCase();
+    typeBadge.className = `badge ${item.asset_type === 'video' ? 'badge-video' : 'badge-image'}`;
+
+    renderMedia(item);
+    updatePlatformView(item);
+  }
+
+  function renderMedia(item) {
+    const container = document.getElementById('media-container');
+    const toggles = document.getElementById('media-toggles');
+
+    if (item.asset_type === 'video') {
+      toggles.style.display = 'none';
+      container.innerHTML = `
+        <video controls autoplay muted loop src="assets/${item.primary_asset}">
+          Your browser does not support video playback.
+        </video>
+      `;
+    } else {
+      if (item.secondary_asset) {
+        toggles.style.display = 'flex';
+        document.getElementById('btn-toggle-primary').classList.add('active');
+        document.getElementById('btn-toggle-secondary').classList.remove('active');
+      } else {
+        toggles.style.display = 'none';
+      }
+      container.innerHTML = `
+        <img src="assets/${item.primary_asset}" alt="${item.primary_asset}">
+      `;
+    }
+  }
+
+  function switchMedia(view) {
+    const item = schedule.find(s => s.day === currentDay);
+    if (!item) return;
+    activeMediaView = view;
+
+    const container = document.getElementById('media-container');
+    const assetToLoad = (view === 'secondary' && item.secondary_asset) ? item.secondary_asset : item.primary_asset;
+
+    document.getElementById('btn-toggle-primary').classList.toggle('active', view === 'primary');
+    document.getElementById('btn-toggle-secondary').classList.toggle('active', view === 'secondary');
+
+    container.innerHTML = `<img src="assets/${assetToLoad}" alt="${assetToLoad}">`;
+  }
+
+  function selectPlatform(plat) {
+    currentPlatform = plat;
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const item = schedule.find(s => s.day === currentDay);
+    if (item) updatePlatformView(item);
+  }
+
+  function updatePlatformView(item) {
+    const pData = item.platforms[currentPlatform];
+    const copyBox = document.getElementById('copy-text');
+    const urlLink = document.getElementById('platform-url');
+    const profileCallout = document.getElementById('callout-profile-name');
+
+    if (!pData) return;
+
+    profileCallout.innerText = pData.target_profile || "Blue Seas Fishing (@blueseasfishing)";
+
+    if (currentPlatform === 'pinterest') {
+      copyBox.innerText = `Title: ${pData.title}\n\nDescription:\n${pData.description}\n\nDestination URL:\n${pData.tracking_url}`;
+    } else {
+      copyBox.innerText = pData.text;
+    }
+
+    urlLink.innerText = pData.tracking_url;
+    urlLink.href = pData.tracking_url;
+  }
+
+  function renderPortfolio() {
+    const container = document.getElementById('portfolio-brands-container');
+    container.innerHTML = '';
+
+    for (const [key, b] of Object.entries(portfolio)) {
+      const card = document.createElement('div');
+      card.className = 'brand-card';
+
+      const iconHtml = (key === 'blueseasfishing') ? `<img src="profile-icon.png" style="width:26px;height:26px;border-radius:6px;object-fit:cover;vertical-align:middle;margin-right:8px;border:1px solid #00a8ff;">` : '🌐 ';
+
+      let profilesHtml = '';
+      for (const [plat, p] of Object.entries(b.profiles)) {
+        profilesHtml += `
+          <div class="profile-item">
+            <div class="profile-plat-title">
+              <span>${plat.toUpperCase()} (${p.recommended_handle || p.display_name})</span>
+              <span style="font-size: 11px; color: var(--accent-green);">${p.status || 'Active'}</span>
+            </div>
+            ${p.bio ? `<div class="profile-bio-box">${p.bio}</div>` : ''}
+            <div class="profile-link-row">
+              <a href="${p.website_field}" target="_blank">${p.website_field}</a>
+              <button class="btn" style="padding: 2px 8px; font-size: 11px;" onclick="copyString('${p.website_field}')">Copy Link</button>
+            </div>
+          </div>
+        `;
+      }
+
+      card.innerHTML = `
+        <div class="brand-card-header">
+          <div class="brand-name">
+            <span style="display:flex;align-items:center;">${iconHtml} ${b.brand_name}</span>
+            <span style="font-size: 13px; color: var(--text-muted); font-weight: normal; margin-left:8px;">(${b.domain})</span>
+          </div>
+          <span class="badge badge-profile">${b.niche}</span>
+        </div>
+        <div class="profile-grid">
+          ${profilesHtml}
+        </div>
+      `;
+
+      container.appendChild(card);
+    }
+  }
+
+  function copyCurrentPost() {
+    const copyBox = document.getElementById('copy-text');
+    navigator.clipboard.writeText(copyBox.innerText).then(() => {
+      showToast("✓ Copied post text!");
+    });
+  }
+
+  function copyCurrentUrl() {
+    const url = document.getElementById('platform-url').innerText;
+    navigator.clipboard.writeText(url).then(() => {
+      showToast("✓ Copied URL!");
+    });
+  }
+
+  function copyCurrentProfileBioLink() {
+    const item = schedule.find(s => s.day === currentDay);
+    if (!item) return;
+    const bioUrl = item.platforms[currentPlatform].profile_bio_url || item.target_landing_page;
+    navigator.clipboard.writeText(bioUrl).then(() => {
+      showToast("✓ Copied Profile Bio Link!");
+    });
+  }
+
+  function copyString(str) {
+    navigator.clipboard.writeText(str).then(() => {
+      showToast("✓ Copied Bio Link!");
+    });
+  }
+
+  function openTargetUrl() {
+    const url = document.getElementById('platform-url').href;
+    window.open(url, '_blank');
+  }
+
+  function showToast(msg = "✓ Copied!") {
+    const toast = document.getElementById('copy-toast');
+    toast.innerText = msg;
+    toast.style.display = 'inline';
+    setTimeout(() => { toast.style.display = 'none'; }, 2500);
+  }
+
+  window.onload = init;
+</script>
+</body>
+</html>
