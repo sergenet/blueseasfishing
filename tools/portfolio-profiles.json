@@ -1,0 +1,185 @@
+{
+  "portfolio_name": "Serge Digital Portfolio Social Architecture",
+  "generated_at": "2026-11-06T12:25:00",
+  "brands": {
+    "blueseasfishing": {
+      "brand_name": "Blue Seas Fishing",
+      "domain": "blueseasfishing.com",
+      "niche": "Fishing AI, 548 Species Guides, Destinations, Fishing Tackle",
+      "primary_cta_target": "https://www.blueseasfishing.com/fish-id.html",
+      "profiles": {
+        "facebook": {
+          "account_type": "Facebook Business Page",
+          "recommended_handle": "@blueseasfishing",
+          "display_name": "Blue Seas Fishing",
+          "profile_url": "https://www.facebook.com/profile.php?id=61596155766812",
+          "bio": "Snap, identify, catch. AI Fish identification across 548 freshwater & saltwater species. Free online tool + species guides.",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=facebook&utm_medium=page_website&utm_campaign=profile_bio",
+          "status": "Active & Verified",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png",
+          "page_id": "61596155766812",
+          "planner_url": "https://business.facebook.com/latest/planner?asset_id=61596155766812"
+        },
+        "instagram": {
+          "account_type": "Instagram Professional / Creator",
+          "recommended_handle": "@blueseasfishing",
+          "display_name": "Blue Seas Fishing | AI Fish ID",
+          "profile_url": "https://www.instagram.com/blueseasfishing/",
+          "bio": "\ud83c\udfa3 Snap a photo, identify your catch in 3 seconds\n\ud83c\udf0a 548 freshwater & saltwater species\n\ud83d\udcf2 Free AI fish identifier below \ud83d\udc47",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=instagram&utm_medium=bio_link&utm_campaign=profile_bio",
+          "status": "Active & Linked to Facebook Page 61596155766812",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png",
+          "handle": "@blueseasfishing"
+        },
+        "twitter": {
+          "account_type": "X / Twitter Business Account",
+          "recommended_handle": "@BlueSeasFishing",
+          "display_name": "Blue Seas Fishing",
+          "profile_url": "https://x.com/BlueSeasFishing",
+          "bio": "AI Fish Identification in 3 seconds across 548 species. Destination reports, species guides, and digital catch log. Free to try.",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=twitter&utm_medium=profile_link&utm_campaign=profile_bio",
+          "status": "Ready to configure",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png"
+        },
+        "tiktok": {
+          "account_type": "TikTok Creator / Business",
+          "recommended_handle": "@blueseasfishing",
+          "display_name": "Blue Seas Fishing",
+          "profile_url": "https://www.tiktok.com/@blueseasfishing",
+          "bio": "Can AI identify your catch? 548 species tested \ud83d\udc1f Free tool linked below \ud83d\udc47",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=tiktok&utm_medium=bio_link&utm_campaign=profile_bio",
+          "status": "Action Required: Update Bio Link",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png"
+        },
+        "pinterest": {
+          "account_type": "Pinterest Business",
+          "recommended_handle": "blueseasfishing",
+          "display_name": "Blue Seas Fishing - Species & Destination Guides",
+          "profile_url": "https://www.pinterest.com/blueseasfishing",
+          "bio": "State-by-state fishing destination reports, 548 species identification guides, and tackle setups for freshwater & saltwater anglers.",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=pinterest&utm_medium=profile_bio",
+          "status": "Ready to configure",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png"
+        },
+        "youtube": {
+          "account_type": "YouTube Channel (Shorts & ID Demos)",
+          "recommended_handle": "@blueseasfishing",
+          "display_name": "Blue Seas Fishing",
+          "profile_url": "https://www.youtube.com/@blueseasfishing",
+          "bio": "Fast AI fish identification demos, species comparisons, and angling guides.",
+          "website_field": "https://www.blueseasfishing.com/fish-id.html?utm_source=youtube&utm_medium=channel_link&utm_campaign=profile_bio",
+          "status": "Ready to configure",
+          "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png"
+        }
+      },
+      "profile_picture": "C:\\blueseasfishing\\Assets\\android\\icon-new-512.png",
+      "profile_picture_relative": "profile-icon.png"
+    },
+    "gardenwithserge": {
+      "brand_name": "Garden with Serge",
+      "domain": "gardenwithserge.com",
+      "niche": "Gardening Tips, Plant Identification, Plant Doctor AI",
+      "primary_cta_target": "https://www.gardenwithserge.com/",
+      "profiles": {
+        "instagram": {
+          "recommended_handle": "@gardenwithserge",
+          "display_name": "Garden with Serge | Plant Care",
+          "website_field": "https://www.gardenwithserge.com/?utm_source=instagram&utm_medium=bio_link&utm_campaign=profile_bio",
+          "status": "Independent Brand Profile"
+        },
+        "facebook": {
+          "recommended_handle": "@gardenwithserge",
+          "display_name": "Garden with Serge",
+          "website_field": "https://www.gardenwithserge.com/?utm_source=facebook&utm_medium=page_website",
+          "status": "Independent Brand Profile"
+        },
+        "tiktok": {
+          "recommended_handle": "@gardenwithserge",
+          "display_name": "Garden with Serge",
+          "website_field": "https://www.gardenwithserge.com/?utm_source=tiktok&utm_medium=bio_link",
+          "status": "Independent Brand Profile"
+        },
+        "youtube": {
+          "recommended_handle": "@gardenwithserge",
+          "display_name": "Garden with Serge",
+          "website_field": "https://www.gardenwithserge.com/?utm_source=youtube&utm_medium=channel_link",
+          "status": "Independent Brand Profile"
+        }
+      }
+    },
+    "timerhaven": {
+      "brand_name": "TimerHaven",
+      "domain": "timerhaven.com",
+      "niche": "Online Timers, Stopwatch, Productivity & Weather",
+      "primary_cta_target": "https://www.timerhaven.com/",
+      "profiles": {
+        "facebook": {
+          "recommended_handle": "@timerhaven",
+          "display_name": "TimerHaven",
+          "website_field": "https://www.timerhaven.com/?utm_source=facebook&utm_medium=page_link",
+          "status": "Independent Brand Profile"
+        },
+        "twitter": {
+          "recommended_handle": "@TimerHaven",
+          "display_name": "TimerHaven",
+          "website_field": "https://www.timerhaven.com/?utm_source=twitter&utm_medium=profile_link",
+          "status": "Independent Brand Profile"
+        }
+      }
+    },
+    "nexuscut": {
+      "brand_name": "NexusCut",
+      "domain": "nexuscut.io",
+      "niche": "Video & Media Editing Tools, AI Video Trimming",
+      "primary_cta_target": "https://nexuscut.io/",
+      "profiles": {
+        "twitter": {
+          "recommended_handle": "@NexusCut",
+          "display_name": "NexusCut Video Tools",
+          "website_field": "https://nexuscut.io/?utm_source=twitter&utm_medium=profile_link",
+          "status": "Independent Brand Profile"
+        }
+      }
+    },
+    "newgiftsandgadgets": {
+      "brand_name": "New Gifts and Gadgets",
+      "domain": "newgiftsandgadgets.com",
+      "niche": "Trending Tech Gadgets, Unique Gifts, Affiliate Storefront",
+      "primary_cta_target": "https://www.newgiftsandgadgets.com/",
+      "profiles": {
+        "pinterest": {
+          "recommended_handle": "newgiftsandgadgets",
+          "display_name": "New Gifts and Gadgets",
+          "website_field": "https://www.newgiftsandgadgets.com/?utm_source=pinterest&utm_medium=profile_bio",
+          "status": "High Priority Affiliate Channel"
+        },
+        "facebook": {
+          "recommended_handle": "@newgiftsandgadgets",
+          "display_name": "New Gifts and Gadgets",
+          "website_field": "https://www.newgiftsandgadgets.com/?utm_source=facebook&utm_medium=page_website",
+          "status": "Independent Brand Profile"
+        },
+        "tiktok": {
+          "recommended_handle": "@newgiftsandgadgets",
+          "display_name": "New Gifts and Gadgets",
+          "website_field": "https://www.newgiftsandgadgets.com/?utm_source=tiktok&utm_medium=bio_link",
+          "status": "Independent Brand Profile"
+        }
+      }
+    },
+    "laseniorservices": {
+      "brand_name": "LA Senior Services Directory",
+      "domain": "laseniorservicesdirectory.com",
+      "niche": "Local Los Angeles Senior Living, Healthcare & Care Services",
+      "primary_cta_target": "https://www.laseniorservicesdirectory.com/",
+      "profiles": {
+        "facebook": {
+          "recommended_handle": "@laseniorservices",
+          "display_name": "LA Senior Services Directory",
+          "website_field": "https://www.laseniorservicesdirectory.com/?utm_source=facebook&utm_medium=page_website",
+          "status": "Independent Brand Profile"
+        }
+      }
+    }
+  }
+}
