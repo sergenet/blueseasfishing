@@ -1,9 +1,31 @@
 import os
 import ftplib
+import sys
 
-FTP_HOST = 'ftp.blueseasfishing.com'
-FTP_USER = 'contact@blueseasfishing.com'
-FTP_PASS = 'Sako!!BSF2026'
+
+def _cred(key, default=''):
+    """Environment variable first, else the matching line in .env beside this file."""
+    value = os.environ.get(key)
+    if value:
+        return value
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+    try:
+        with open(env_path, encoding='utf-8') as fh:
+            for line in fh:
+                line = line.strip()
+                if line.startswith(key + '='):
+                    return line.split('=', 1)[1].strip().strip('"').strip("'")
+    except OSError:
+        pass
+    return default
+
+
+FTP_HOST = _cred('BSF_FTP_HOST', 'ftp.blueseasfishing.com')
+FTP_USER = _cred('BSF_FTP_USER', 'contact@blueseasfishing.com')
+FTP_PASS = _cred('BSF_FTP_PASS')
+
+if not FTP_PASS:
+    sys.exit('set BSF_FTP_PASS in .env - the password is never stored in this file')
 
 def upload_file(ftp, local_path, remote_path):
     with open(local_path, 'rb') as f:
