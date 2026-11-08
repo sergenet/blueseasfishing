@@ -1,19 +1,32 @@
 /* branding-live.js — site-wide navbar helper
-   - Ensures a “Member Login” link is present and deduped
-   - No changes to your HTML files required
+   - Ensures a localized “Member Login” / “My Account” link is present and deduped
+   - Supports en, es, fr, de, pt, ru, el, ar locales
 */
 (function () {
-  var LOGIN_HREF = '/login.html';
-  var LOGIN_TEXT = 'Member Login';
+  function getLang() {
+    var l = (document.documentElement.getAttribute('lang') || 'en').toLowerCase().trim();
+    if (l.length > 2) l = l.slice(0, 2);
+    return l;
+  }
+
+  var TRANSLATIONS = {
+    en: { login: 'Member Login', account: 'My Account' },
+    es: { login: 'Inicio de sesión de miembro', account: 'Mi cuenta' },
+    fr: { login: 'Connexion membre', account: 'Mon compte' },
+    de: { login: 'Mitglieder-Login', account: 'Mein Konto' },
+    pt: { login: 'Login de membro', account: 'Minha conta' },
+    ru: { login: 'Вход для участников', account: 'Мой аккаунт' },
+    el: { login: 'Είσοδος μέλους', account: 'Ο λογαριασμός μου' },
+    ar: { login: 'دخول الأعضاء', account: 'حسابي' }
+  };
 
   function isLoginLink(a) {
     var href = (a.getAttribute('href') || '').toLowerCase();
     var txt  = (a.textContent || '').toLowerCase();
-    return href.includes('/login') || /login|sign\s*in/.test(txt);
+    return href.includes('/login') || /login|sign\s*in|miembro|mitglieder|connexion|участников|μέλους|الأعضاء/.test(txt);
   }
 
   function findNavLists(root) {
-    // your site uses #navbar-nav; keep fallbacks for safety
     var lists = root.querySelectorAll
       ? root.querySelectorAll('#navbar-nav, .navbar-nav, nav ul')
       : [];
@@ -29,21 +42,22 @@
   function addLoginTo(ul) {
     if (!ul || ul.__bsfLoginDone) return;
 
-    // Already has a login link?
     if (ul.querySelector('a') && Array.from(ul.querySelectorAll('a')).some(isLoginLink)) {
       ul.__bsfLoginDone = true;
       return;
     }
 
-    // Create <li><a>Member Login</a></li>
+    var lang = getLang();
+    var t = TRANSLATIONS[lang] || TRANSLATIONS.en;
+    var prefix = lang === 'en' ? '' : '/' + lang;
+
     var li = document.createElement('li');
     var a  = document.createElement('a');
-    a.href = LOGIN_HREF;
-    a.textContent = LOGIN_TEXT;
-    a.className = 'nav-link';         // matches your theme
+    a.href = prefix + '/login.html';
+    a.textContent = t.login;
+    a.className = 'nav-link member-link';
     li.appendChild(a);
 
-    // Try to place it just before “Upload a Photo” button if present
     var uploadBtn =
       ul.querySelector('a[href*="fish-id"], a[href*="/fish-id.html"], a.btn.btn-primary, a.btn');
     var beforeNode = uploadBtn ? closestLi(uploadBtn) : null;
@@ -62,21 +76,25 @@
   }
 
   /* ===== State-aware membership link =====
-     Static menus carry <a ... class="member-link">Member Login</a> -> /login.html.
-     Once the server says who we are, flip logged-in users to "My Account" -> /members-area.html. */
+     Static menus carry <a ... class="member-link">...</a> -> /login.html.
+     Once the server says who we are, flip logged-in users to localized "My Account" -> /members-area.html. */
   var MEMBER_SEL = '.member-link, nav a[href*="/login"], .top a[href*="/login"], header a[href*="/login"]';
 
   function applyMemberState(user) {
+    var lang = getLang();
+    var t = TRANSLATIONS[lang] || TRANSLATIONS.en;
+    var prefix = lang === 'en' ? '' : '/' + lang;
+
     var links = document.querySelectorAll(MEMBER_SEL);
     for (var i = 0; i < links.length; i++) {
       var a = links[i];
       a.setAttribute('data-member-link', '1');
       if (user) {
-        a.textContent = 'My Account';
-        a.href = '/members-area.html';
+        a.textContent = t.account;
+        a.href = prefix + '/members-area.html';
       } else {
-        a.textContent = 'Member Login';
-        a.href = '/login.html';
+        a.textContent = t.login;
+        a.href = prefix + '/login.html';
       }
     }
   }
@@ -88,20 +106,17 @@
         var u = (j && j.ok && j.data) ? j.data.user : null;
         applyMemberState(u && u.email ? u : null);
       })
-      .catch(function () { /* offline: keep static Member Login label */ });
+      .catch(function () { /* offline: keep static label */ });
   }
 
-  // Exposed for QA: simulate either state without a real account.
   window.BSF_BRANDING = { applyMemberState: applyMemberState, refresh: refreshMemberState };
 
-  // Initial pass
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () { run(document); refreshMemberState(); });
   } else {
     run(document); refreshMemberState();
   }
 
-  // Watch for late-inserted menus (mobile drawer, template hydrations)
   var mo = new MutationObserver(function (muts) {
     for (var i = 0; i < muts.length; i++) {
       var m = muts[i];
