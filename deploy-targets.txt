@@ -1,0 +1,3 @@
+images/gear/heated-ice-bibs.jpg
+shop.html
+recommended-fishing-gear.html
