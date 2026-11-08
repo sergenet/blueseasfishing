@@ -4,6 +4,8 @@
   const GA_ID = 'G-5E6LJG6EQE';
   const CLARITY_ID = 'yl50z22f4y';
   const STORAGE_KEY = 'bsf_analytics_consent';
+  const AD_CLIENT = 'ca-pub-0467059729557007';
+  const ADS_FLAG = '__bsf_adsense_loaded';
   const CMP_WAIT_MS = 3000;
 
   // googlefc.ConsentModePurposeStatusEnum, compared by value so a rename in
@@ -12,6 +14,32 @@
   const CM_DENIED = 2;
   const CM_NOT_APPLICABLE = 3;
   const CM_NOT_CONFIGURED = 4;
+
+  // Google decides EEA coverage from the IP, which this script cannot see.
+  // Timezones are a preload hint: in a covered region the AdSense tag has to
+  // run to deliver Google's message, and `gdprApplies` then confirms it. If the
+  // hint was wrong the message never appears and our own banner takes over.
+  // Allowlist rather than "anything starting with Europe/": Istanbul, Moscow
+  // and the Balkans are not covered and should keep the opt-in flow.
+  const CONSENT_MESSAGE_TIMEZONES = {
+    'Europe/Amsterdam': 1, 'Europe/Athens': 1, 'Europe/Berlin': 1,
+    'Europe/Bratislava': 1, 'Europe/Brussels': 1, 'Europe/Bucharest': 1,
+    'Europe/Budapest': 1, 'Europe/Busingen': 1, 'Europe/Copenhagen': 1,
+    'Europe/Dublin': 1, 'Europe/Helsinki': 1, 'Europe/Lisbon': 1,
+    'Europe/Ljubljana': 1, 'Europe/Luxembourg': 1, 'Europe/Madrid': 1,
+    'Europe/Malta': 1, 'Europe/Mariehamn': 1, 'Europe/Nicosia': 1,
+    'Europe/Paris': 1, 'Europe/Prague': 1, 'Europe/Riga': 1,
+    'Europe/Rome': 1, 'Europe/Sofia': 1, 'Europe/Stockholm': 1,
+    'Europe/Tallinn': 1, 'Europe/Vienna': 1, 'Europe/Vilnius': 1,
+    'Europe/Warsaw': 1, 'Europe/Zagreb': 1,
+    'Europe/Oslo': 1, 'Europe/Reykjavik': 1, 'Europe/Vaduz': 1,
+    'Arctic/Longyearbyen': 1,
+    'Europe/London': 1, 'Europe/Belfast': 1, 'Europe/Gibraltar': 1,
+    'Europe/Guernsey': 1, 'Europe/Isle_of_Man': 1, 'Europe/Jersey': 1,
+    'Europe/Zurich': 1,
+    'Africa/Ceuta': 1, 'Atlantic/Azores': 1, 'Atlantic/Canary': 1,
+    'Atlantic/Madeira': 1
+  };
 
   let analyticsLoaded = false;
   let analyticsAllowed = false;
@@ -75,12 +103,40 @@
     } catch (e) {}
   }
 
+  // --- Advertising ---------------------------------------------------------
+  //
+  // Ad units are plain <ins class="adsbygoogle"> markup with their own
+  // push({}) call. Those pushes queue in window.adsbygoogle while no library is
+  // present, and queueing alone makes no request. Outside the EEA the loader is
+  // added only after Accept, so the queued units are requested then. Inside the
+  // EEA the tag must run for Google's message to appear, and Google's own CMP
+  // controls personalisation.
+  //
+  // Do not replace window.adsbygoogle here: ad-gate.js overrides its push for
+  // Premium members, and discarding the array would undo that.
+
+  function loadAdsense() {
+    try {
+      if (window[ADS_FLAG]) return;
+      window[ADS_FLAG] = true;
+
+      if (!document.querySelector('script[src*="pagead2.googlesyndication.com"]')) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + AD_CLIENT;
+        script.onerror = function () { console.warn('AdSense loader failed to load'); };
+        document.head.appendChild(script);
+      }
+    } catch (e) { console.warn('loadAdsense error', e); }
+  }
+
   // --- Google's certified CMP ---------------------------------------------
   //
-  // The AdSense tag in <head> carries Google's European message. In the EEA it
-  // is a certified CMP, so its answer — not this site's banner — has to decide
-  // whether analytics runs. Showing both would ask the same visitor twice and
-  // let the two records disagree.
+  // The AdSense loader above is what delivers Google's European message. In
+  // the EEA it is a certified CMP, so its answer — not this site's banner — has
+  // to decide whether analytics runs. Showing both would ask the same visitor
+  // twice and let the two records disagree.
 
   function pushToGoogleFc(key, fn) {
     window.googlefc = window.googlefc || {};
@@ -171,8 +227,11 @@
 
   function applyGoogleDecision() {
     const decision = googleAnalyticsDecision();
-    if (decision === 'granted') startAnalytics();
-    else if (decision === 'denied') stopAnalytics();
+    if (decision === 'granted') {
+      startAnalytics();
+    } else if (decision === 'denied') {
+      stopAnalytics();
+    }
   }
 
   function enterEeaMode() {
@@ -199,9 +258,15 @@
   // --- This site's own banner (non-EEA visitors) ---------------------------
 
   function setConsent(allowed) {
-    localStorage.setItem(STORAGE_KEY, allowed ? 'granted' : 'denied');
-    if (allowed) startAnalytics();
-    else stopAnalytics();
+    try {
+      localStorage.setItem(STORAGE_KEY, allowed ? 'granted' : 'denied');
+    } catch (e) {}
+    if (allowed) {
+      startAnalytics();
+      loadAdsense();
+    } else {
+      stopAnalytics();
+    }
     removeBanner();
   }
 
@@ -270,8 +335,8 @@
     const banner = document.createElement('aside');
     banner.id = 'bsf-consent-banner';
     banner.setAttribute('role', 'dialog');
-    banner.setAttribute('aria-label', 'Analytics choice');
-    banner.innerHTML = '<div><strong>Optional analytics</strong><p>Allow privacy-conscious analytics so we can understand which pages and features are useful. We do not send fish photos, identification notes, email addresses, passwords, or payment details.</p><a href="/cookies.html">Cookie details</a></div><div class="bsf-consent-actions"><button type="button" data-choice="decline">Decline</button><button type="button" data-choice="allow">Allow analytics</button></div>';
+    banner.setAttribute('aria-label', 'Analytics and advertising choice');
+    banner.innerHTML = '<div><strong>Optional analytics and ads</strong><p>Allow privacy-conscious analytics and advertising so we can understand which pages and features are useful. We do not send fish photos, identification notes, email addresses, passwords, or payment details.</p><a href="/cookies.html">Cookie details</a></div><div class="bsf-consent-actions"><button type="button" data-choice="decline">Decline</button><button type="button" data-choice="allow">Allow analytics &amp; ads</button></div>';
     const style = document.createElement('style');
     style.textContent = '#bsf-consent-banner{position:fixed;z-index:99999;left:16px;right:16px;bottom:16px;display:flex;gap:20px;align-items:center;justify-content:space-between;max-width:980px;margin:auto;padding:16px 18px;background:#082f49;color:#fff;border:1px solid #38bdf8;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.35);font:15px/1.45 system-ui,sans-serif}#bsf-consent-banner p{margin:.35rem 0}#bsf-consent-banner a{color:#bae6fd}.bsf-consent-actions{display:flex;gap:8px;flex-shrink:0}.bsf-consent-actions button{border:1px solid #7dd3fc;border-radius:8px;padding:9px 13px;cursor:pointer;background:#fff;color:#0c4a6e;font-weight:700}.bsf-consent-actions button:first-child{background:transparent;color:#fff}@media(max-width:680px){#bsf-consent-banner{flex-direction:column;align-items:stretch}.bsf-consent-actions{justify-content:flex-end}}';
     style.id = 'bsf-consent-style';
@@ -281,24 +346,50 @@
     banner.querySelector('[data-choice="decline"]').addEventListener('click', function () { setConsent(false); });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    whenGdprDecision(function (applies) {
-      if (applies) {
-        enterEeaMode();
-        return;
-      }
-      const choice = readStoredChoice();
-      if (choice === 'granted') {
-        startAnalytics();
-      } else if (choice !== 'denied') {
-        showBanner();
-      }
-    });
+  function looksEuropean() {
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      return Boolean(tz && CONSENT_MESSAGE_TIMEZONES[tz]);
+    } catch (e) {
+      return false;
+    }
+  }
 
-    document.querySelectorAll('[data-plan]').forEach(function (button) {
-      button.addEventListener('click', function () {
-        window.bsfTrack('begin_checkout', { plan: button.dataset.plan || 'unknown' });
+  function startOwnBannerFlow() {
+    const choice = readStoredChoice();
+    if (choice === 'granted') {
+      startAnalytics();
+      loadAdsense();
+    } else if (choice !== 'denied') {
+      showBanner();
+    }
+  }
+
+  function start() {
+    if (looksEuropean()) {
+      // The AdSense tag is what delivers Google's message, so for a covered
+      // visitor it has to load before anyone has chosen anything.
+      loadAdsense();
+      whenGdprDecision(function (applies) {
+        if (applies) enterEeaMode();
+        else startOwnBannerFlow();
+      });
+    } else {
+      startOwnBannerFlow();
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      start();
+
+      document.querySelectorAll('[data-plan]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          window.bsfTrack('begin_checkout', { plan: button.dataset.plan || 'unknown' });
+        });
       });
     });
-  });
+  } else {
+    start();
+  }
 })();

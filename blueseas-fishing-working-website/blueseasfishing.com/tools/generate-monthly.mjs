@@ -232,7 +232,7 @@ function buildMonthPage(m) {
     .feat-box{border:1px solid #d8e2ea;border-radius:10px;background:#f7fafc;padding:14px 16px;margin:16px 0}
     .feat-box ul{padding-left:18px;margin:8px 0 0}
   </style>
-  <script src="/analytics-consent.js?v=4" defer></script>
+  <script src="/analytics-consent.js?v=5" defer></script>
 </head>
 <body>
 ${NAV}
@@ -291,7 +291,7 @@ function buildHub() {
   <script type="application/ld+json">${JSON.stringify(ld)}</script>
   <link rel="stylesheet" href="/assets/css/species-guides.css">
   <style>.month-grid li{margin:8px 0;font-size:17px}</style>
-  <script src="/analytics-consent.js?v=4" defer></script>
+  <script src="/analytics-consent.js?v=5" defer></script>
 </head>
 <body>
 ${NAV}

@@ -192,7 +192,7 @@ function familyPage(fam) {
     .r-key-avg{color:#4d7fa3}.r-key-trophy{color:#a4262c}
     @media(max-width:720px){.r-barcell{min-width:130px}}
   </style>
-  <script src="/analytics-consent.js?v=4" defer></script>
+  <script src="/analytics-consent.js?v=5" defer></script>
 </head>
 <body>
 ${NAV}
@@ -260,7 +260,7 @@ function buildHub() {
     .r-more{margin:8px 0 0;font-size:14px}
     .r-method{border:1px solid #d8e2ea;border-radius:10px;background:#f7fafc;padding:12px 14px;margin:18px 0;font-size:14px;color:#41586b}
   </style>
-  <script src="/analytics-consent.js?v=4" defer></script>
+  <script src="/analytics-consent.js?v=5" defer></script>
 </head>
 <body>
 ${NAV}

@@ -496,7 +496,7 @@ function buildPage(pair) {
   <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
   <script type="application/ld+json">${JSON.stringify(article)}</script>
   <script type="application/ld+json">${JSON.stringify(faq)}</script>
-<link rel="stylesheet" href="/assets/css/species-guides.css"><script src="/analytics-consent.js?v=4" defer></script></head>
+<link rel="stylesheet" href="/assets/css/species-guides.css"><script src="/analytics-consent.js?v=5" defer></script></head>
 <body>${NAV}<main class="guide-wrap">
 <div class="breadcrumbs"><a href="/">Home</a> / <a href="/fish-identification-guides.html">ID guides</a> / ${esc(an)} vs. ${esc(bn.toLowerCase())}</div>
 <h1>${esc(an)} vs. ${esc(bn.toLowerCase())}: how to tell them apart</h1>
@@ -545,7 +545,7 @@ function buildHub() {
   <meta property="og:url" content="${url}">
   <meta name="twitter:card" content="summary">
   <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
-<link rel="stylesheet" href="/assets/css/species-guides.css"><script src="/analytics-consent.js?v=4" defer></script></head>
+<link rel="stylesheet" href="/assets/css/species-guides.css"><script src="/analytics-consent.js?v=5" defer></script></head>
 <body>${NAV}<main class="guide-wrap">
 <div class="breadcrumbs"><a href="/">Home</a> / ID guides</div>
 <h1>Fish identification guides</h1>
