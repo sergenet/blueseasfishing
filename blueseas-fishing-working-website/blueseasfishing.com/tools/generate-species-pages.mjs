@@ -369,7 +369,7 @@ function speciesPage(sp, slug, fresh = null) {
     .sp-hero{margin:18px 0}.sp-hero img{width:100%;max-width:720px;height:auto;border-radius:12px;border:1px solid #d8e2ea;display:block;margin:0 auto}
     .sp-hero figcaption{text-align:center;font-size:12px;color:#5a7184;margin-top:4px}
   </style>
-  <script src="/analytics-consent.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=4" defer></script>
 </head>
 <body>
 <nav class="guide-nav"><div class="guide-nav-inner"><a class="guide-brand" href="/">Blue Seas Fishing</a><a href="/fish-id.html">Identify a Fish</a><a href="/gallery.html">Species Database</a><a href="/species/">Species A–Z</a><a href="/destinations/">Destinations</a><a href="/blog.html">Fishing Guides</a><a href="/forum.html">Forum</a><a href="/subscribe.html">Subscribe</a><a href="/premium.html" class="guide-cta">Go Premium</a></div></nav>
@@ -460,7 +460,7 @@ function speciesIndex(groups, total) {
     .env{color:#5a7184;font-size:13px}
     footer{margin-top:40px;padding-top:14px;border-top:1px solid #d8e2ea;color:#5a7184;font-size:14px}
   </style>
-  <script src="/analytics-consent.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=4" defer></script>
 </head>
 <body>
 <nav class="guide-nav"><div class="guide-nav-inner"><a class="guide-brand" href="/">Blue Seas Fishing</a><a href="/fish-id.html">Identify a Fish</a><a href="/gallery.html">Species Database</a><a href="/species/">Species A–Z</a><a href="/destinations/">Destinations</a><a href="/blog.html">Fishing Guides</a><a href="/forum.html">Forum</a><a href="/subscribe.html">Subscribe</a><a href="/premium.html" class="guide-cta">Go Premium</a></div></nav>

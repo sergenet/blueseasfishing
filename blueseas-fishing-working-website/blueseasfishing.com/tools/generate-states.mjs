@@ -537,7 +537,7 @@ function stateMonthPage(code, m, perMonth, indexable = true) {
     .st-shift-list li{margin:6px 0}
     .st-bait-inline{display:block;color:#5b7185;font-size:13px}
   </style>
-  <script src="/analytics-consent.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=4" defer></script>
 </head>
 <body>
 ${NAV}
@@ -647,7 +647,7 @@ function statePage(code) {
     .stg-dim{border-style:dashed;background:#fbfcfd}
     .stg-dim .stg-m{color:#9ab0c0}
   </style>
-  <script src="/analytics-consent.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=4" defer></script>
 </head>
 <body>
 ${NAV}
@@ -717,7 +717,7 @@ function buildHub() {
     .st-count{color:#5a7184;font-size:13px;margin-left:6px}
     .st-state-note{border:1px solid #d8e2ea;border-radius:10px;background:#f7fafc;padding:12px 14px;margin:16px 0;font-size:14px;color:#41586b}
   </style>
-  <script src="/analytics-consent.js?v=2" defer></script>
+  <script src="/analytics-consent.js?v=4" defer></script>
 </head>
 <body>
 ${NAV}
