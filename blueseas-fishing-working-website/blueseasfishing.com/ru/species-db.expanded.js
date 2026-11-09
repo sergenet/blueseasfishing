@@ -56,13 +56,13 @@
         ['Дискус','Symphysodon discus','discus'],['Пресноводная рыба-ангел','Pterophyllum scalare','freshwater-angelfish'],['Осужденная цихлида','Amatitlania nigrofasciata','convict-cichlid'],
         ['Арапайма','Arapaima gigas','arapaima'],['Серебряная Арована','Osteoglossum bicirrhosum','silver-arowana'],['Рыба-клоун-нож','Chitala ornata','clown-knifefish'],
         ['Гигантский гурами','Osphronemus goramy','giant-gourami'],['Целующийся гурами','Helostoma temminckii','kissing-gourami'],['Змеиный гурами','Trichopodus pectoralis','snakeskin-gourami'],
-        ['Гигантский змееголов','Channa micropeltes','giant-snakehead'],['Северный змееголов','Channa argus','northern-snakehead'],['Полосатый змееголов','Channa striata','striped-snakehead'],
+        ['Гигантский змееголов','Channa micropeltes','snakehead-giant'],['Северный змееголов','Channa argus','northern-snakehead'],['Полосатый змееголов','Channa striata','striped-snakehead'],
         ['Ходячий сом','Clarias batrachus','walking-catfish'],['Североафриканский сом','Clarias gariepinus','north-african-catfish'],['Краснохвостый сом','Phractocephalus hemioliopterus','redtail-catfish'],
         ['Тигровый лопатоносый сом','Pseudoplatystoma fasciatum','tiger-shovelnose-catfish'],['Зубатка-рипса','Oxydoras niger','ripsaw-catfish'],['Пиктус Сом','Pimelodus pictus','pictus-catfish'],
-        ['Радужный акулий сом','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Меконгский гигантский сом','Pangasianodon gigas','mekong-giant-catfish'],['Вельсский сом','Silurus glanis','wels-catfish'],
+        ['Радужный акулий сом','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Меконгский гигантский сом','Pangasianodon gigas','giant-mekong-catfish'],['Вельсский сом','Silurus glanis','wels-catfish'],
         ['Тамбаки','Colossoma macropomum','tambaqui'],['паку','Piaractus mesopotamicus','pacu'],['Краснобрюхая пиранья','Pygocentrus nattereri','red-bellied-piranha'],
-        ['Пайара','Hydrolycus scomberoides','payara'],['Золотой дорадо','Salminus brasiliensis','golden-dorado'],['Тигровая рыба','Hydrocynus vittatus','tigerfish'],
-        ['Голиаф-тигр','Hydrocynus goliath','goliath-tigerfish'],['Гигантский Барб','Catlocarpio siamensis','giant-barb'],['Роху','Labeo rohita','rohu']
+        ['Пайара','Hydrolycus scomberoides','payara-vampire-fish'],['Золотой дорадо','Salminus brasiliensis','golden-dorado'],['Тигровая рыба','Hydrocynus vittatus','tigerfish'],
+        ['Голиаф-тигр','Hydrocynus goliath','goliath-tigerfish'],['Гигантский Барб','Catlocarpio siamensis','siamese-carp'],['Роху','Labeo rohita','rohu']
       ]
     },
     {
@@ -91,9 +91,9 @@
       baits: 'Видозависимый; наживка, кальмары, креветки, крабы, черви, приманки, ложки, воблеры или мушки',
       season: 'Зависит от миграции, температуры, региона и регулирования.',
       fish: [
-        ['Атлантический тарпон','Megalops atlanticus','atlantic-tarpon'],['Индо-Тихоокеанский тарпон','Megalops cyprinoides','indo-pacific-tarpon'],['Обыкновенный снук','Centropomus undecimalis','common-snook'],
-        ['Жирный Снук','Centropomus parallelus','fat-snook'],['Мечеспайн Снук','Centropomus ensiferus','swordspine-snook'],['Атлантическое разрешение','Trachinotus falcatus','atlantic-permit'],
-        ['Флорида Помпано','Trachinotus carolinus','florida-pompano'],['Паломета','Trachinotus goodei','palometa'],['Большой Янтарный Джек','Seriola dumerili','greater-amberjack'],
+        ['Атлантический тарпон','Megalops atlanticus','tarpon'],['Индо-Тихоокеанский тарпон','Megalops cyprinoides','indo-pacific-tarpon'],['Обыкновенный снук','Centropomus undecimalis','snook'],
+        ['Жирный Снук','Centropomus parallelus','fat-snook'],['Мечеспайн Снук','Centropomus ensiferus','swordspine-snook'],['Атлантическое разрешение','Trachinotus falcatus','permit'],
+        ['Флорида Помпано','Trachinotus carolinus','pompano'],['Паломета','Trachinotus goodei','palometa'],['Большой Янтарный Джек','Seriola dumerili','greater-amberjack'],
         ['Малый Янтарный Джек','Seriola fasciata','lesser-amberjack'],['Альмако Джек','Seriola rivoliana','almaco-jack'],['Креваль Джек','Caranx hippos','crevalle-jack'],
         ['Конский глаз Джек','Caranx latus','horse-eye-jack'],['Синий бегун','Caranx crysos','blue-runner'],['Африканский помпано','Alectis ciliaris','african-pompano'],
         ['Обзор','Selene vomer','lookdown'],['Атлантическая рыба-луна','Selene setapinnis','atlantic-moonfish'],['божья коровка','Elops saurus','ladyfish'],
@@ -113,7 +113,7 @@
       season: 'Высоко мигрирующие; их доступность варьируется в зависимости от течения, температуры и погодных условий.',
       fish: [
         ['Черноперый тунец','Thunnus atlanticus','blackfin-tuna'],['Длиннохвостый тунец','Thunnus tonggol','longtail-tuna'],['Южный голубой тунец','Thunnus maccoyii','southern-bluefin-tuna'],
-        ['Атлантический голубой марлин','Makaira nigricans','atlantic-blue-marlin'],['Черный Марлин','Istiompax indica','black-marlin'],['Белый Марлин','Kajikia albida','white-marlin'],
+        ['Атлантический голубой марлин','Makaira nigricans','blue-marlin'],['Черный Марлин','Istiompax indica','black-marlin'],['Белый Марлин','Kajikia albida','white-marlin'],
         ['Короткоклювая рыба-копьеносец','Tetrapturus angustirostris','shortbill-spearfish'],['Длинноклювая копьеносная рыба','Tetrapturus pfluegeri','longbill-spearfish'],['Средиземноморская копья','Tetrapturus belone','mediterranean-spearfish'],
         ['Индо-Тихоокеанский парусник','Istiophorus platypterus','indo-pacific-sailfish'],['Большая Барракуда','Sphyraena barracuda','great-barracuda'],['Тихоокеанская барракуда','Sphyraena argentea','pacific-barracuda'],
         ['Эсколар','Lepidocybium flavobrunneum','escolar'],['Масляная рыба','Ruvettus pretiosus','oilfish'],['Опа','Lampris guttatus','opah'],
@@ -155,7 +155,7 @@
         ['Тихоокеанский оленерогий бык','Leptocottus armatus','pacific-staghorn-sculpin'],['Длиннорогий бычок','Myoxocephalus octodecemspinosus','longhorn-sculpin'],['Морской ворон','Hemitripterus americanus','sea-raven'],
         ['Атлантическая Сайра','Scomberesox saurus','atlantic-saury'],['Тихоокеанская сайра','Cololabis saira','pacific-saury'],['Песочное копье','Ammodytes americanus','sand-lance'],
         ['Тихоокеанское песчаное копье','Ammodytes hexapterus','pacific-sand-lance'],['Кафельфиш','Lopholatilus chamaeleonticeps','tilefish'],['Голубая кафельная рыба','Caulolatilus microps','blueline-tilefish'],
-        ['Золотая плитка','Lopholatilus chamaeleonticeps','golden-tilefish'],['Северный фугу','Sphoeroides maculatus','northern-puffer'],['Южный фугу','Sphoeroides nephelus','southern-puffer'],
+        ['Золотая плитка','Lopholatilus chamaeleonticeps','tilefish'],['Северный фугу','Sphoeroides maculatus','northern-puffer'],['Южный фугу','Sphoeroides nephelus','southern-puffer'],
         ['Клетчатый пуховик','Sphoeroides testudineus','checkered-puffer'],['Рыба-дикобраз','Diodon hystrix','porcupinefish'],['Воздушный шар','Diodon holocanthus','balloonfish'],
         ['Гладкая рыба-хобот','Lactophrys triqueter','smooth-trunkfish'],['Нацарапанная коровья рыба','Acanthostracion quadricornis','scrawled-cowfish'],['Пятнистая рыба-хобот','Lactophrys bicaudalis','spotted-trunkfish'],
         ['Ремора','Remora remora','remora'],['Шарксакер','Echeneis naucrates','sharksucker'],['Атлантическая абордажная рыба','Trichiurus lepturus','atlantic-cutlassfish'],

@@ -56,13 +56,13 @@
         ['discutir','Symphysodon discus','discus'],['Pez ángel de agua dulce','Pterophyllum scalare','freshwater-angelfish'],['Cíclido Convicto','Amatitlania nigrofasciata','convict-cichlid'],
         ['arapaima','Arapaima gigas','arapaima'],['Arowana de plata','Osteoglossum bicirrhosum','silver-arowana'],['Pez cuchillo payaso','Chitala ornata','clown-knifefish'],
         ['Gurami gigante','Osphronemus goramy','giant-gourami'],['Besando a Gurami','Helostoma temminckii','kissing-gourami'],['Gurami de piel de serpiente','Trichopodus pectoralis','snakeskin-gourami'],
-        ['Cabeza de serpiente gigante','Channa micropeltes','giant-snakehead'],['Cabeza de serpiente del norte','Channa argus','northern-snakehead'],['Cabeza de serpiente rayada','Channa striata','striped-snakehead'],
+        ['Cabeza de serpiente gigante','Channa micropeltes','snakehead-giant'],['Cabeza de serpiente del norte','Channa argus','northern-snakehead'],['Cabeza de serpiente rayada','Channa striata','striped-snakehead'],
         ['Bagre Caminante','Clarias batrachus','walking-catfish'],['Bagre del norte de África','Clarias gariepinus','north-african-catfish'],['Bagre de cola roja','Phractocephalus hemioliopterus','redtail-catfish'],
         ['Bagre nariz de pala tigre','Pseudoplatystoma fasciatum','tiger-shovelnose-catfish'],['Bagre sierra rasgadora','Oxydoras niger','ripsaw-catfish'],['Bagre Pictus','Pimelodus pictus','pictus-catfish'],
-        ['Bagre Tiburón Iridiscente','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Bagre gigante del Mekong','Pangasianodon gigas','mekong-giant-catfish'],['Bagre Wels','Silurus glanis','wels-catfish'],
+        ['Bagre Tiburón Iridiscente','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Bagre gigante del Mekong','Pangasianodon gigas','giant-mekong-catfish'],['Bagre Wels','Silurus glanis','wels-catfish'],
         ['tambaquí','Colossoma macropomum','tambaqui'],['pacú','Piaractus mesopotamicus','pacu'],['Piraña de vientre rojo','Pygocentrus nattereri','red-bellied-piranha'],
-        ['payara','Hydrolycus scomberoides','payara'],['dorado dorado','Salminus brasiliensis','golden-dorado'],['pez tigre','Hydrocynus vittatus','tigerfish'],
-        ['Pez tigre goliat','Hydrocynus goliath','goliath-tigerfish'],['Púa gigante','Catlocarpio siamensis','giant-barb'],['Rohu','Labeo rohita','rohu']
+        ['payara-vampire-fish','Hydrolycus scomberoides','payara-vampire-fish'],['dorado dorado','Salminus brasiliensis','golden-dorado'],['pez tigre','Hydrocynus vittatus','tigerfish'],
+        ['Pez tigre goliat','Hydrocynus goliath','goliath-tigerfish'],['Púa gigante','Catlocarpio siamensis','siamese-carp'],['Rohu','Labeo rohita','rohu']
       ]
     },
     {
@@ -91,9 +91,9 @@
       baits: 'Dependiente de la especie; carnada, calamares, camarones, cangrejos, gusanos, jigs, cucharas, tapones o moscas',
       season: 'Varía según la migración, la temperatura, la región y la regulación.',
       fish: [
-        ['Sábalo Atlántico','Megalops atlanticus','atlantic-tarpon'],['Sábalo del Indo-Pacífico','Megalops cyprinoides','indo-pacific-tarpon'],['Róbalo común','Centropomus undecimalis','common-snook'],
-        ['róbalo gordo','Centropomus parallelus','fat-snook'],['Róbalo espina de espada','Centropomus ensiferus','swordspine-snook'],['Permiso Atlántico','Trachinotus falcatus','atlantic-permit'],
-        ['Pámpano de Florida','Trachinotus carolinus','florida-pompano'],['palometa','Trachinotus goodei','palometa'],['Amberjack mayor','Seriola dumerili','greater-amberjack'],
+        ['Sábalo Atlántico','Megalops atlanticus','tarpon'],['Sábalo del Indo-Pacífico','Megalops cyprinoides','indo-pacific-tarpon'],['Róbalo común','Centropomus undecimalis','snook'],
+        ['róbalo gordo','Centropomus parallelus','fat-snook'],['Róbalo espina de espada','Centropomus ensiferus','swordspine-snook'],['Permiso Atlántico','Trachinotus falcatus','permit'],
+        ['Pámpano de Florida','Trachinotus carolinus','pompano'],['palometa','Trachinotus goodei','palometa'],['Amberjack mayor','Seriola dumerili','greater-amberjack'],
         ['Amberjack menor','Seriola fasciata','lesser-amberjack'],['Almaco Jack','Seriola rivoliana','almaco-jack'],['Jack Crevalle','Caranx hippos','crevalle-jack'],
         ['Jack ojo de caballo','Caranx latus','horse-eye-jack'],['Corredor azul','Caranx crysos','blue-runner'],['Pámpano africano','Alectis ciliaris','african-pompano'],
         ['mirar hacia abajo','Selene vomer','lookdown'],['Pez Luna del Atlántico','Selene setapinnis','atlantic-moonfish'],['Mariquita','Elops saurus','ladyfish'],
@@ -113,7 +113,7 @@
       season: 'Altamente migratorio; su disponibilidad varía según la corriente, la temperatura y la regulación.',
       fish: [
         ['Atún Aleta Negra','Thunnus atlanticus','blackfin-tuna'],['Atún de cola larga','Thunnus tonggol','longtail-tuna'],['Atún Rojo del Sur','Thunnus maccoyii','southern-bluefin-tuna'],
-        ['Marlín azul del Atlántico','Makaira nigricans','atlantic-blue-marlin'],['Marlín negro','Istiompax indica','black-marlin'],['Marlín blanco','Kajikia albida','white-marlin'],
+        ['Marlín azul del Atlántico','Makaira nigricans','blue-marlin'],['Marlín negro','Istiompax indica','black-marlin'],['Marlín blanco','Kajikia albida','white-marlin'],
         ['Pez lanza de pico corto','Tetrapturus angustirostris','shortbill-spearfish'],['Pez lanza pico largo','Tetrapturus pfluegeri','longbill-spearfish'],['Pez lanza del Mediterráneo','Tetrapturus belone','mediterranean-spearfish'],
         ['Pez vela del Indo-Pacífico','Istiophorus platypterus','indo-pacific-sailfish'],['gran barracuda','Sphyraena barracuda','great-barracuda'],['Barracuda del Pacífico','Sphyraena argentea','pacific-barracuda'],
         ['escolares','Lepidocybium flavobrunneum','escolar'],['pez aceite','Ruvettus pretiosus','oilfish'],['opah','Lampris guttatus','opah'],
@@ -155,7 +155,7 @@
         ['Escultura de cuerno de ciervo del Pacífico','Leptocottus armatus','pacific-staghorn-sculpin'],['Escultura de cuernos largos','Myoxocephalus octodecemspinosus','longhorn-sculpin'],['Cuervo de mar','Hemitripterus americanus','sea-raven'],
         ['Saurio Atlántico','Scomberesox saurus','atlantic-saury'],['Saurio del Pacífico','Cololabis saira','pacific-saury'],['Lanza de arena','Ammodytes americanus','sand-lance'],
         ['Lanza de arena del Pacífico','Ammodytes hexapterus','pacific-sand-lance'],['blanquillo','Lopholatilus chamaeleonticeps','tilefish'],['Pez azulejo línea azul','Caulolatilus microps','blueline-tilefish'],
-        ['Pez blanquillo dorado','Lopholatilus chamaeleonticeps','golden-tilefish'],['Globo del Norte','Sphoeroides maculatus','northern-puffer'],['Globo sureño','Sphoeroides nephelus','southern-puffer'],
+        ['Pez blanquillo dorado','Lopholatilus chamaeleonticeps','tilefish'],['Globo del Norte','Sphoeroides maculatus','northern-puffer'],['Globo sureño','Sphoeroides nephelus','southern-puffer'],
         ['Puffer a cuadros','Sphoeroides testudineus','checkered-puffer'],['pez puercoespín','Diodon hystrix','porcupinefish'],['pez globo','Diodon holocanthus','balloonfish'],
         ['Pez tronco liso','Lactophrys triqueter','smooth-trunkfish'],['Pez vaca garabateado','Acanthostracion quadricornis','scrawled-cowfish'],['Pez tronco manchado','Lactophrys bicaudalis','spotted-trunkfish'],
         ['Rémora','Remora remora','remora'],['chupatiburones','Echeneis naucrates','sharksucker'],['Sable del Atlántico','Trichiurus lepturus','atlantic-cutlassfish'],

@@ -56,13 +56,13 @@
         ['Discus','Symphysodon discus'],['Freshwater Angelfish','Pterophyllum scalare'],['Convict Cichlid','Amatitlania nigrofasciata'],
         ['Arapaima','Arapaima gigas'],['Silver Arowana','Osteoglossum bicirrhosum'],['Clown Knifefish','Chitala ornata'],
         ['Giant Gourami','Osphronemus goramy'],['Kissing Gourami','Helostoma temminckii'],['Snakeskin Gourami','Trichopodus pectoralis'],
-        ['Giant Snakehead','Channa micropeltes'],['Northern Snakehead','Channa argus'],['Striped Snakehead','Channa striata'],
+        ['Giant Snakehead','Channa micropeltes','snakehead-giant'],['Northern Snakehead','Channa argus'],['Striped Snakehead','Channa striata'],
         ['Walking Catfish','Clarias batrachus'],['North African Catfish','Clarias gariepinus'],['Redtail Catfish','Phractocephalus hemioliopterus'],
         ['Tiger Shovelnose Catfish','Pseudoplatystoma fasciatum'],['Ripsaw Catfish','Oxydoras niger'],['Pictus Catfish','Pimelodus pictus'],
-        ['Iridescent Shark Catfish','Pangasianodon hypophthalmus'],['Mekong Giant Catfish','Pangasianodon gigas'],['Wels Catfish','Silurus glanis'],
+        ['Iridescent Shark Catfish','Pangasianodon hypophthalmus'],['Mekong Giant Catfish','Pangasianodon gigas','giant-mekong-catfish'],['Wels Catfish','Silurus glanis'],
         ['Tambaqui','Colossoma macropomum'],['Pacu','Piaractus mesopotamicus'],['Red-bellied Piranha','Pygocentrus nattereri'],
-        ['Payara','Hydrolycus scomberoides'],['Golden Dorado','Salminus brasiliensis'],['Tigerfish','Hydrocynus vittatus'],
-        ['Goliath Tigerfish','Hydrocynus goliath'],['Giant Barb','Catlocarpio siamensis'],['Rohu','Labeo rohita']
+        ['Payara','Hydrolycus scomberoides','payara-vampire-fish'],['Golden Dorado','Salminus brasiliensis'],['Tigerfish','Hydrocynus vittatus'],
+        ['Goliath Tigerfish','Hydrocynus goliath'],['Giant Barb','Catlocarpio siamensis','siamese-carp'],['Rohu','Labeo rohita']
       ]
     },
     {
@@ -91,9 +91,9 @@
       baits: 'Species-dependent; baitfish, squid, shrimp, crabs, worms, jigs, spoons, plugs, or flies',
       season: 'Varies by migration, temperature, region, and regulation',
       fish: [
-        ['Atlantic Tarpon','Megalops atlanticus'],['Indo-Pacific Tarpon','Megalops cyprinoides'],['Common Snook','Centropomus undecimalis'],
-        ['Fat Snook','Centropomus parallelus'],['Swordspine Snook','Centropomus ensiferus'],['Atlantic Permit','Trachinotus falcatus'],
-        ['Florida Pompano','Trachinotus carolinus'],['Palometa','Trachinotus goodei'],['Greater Amberjack','Seriola dumerili'],
+        ['Atlantic Tarpon','Megalops atlanticus','tarpon'],['Indo-Pacific Tarpon','Megalops cyprinoides'],['Common Snook','Centropomus undecimalis','snook'],
+        ['Fat Snook','Centropomus parallelus'],['Swordspine Snook','Centropomus ensiferus'],['Atlantic Permit','Trachinotus falcatus','permit'],
+        ['Florida Pompano','Trachinotus carolinus','pompano'],['Palometa','Trachinotus goodei'],['Greater Amberjack','Seriola dumerili'],
         ['Lesser Amberjack','Seriola fasciata'],['Almaco Jack','Seriola rivoliana'],['Crevalle Jack','Caranx hippos'],
         ['Horse-eye Jack','Caranx latus'],['Blue Runner','Caranx crysos'],['African Pompano','Alectis ciliaris'],
         ['Lookdown','Selene vomer'],['Atlantic Moonfish','Selene setapinnis'],['Ladyfish','Elops saurus'],
@@ -113,7 +113,7 @@
       season: 'Highly migratory; availability varies by current, temperature, and regulation',
       fish: [
         ['Blackfin Tuna','Thunnus atlanticus'],['Longtail Tuna','Thunnus tonggol'],['Southern Bluefin Tuna','Thunnus maccoyii'],
-        ['Atlantic Blue Marlin','Makaira nigricans'],['Black Marlin','Istiompax indica'],['White Marlin','Kajikia albida'],
+        ['Atlantic Blue Marlin','Makaira nigricans','blue-marlin'],['Black Marlin','Istiompax indica'],['White Marlin','Kajikia albida'],
         ['Shortbill Spearfish','Tetrapturus angustirostris'],['Longbill Spearfish','Tetrapturus pfluegeri'],['Mediterranean Spearfish','Tetrapturus belone'],
         ['Indo-Pacific Sailfish','Istiophorus platypterus'],['Great Barracuda','Sphyraena barracuda'],['Pacific Barracuda','Sphyraena argentea'],
         ['Escolar','Lepidocybium flavobrunneum'],['Oilfish','Ruvettus pretiosus'],['Opah','Lampris guttatus'],
@@ -155,7 +155,7 @@
         ['Pacific Staghorn Sculpin','Leptocottus armatus'],['Longhorn Sculpin','Myoxocephalus octodecemspinosus'],['Sea Raven','Hemitripterus americanus'],
         ['Atlantic Saury','Scomberesox saurus'],['Pacific Saury','Cololabis saira'],['Sand Lance','Ammodytes americanus'],
         ['Pacific Sand Lance','Ammodytes hexapterus'],['Tilefish','Lopholatilus chamaeleonticeps'],['Blueline Tilefish','Caulolatilus microps'],
-        ['Golden Tilefish','Lopholatilus chamaeleonticeps'],['Northern Puffer','Sphoeroides maculatus'],['Southern Puffer','Sphoeroides nephelus'],
+        ['Golden Tilefish','Lopholatilus chamaeleonticeps','tilefish'],['Northern Puffer','Sphoeroides maculatus'],['Southern Puffer','Sphoeroides nephelus'],
         ['Checkered Puffer','Sphoeroides testudineus'],['Porcupinefish','Diodon hystrix'],['Balloonfish','Diodon holocanthus'],
         ['Smooth Trunkfish','Lactophrys triqueter'],['Scrawled Cowfish','Acanthostracion quadricornis'],['Spotted Trunkfish','Lactophrys bicaudalis'],
         ['Remora','Remora remora'],['Sharksucker','Echeneis naucrates'],['Atlantic Cutlassfish','Trichiurus lepturus'],

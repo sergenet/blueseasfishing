@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /assets/data/
 Disallow: /admin
+Disallow: /cgi-bin/
 
 Sitemap: https://www.blueseasfishing.com/sitemap.xml

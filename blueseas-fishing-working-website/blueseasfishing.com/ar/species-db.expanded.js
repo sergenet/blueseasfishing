@@ -56,13 +56,13 @@
         ['رمي القرص','Symphysodon discus','discus'],['ملائكية المياه العذبة','Pterophyllum scalare','freshwater-angelfish'],['المدان سيشليد','Amatitlania nigrofasciata','convict-cichlid'],
         ['أرابيما','Arapaima gigas','arapaima'],['الأروانا الفضية','Osteoglossum bicirrhosum','silver-arowana'],['سمكة المهرج','Chitala ornata','clown-knifefish'],
         ['الجورامي العملاق','Osphronemus goramy','giant-gourami'],['تقبيل جورامي','Helostoma temminckii','kissing-gourami'],['جلد الثعبان جورامي','Trichopodus pectoralis','snakeskin-gourami'],
-        ['رأس الأفعى العملاق','Channa micropeltes','giant-snakehead'],['رأس الأفعى الشمالية','Channa argus','northern-snakehead'],['رأس الأفعى مخطط','Channa striata','striped-snakehead'],
+        ['رأس الأفعى العملاق','Channa micropeltes','snakehead-giant'],['رأس الأفعى الشمالية','Channa argus','northern-snakehead'],['رأس الأفعى مخطط','Channa striata','striped-snakehead'],
         ['سمك السلور المشي','Clarias batrachus','walking-catfish'],['سمك السلور شمال أفريقيا','Clarias gariepinus','north-african-catfish'],['سمك السلور ذو الذيل الأحمر','Phractocephalus hemioliopterus','redtail-catfish'],
         ['سمك السلور النمر مجرفة الأنف','Pseudoplatystoma fasciatum','tiger-shovelnose-catfish'],['سمك السلور ريبسو','Oxydoras niger','ripsaw-catfish'],['بيكتوس سمك السلور','Pimelodus pictus','pictus-catfish'],
-        ['قزحي الألوان سمك السلور القرش','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['ميكونج سمك السلور العملاق','Pangasianodon gigas','mekong-giant-catfish'],['سمك السلور ويلس','Silurus glanis','wels-catfish'],
+        ['قزحي الألوان سمك السلور القرش','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['ميكونج سمك السلور العملاق','Pangasianodon gigas','giant-mekong-catfish'],['سمك السلور ويلس','Silurus glanis','wels-catfish'],
         ['تامباكي','Colossoma macropomum','tambaqui'],['باكو','Piaractus mesopotamicus','pacu'],['سمكة البيرانا ذات البطن الحمراء','Pygocentrus nattereri','red-bellied-piranha'],
-        ['بايارا','Hydrolycus scomberoides','payara'],['دورادو الذهبي','Salminus brasiliensis','golden-dorado'],['سمكة النمر','Hydrocynus vittatus','tigerfish'],
-        ['جالوت تايجرفيش','Hydrocynus goliath','goliath-tigerfish'],['العملاق بارب','Catlocarpio siamensis','giant-barb'],['روهو','Labeo rohita','rohu']
+        ['بايارا','Hydrolycus scomberoides','payara-vampire-fish'],['دورادو الذهبي','Salminus brasiliensis','golden-dorado'],['سمكة النمر','Hydrocynus vittatus','tigerfish'],
+        ['جالوت تايجرفيش','Hydrocynus goliath','goliath-tigerfish'],['العملاق بارب','Catlocarpio siamensis','siamese-carp'],['روهو','Labeo rohita','rohu']
       ]
     },
     {
@@ -91,9 +91,9 @@
       baits: 'تعتمد على الأنواع؛ أسماك الطعم أو الحبار أو الروبيان أو السرطانات أو الديدان أو الرقصات أو الملاعق أو المقابس أو الذباب',
       season: 'يختلف ذلك باختلاف الهجرة ودرجة الحرارة والمنطقة واللوائح التنظيمية',
       fish: [
-        ['الأطلسي تاربون','Megalops atlanticus','atlantic-tarpon'],['منطقة تاربون في المحيطين الهندي والهادئ','Megalops cyprinoides','indo-pacific-tarpon'],['سنوك المشترك','Centropomus undecimalis','common-snook'],
-        ['فات سنوك','Centropomus parallelus','fat-snook'],['Swordspine سنوك','Centropomus ensiferus','swordspine-snook'],['تصريح الأطلسي','Trachinotus falcatus','atlantic-permit'],
-        ['فلوريدا بومبانو','Trachinotus carolinus','florida-pompano'],['بالوميتا','Trachinotus goodei','palometa'],['السريولا الكبرى','Seriola dumerili','greater-amberjack'],
+        ['الأطلسي تاربون','Megalops atlanticus','tarpon'],['منطقة تاربون في المحيطين الهندي والهادئ','Megalops cyprinoides','indo-pacific-tarpon'],['سنوك المشترك','Centropomus undecimalis','snook'],
+        ['فات سنوك','Centropomus parallelus','fat-snook'],['Swordspine سنوك','Centropomus ensiferus','swordspine-snook'],['تصريح الأطلسي','Trachinotus falcatus','permit'],
+        ['فلوريدا بومبانو','Trachinotus carolinus','pompano'],['بالوميتا','Trachinotus goodei','palometa'],['السريولا الكبرى','Seriola dumerili','greater-amberjack'],
         ['السريولا الصغرى','Seriola fasciata','lesser-amberjack'],['ألماكو جاك','Seriola rivoliana','almaco-jack'],['كريفال جاك','Caranx hippos','crevalle-jack'],
         ['جاك عين الحصان','Caranx latus','horse-eye-jack'],['العداء الأزرق','Caranx crysos','blue-runner'],['بومبانو الأفريقي','Alectis ciliaris','african-pompano'],
         ['نظرة عامة','Selene vomer','lookdown'],['سمكة القمر الأطلسية','Selene setapinnis','atlantic-moonfish'],['الخنفساء','Elops saurus','ladyfish'],
@@ -113,7 +113,7 @@
       season: 'تتميز بقدرة عالية على الهجرة؛ ويختلف توافرها باختلاف التيارات ودرجة الحرارة والتنظيم.',
       fish: [
         ['سمكة التونة ذات الزعانف السوداء','Thunnus atlanticus','blackfin-tuna'],['سمكة التونة طويلة الذيل','Thunnus tonggol','longtail-tuna'],['سمكة التونة ذات الزعانف الزرقاء الجنوبية','Thunnus maccoyii','southern-bluefin-tuna'],
-        ['الأطلسي الأزرق مارلن','Makaira nigricans','atlantic-blue-marlin'],['بلاك مارلن','Istiompax indica','black-marlin'],['وايت مارلن','Kajikia albida','white-marlin'],
+        ['الأطلسي الأزرق مارلن','Makaira nigricans','blue-marlin'],['بلاك مارلن','Istiompax indica','black-marlin'],['وايت مارلن','Kajikia albida','white-marlin'],
         ['سمكة الرمح قصيرة المنقار','Tetrapturus angustirostris','shortbill-spearfish'],['سمكة الرمح ذات المنقار الطويل','Tetrapturus pfluegeri','longbill-spearfish'],['سمكة البحر الأبيض المتوسط','Tetrapturus belone','mediterranean-spearfish'],
         ['سمكة أبو شراع في المحيطين الهندي والهادئ','Istiophorus platypterus','indo-pacific-sailfish'],['باراكودا العظيمة','Sphyraena barracuda','great-barracuda'],['باراكودا المحيط الهادئ','Sphyraena argentea','pacific-barracuda'],
         ['اجتماعيون','Lepidocybium flavobrunneum','escolar'],['السمك الزيتي','Ruvettus pretiosus','oilfish'],['أوبا','Lampris guttatus','opah'],
@@ -155,7 +155,7 @@
         ['المحيط الهادئ ستاغورن سكالبين','Leptocottus armatus','pacific-staghorn-sculpin'],['سكالبين ذو القرون الطويلة','Myoxocephalus octodecemspinosus','longhorn-sculpin'],['غراب البحر','Hemitripterus americanus','sea-raven'],
         ['صوري الأطلسي','Scomberesox saurus','atlantic-saury'],['صوري المحيط الهادئ','Cololabis saira','pacific-saury'],['الرمال لانس','Ammodytes americanus','sand-lance'],
         ['رمال المحيط الهادئ','Ammodytes hexapterus','pacific-sand-lance'],['سمك القرميد','Lopholatilus chamaeleonticeps','tilefish'],['سمكة القرميد الزرقاء','Caulolatilus microps','blueline-tilefish'],
-        ['سمكة القرميد الذهبية','Lopholatilus chamaeleonticeps','golden-tilefish'],['البخاخ الشمالي','Sphoeroides maculatus','northern-puffer'],['البخاخ الجنوبي','Sphoeroides nephelus','southern-puffer'],
+        ['سمكة القرميد الذهبية','Lopholatilus chamaeleonticeps','tilefish'],['البخاخ الشمالي','Sphoeroides maculatus','northern-puffer'],['البخاخ الجنوبي','Sphoeroides nephelus','southern-puffer'],
         ['البخاخ متقلب','Sphoeroides testudineus','checkered-puffer'],['سمكة النيص','Diodon hystrix','porcupinefish'],['سمكة البالون','Diodon holocanthus','balloonfish'],
         ['سمك الجذع السلس','Lactophrys triqueter','smooth-trunkfish'],['سمكة البقر المخربشة','Acanthostracion quadricornis','scrawled-cowfish'],['سمكة الجذع المرقطة','Lactophrys bicaudalis','spotted-trunkfish'],
         ['ريمورا','Remora remora','remora'],['مصاص القرش','Echeneis naucrates','sharksucker'],['أسماك المحيط الأطلسي','Trichiurus lepturus','atlantic-cutlassfish'],

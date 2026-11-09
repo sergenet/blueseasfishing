@@ -21,6 +21,26 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
+# --- CGI-bin legacy/probe requests -> home (301) ---
+RewriteRule ^cgi-bin(/.*)?$ https://www.blueseasfishing.com/ [R=301,L]
+
+# --- Template string crawler artifacts in species -> /species/ (301) ---
+RewriteCond %{THE_REQUEST} /species/(\$|\%24) [NC,OR]
+RewriteCond %{REQUEST_URI} \$\{|\%24|\{ [NC]
+RewriteRule ^(.*)species/ https://www.blueseasfishing.com/species/ [R=301,L]
+
+# --- Species alias redirects (301) ---
+RewriteRule ^(.*)species/atlantic-blue-marlin\.html$ https://www.blueseasfishing.com/species/blue-marlin.html [R=301,L]
+RewriteRule ^(.*)species/giant-snakehead\.html$ https://www.blueseasfishing.com/species/snakehead-giant.html [R=301,L]
+RewriteRule ^(.*)species/mekong-giant-catfish\.html$ https://www.blueseasfishing.com/species/giant-mekong-catfish.html [R=301,L]
+RewriteRule ^(.*)species/payara\.html$ https://www.blueseasfishing.com/species/payara-vampire-fish.html [R=301,L]
+RewriteRule ^(.*)species/giant-barb\.html$ https://www.blueseasfishing.com/species/siamese-carp.html [R=301,L]
+RewriteRule ^(.*)species/atlantic-tarpon\.html$ https://www.blueseasfishing.com/species/tarpon.html [R=301,L]
+RewriteRule ^(.*)species/common-snook\.html$ https://www.blueseasfishing.com/species/snook.html [R=301,L]
+RewriteRule ^(.*)species/atlantic-permit\.html$ https://www.blueseasfishing.com/species/permit.html [R=301,L]
+RewriteRule ^(.*)species/florida-pompano\.html$ https://www.blueseasfishing.com/species/pompano.html [R=301,L]
+RewriteRule ^(.*)species/golden-tilefish\.html$ https://www.blueseasfishing.com/species/tilefish.html [R=301,L]
+
 # --- /index.html on any host -> https://www.blueseasfishing.com/ (single home URL; 1-hop 301) ---
 RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
 RewriteRule ^index\.html$ https://www.blueseasfishing.com/ [R=301,L]

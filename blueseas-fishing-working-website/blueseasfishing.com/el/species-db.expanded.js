@@ -56,13 +56,13 @@
         ['Συζήτηση','Symphysodon discus','discus'],['Αγγελόψαρο του γλυκού νερού','Pterophyllum scalare','freshwater-angelfish'],['Κατάδικος Κιχλίδα','Amatitlania nigrofasciata','convict-cichlid'],
         ['Arapaima','Arapaima gigas','arapaima'],['Ασημένια Arowana','Osteoglossum bicirrhosum','silver-arowana'],['Μαχαιρόψαρο κλόουν','Chitala ornata','clown-knifefish'],
         ['Γίγαντας Γκουράμι','Osphronemus goramy','giant-gourami'],['Φιλιά Gourami','Helostoma temminckii','kissing-gourami'],['Snakeskin Gourami','Trichopodus pectoralis','snakeskin-gourami'],
-        ['Giant Snakehead','Channa micropeltes','giant-snakehead'],['Northern Snakehead','Channa argus','northern-snakehead'],['Ριγέ Snakehead','Channa striata','striped-snakehead'],
+        ['Giant Snakehead','Channa micropeltes','snakehead-giant'],['Northern Snakehead','Channa argus','northern-snakehead'],['Ριγέ Snakehead','Channa striata','striped-snakehead'],
         ['Γατόψαρο που περπατάει','Clarias batrachus','walking-catfish'],['Γατόψαρο Βόρειας Αφρικής','Clarias gariepinus','north-african-catfish'],['Γατόψαρο Redtail','Phractocephalus hemioliopterus','redtail-catfish'],
         ['Γατόψαρο Tiger Shovelnose','Pseudoplatystoma fasciatum','tiger-shovelnose-catfish'],['Γατόψαρο Ripsaw','Oxydoras niger','ripsaw-catfish'],['Γατόψαρο Pictus','Pimelodus pictus','pictus-catfish'],
-        ['Ιριδίζον γατόψαρο καρχαρία','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Γιγαντιαίο γατόψαρο Μεκόνγκ','Pangasianodon gigas','mekong-giant-catfish'],['Γατόψαρο Wels','Silurus glanis','wels-catfish'],
+        ['Ιριδίζον γατόψαρο καρχαρία','Pangasianodon hypophthalmus','iridescent-shark-catfish'],['Γιγαντιαίο γατόψαρο Μεκόνγκ','Pangasianodon gigas','giant-mekong-catfish'],['Γατόψαρο Wels','Silurus glanis','wels-catfish'],
         ['Tambaqui','Colossoma macropomum','tambaqui'],['Pacu','Piaractus mesopotamicus','pacu'],['Κοκκινοκοιλιακό Piranha','Pygocentrus nattereri','red-bellied-piranha'],
-        ['Παγάρα','Hydrolycus scomberoides','payara'],['Golden Dorado','Salminus brasiliensis','golden-dorado'],['Tigerfish','Hydrocynus vittatus','tigerfish'],
-        ['Goliath Tigerfish','Hydrocynus goliath','goliath-tigerfish'],['Giant Barb','Catlocarpio siamensis','giant-barb'],['Rohu','Labeo rohita','rohu']
+        ['Παγάρα','Hydrolycus scomberoides','payara-vampire-fish'],['Golden Dorado','Salminus brasiliensis','golden-dorado'],['Tigerfish','Hydrocynus vittatus','tigerfish'],
+        ['Goliath Tigerfish','Hydrocynus goliath','goliath-tigerfish'],['Giant Barb','Catlocarpio siamensis','siamese-carp'],['Rohu','Labeo rohita','rohu']
       ]
     },
     {
@@ -91,9 +91,9 @@
       baits: 'Εξαρτάται από το είδος; δολώματα, καλαμάρια, γαρίδες, καβούρια, σκουλήκια, σέγα, κουτάλια, βύσματα ή μύγες',
       season: 'Ποικίλλει ανάλογα με τη μετανάστευση, τη θερμοκρασία, την περιοχή και τη ρύθμιση',
       fish: [
-        ['Ατλάντικ Τάρπον','Megalops atlanticus','atlantic-tarpon'],['Ινδο-Ειρηνικός Τάρπον','Megalops cyprinoides','indo-pacific-tarpon'],['Κοινό Snook','Centropomus undecimalis','common-snook'],
-        ['Χοντρός Σνούκ','Centropomus parallelus','fat-snook'],['Swordspine Snook','Centropomus ensiferus','swordspine-snook'],['Άδεια Ατλαντικού','Trachinotus falcatus','atlantic-permit'],
-        ['Φλόριντα Πομπάνο','Trachinotus carolinus','florida-pompano'],['Παλομέτα','Trachinotus goodei','palometa'],['Greater Amberjack','Seriola dumerili','greater-amberjack'],
+        ['Ατλάντικ Τάρπον','Megalops atlanticus','tarpon'],['Ινδο-Ειρηνικός Τάρπον','Megalops cyprinoides','indo-pacific-tarpon'],['Κοινό Snook','Centropomus undecimalis','snook'],
+        ['Χοντρός Σνούκ','Centropomus parallelus','fat-snook'],['Swordspine Snook','Centropomus ensiferus','swordspine-snook'],['Άδεια Ατλαντικού','Trachinotus falcatus','permit'],
+        ['Φλόριντα Πομπάνο','Trachinotus carolinus','pompano'],['Παλομέτα','Trachinotus goodei','palometa'],['Greater Amberjack','Seriola dumerili','greater-amberjack'],
         ['Lesser Amberjack','Seriola fasciata','lesser-amberjack'],['Αλμάκο Τζακ','Seriola rivoliana','almaco-jack'],['Κρεβάλ Τζακ','Caranx hippos','crevalle-jack'],
         ['Τζακ με άλογο','Caranx latus','horse-eye-jack'],['Blue Runner','Caranx crysos','blue-runner'],['Αφρικανός Πομπάνο','Alectis ciliaris','african-pompano'],
         ['Κοιτάζοντας προς τα κάτω','Selene vomer','lookdown'],['Φεγγαρόψαρο του Ατλαντικού','Selene setapinnis','atlantic-moonfish'],['Πασχαλίτσα','Elops saurus','ladyfish'],
@@ -113,7 +113,7 @@
       season: 'Εξαιρετικά μεταναστευτικό· η διαθεσιμότητα ποικίλλει ανάλογα με το ρεύμα, τη θερμοκρασία και τη ρύθμιση',
       fish: [
         ['Μαύρος τόνος','Thunnus atlanticus','blackfin-tuna'],['Τόνος Longtail','Thunnus tonggol','longtail-tuna'],['Τόνος του Νότου','Thunnus maccoyii','southern-bluefin-tuna'],
-        ['Atlantic Blue Marlin','Makaira nigricans','atlantic-blue-marlin'],['Μαύρος Μάρλιν','Istiompax indica','black-marlin'],['White Marlin','Kajikia albida','white-marlin'],
+        ['Atlantic Blue Marlin','Makaira nigricans','blue-marlin'],['Μαύρος Μάρλιν','Istiompax indica','black-marlin'],['White Marlin','Kajikia albida','white-marlin'],
         ['Shortbill Spearfish','Tetrapturus angustirostris','shortbill-spearfish'],['Longbill Spearfish','Tetrapturus pfluegeri','longbill-spearfish'],['Μεσογειακό ψαροτούφεκο','Tetrapturus belone','mediterranean-spearfish'],
         ['Ιστιόψαρο Ινδο-Ειρηνικού','Istiophorus platypterus','indo-pacific-sailfish'],['Great Barracuda','Sphyraena barracuda','great-barracuda'],['Pacific Barracuda','Sphyraena argentea','pacific-barracuda'],
         ['Escolar','Lepidocybium flavobrunneum','escolar'],['ελαιόψαρο','Ruvettus pretiosus','oilfish'],['Opah','Lampris guttatus','opah'],
@@ -155,7 +155,7 @@
         ['Pacific Staghorn Sculpin','Leptocottus armatus','pacific-staghorn-sculpin'],['Longhorn Sculpin','Myoxocephalus octodecemspinosus','longhorn-sculpin'],['Sea Raven','Hemitripterus americanus','sea-raven'],
         ['Atlantic Saury','Scomberesox saurus','atlantic-saury'],['Pacific Saury','Cololabis saira','pacific-saury'],['Sand Lance','Ammodytes americanus','sand-lance'],
         ['Pacific Sand Lance','Ammodytes hexapterus','pacific-sand-lance'],['κεραμιδόψαρο','Lopholatilus chamaeleonticeps','tilefish'],['Blueline Tilefish','Caulolatilus microps','blueline-tilefish'],
-        ['Golden Tilefish','Lopholatilus chamaeleonticeps','golden-tilefish'],['Northern Puffer','Sphoeroides maculatus','northern-puffer'],['Southern Puffer','Sphoeroides nephelus','southern-puffer'],
+        ['Golden Tilefish','Lopholatilus chamaeleonticeps','tilefish'],['Northern Puffer','Sphoeroides maculatus','northern-puffer'],['Southern Puffer','Sphoeroides nephelus','southern-puffer'],
         ['Καρό Puffer','Sphoeroides testudineus','checkered-puffer'],['Πορτσόψαρο','Diodon hystrix','porcupinefish'],['Μπαλονόψαρο','Diodon holocanthus','balloonfish'],
         ['Λείος κορμός','Lactophrys triqueter','smooth-trunkfish'],['Ξυρισμένο καουπόψαρο','Acanthostracion quadricornis','scrawled-cowfish'],['στικτός κορμός','Lactophrys bicaudalis','spotted-trunkfish'],
         ['Ρεμόρα','Remora remora','remora'],['Καρχαρία','Echeneis naucrates','sharksucker'],['Ατλαντικό Σουπιά','Trichiurus lepturus','atlantic-cutlassfish'],
