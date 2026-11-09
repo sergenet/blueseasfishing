@@ -140,10 +140,16 @@ def verify_sample():
 def main():
     dry = "--dry-run" in sys.argv
     skip_images = "--skip-images" in sys.argv
+    reuse_zip = "--reuse-zip" in sys.argv
     # --skip-verify: run-monthly.ps1 passes this for unattended monthly runs;
     # the sample HTTP checks are advisory only, so skipping them there is safe.
     skip_verify = "--skip-verify" in sys.argv
-    n = build_zip(skip_images)
+    if reuse_zip and ZIP_LOCAL.exists():
+        with zipfile.ZipFile(ZIP_LOCAL) as z:
+            n = len(z.infolist())
+        print(f"Reusing existing {ZIP_LOCAL.name} ({ZIP_LOCAL.stat().st_size / 1e6:.1f} MB, {n} files)")
+    else:
+        n = build_zip(skip_images)
     if dry:
         print("Dry run: bundle built, nothing uploaded. Delete deploy-bundle.zip when done.")
         return 0

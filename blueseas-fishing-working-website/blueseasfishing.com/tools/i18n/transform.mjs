@@ -7,7 +7,7 @@
 //                 translatable chunks → unit markers. (markers are never re-scanned)
 //   4. translate  via mt.mjs (cache + glossary on the wire)
 //   5. substitute all \u0001{n}\u0001 once → translate links/lang/canonical/hreflang → unmask
-import { existsSync } from 'node:fs';
+import { existsSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { LOCALES, SITE, TEXT_ATTRS, META_TEXT, SKIP_FILES, isPathIndexable } from './config.mjs';
@@ -69,13 +69,27 @@ function resolveHref(href, fromRel) {
     const dir = fromRel.includes('/') ? fromRel.slice(0, fromRel.lastIndexOf('/')) : '';
     p = '/' + (dir ? dir + '/' + p : p);
   }
+  const isDir = p.endsWith('/');
   const parts = [];
   for (const seg of p.split('/')) {
     if (seg === '' || seg === '.') continue;
     if (seg === '..') parts.pop();
     else parts.push(seg);
   }
-  return { path: '/' + parts.join('/'), queryHash };
+  let resolvedPath = '/' + parts.join('/');
+  if (resolvedPath === '/index.html') {
+    resolvedPath = '/';
+  } else if (resolvedPath.endsWith('/index.html')) {
+    resolvedPath = resolvedPath.slice(0, -'index.html'.length);
+  } else if (isDir && resolvedPath !== '/') {
+    resolvedPath += '/';
+  } else {
+    const diskPath = join(ROOT, resolvedPath.replace(/^\//, ''));
+    if (existsSync(diskPath) && statSync(diskPath).isDirectory()) {
+      resolvedPath += '/';
+    }
+  }
+  return { path: resolvedPath, queryHash };
 }
 
 const MASK_RE = /\u0000M\d+\u0000/;

@@ -21,17 +21,17 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
+# --- /index.html on any host -> https://www.blueseasfishing.com/ (single home URL; 1-hop 301) ---
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://www.blueseasfishing.com/ [R=301,L]
+
+# --- /<dir>/index.html on any host -> https://www.blueseasfishing.com/<dir>/ (canonical directory URLs; 1-hop 301) ---
+RewriteCond %{THE_REQUEST} \s/+([^?]+/)index\.html[\s?] [NC]
+RewriteRule ^.+/index\.html$ https://www.blueseasfishing.com/%1 [R=301,L]
+
 # https://blueseasfishing.com/...  ->  https://www.blueseasfishing.com/...
 RewriteCond %{HTTP_HOST} ^blueseasfishing\.com$ [NC]
 RewriteRule ^ https://www.blueseasfishing.com%{REQUEST_URI} [R=301,L]
-
-# --- /index.html -> / (single home URL; was serving a 200 duplicate) ---
-RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
-RewriteRule ^index\.html$ / [R=301,L]
-
-# --- /<dir>/index.html -> /<dir>/ (canonical directory URLs; prevent duplicates) ---
-RewriteCond %{THE_REQUEST} \s/+([^?]+/)index\.html[\s?] [NC]
-RewriteRule ^.+/index\.html$ /%1 [R=301,L]
 
 # --- Owner dashboard: /admin -> /api/admin.php (key stays in the query) ---
 # The dashboard is a PHP script under /api/, so typing /admin used to 404.

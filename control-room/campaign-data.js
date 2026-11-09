@@ -1969,17 +1969,6 @@ window.CAMPAIGN_STATE = {
       "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-06.md"
     },
     {
-      "day": 4,
-      "date": "2026-11-09",
-      "timestamp": "2026-11-06T22:48:16.618908",
-      "theme": "Hero AI Fish Identification - 548 Species",
-      "asset_type": "image",
-      "primary_asset": "A-fishid-1080x1080.jpg",
-      "status": "Scheduled on Meta Planner (Facebook + Instagram)",
-      "scheduled_for": "2026-11-09T08:30:00",
-      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-09.md"
-    },
-    {
       "day": 5,
       "date": "2026-11-10",
       "timestamp": "2026-11-06T22:51:59.330650",
@@ -2031,8 +2020,18 @@ window.CAMPAIGN_STATE = {
       "primary_asset": "fishing boat catch.mp4",
       "webhook_status": "Not Configured",
       "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-08.md"
+    },
+    {
+      "day": 4,
+      "date": "2026-11-09",
+      "timestamp": "2026-11-09T08:30:02.545897",
+      "theme": "Hero AI Fish Identification - 548 Species",
+      "asset_type": "image",
+      "primary_asset": "A-fishid-1080x1080.jpg",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-09.md"
     }
   ],
-  "last_run": "2026-11-08T08:30:02.215740",
+  "last_run": "2026-11-09T08:30:02.545897",
   "total_posted": 7
 };
