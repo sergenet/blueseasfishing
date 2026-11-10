@@ -49,7 +49,15 @@ RewriteRule ^index\.html$ https://www.blueseasfishing.com/ [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+([^?]+/)index\.html[\s?] [NC]
 RewriteRule ^.+/index\.html$ https://www.blueseasfishing.com/%1 [R=301,L]
 
-# https://blueseasfishing.com/...  ->  https://www.blueseasfishing.com/...
+# --- Hub & localized directory trailing slash -> canonical https://www.blueseasfishing.com/<dir>/ (1-hop 301) ---
+RewriteRule ^((?:(?:ar|de|el|es|fr|pt|ru)/)?(?:species|destinations|whats-biting|fish-size-charts|states))$ https://www.blueseasfishing.com/$1/ [R=301,L]
+
+# --- Any other physical directory missing trailing slash -> canonical https://www.blueseasfishing.com/<dir>/ (1-hop 301) ---
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ https://www.blueseasfishing.com/$1/ [R=301,L]
+
+# --- Canonical Host & Protocol: Force HTTPS + WWW on all requests (1-hop 301) ---
+RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^blueseasfishing\.com$ [NC]
 RewriteRule ^ https://www.blueseasfishing.com%{REQUEST_URI} [R=301,L]
 
