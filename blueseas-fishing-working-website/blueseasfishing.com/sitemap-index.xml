@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.blueseasfishing.com/sitemap-core.xml</loc>
+    <lastmod>2026-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.blueseasfishing.com/sitemap-species.xml</loc>
+    <lastmod>2026-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.blueseasfishing.com/sitemap-guides.xml</loc>
+    <lastmod>2026-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.blueseasfishing.com/sitemap-locations.xml</loc>
+    <lastmod>2026-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.blueseasfishing.com/sitemap-tools.xml</loc>
+    <lastmod>2026-11-17</lastmod>
+  </sitemap>
+</sitemapindex>

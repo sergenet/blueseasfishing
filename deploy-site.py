@@ -121,7 +121,8 @@ def upload(ftp, rel: Path) -> str:
 
 def main() -> int:
     dry = "--dry-run" in sys.argv
-    files = collect()
+    cli_targets = [Path(a) for a in sys.argv[1:] if not a.startswith('-')]
+    files = cli_targets if cli_targets else collect()
     print(f"{len(files)} files to upload (secrets/backend excluded)")
     if dry:
         for rel in files:

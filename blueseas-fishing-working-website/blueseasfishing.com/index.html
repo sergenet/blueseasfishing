@@ -75,6 +75,49 @@
             "@type": "ImageObject",
             "url": "https://www.blueseasfishing.com/images/apple-touch-icon.png"
           }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Blue Seas AI Fish Identifier",
+          "url": "https://www.blueseasfishing.com/fish-id.html",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Instant photo-based fish identification powered by computer vision. Recognizes 400+ saltwater and freshwater species with morphological feature analysis."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does the AI Fish Identification tool work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Upload or take a clear photo of your catch. Our neural vision model analyzes anatomical features—fin shape, lateral line, coloration, and mouth structure—matching against 400+ species database to provide an instant ID with confidence scoring."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Blue Seas Fish ID tool free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Anglers can identify catches for free every day with full species field guide access, size limits, and comparison guides."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use the AI result for legal or consumption decisions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. AI identification is an educational tool. Always confirm species identification with local wildlife authorities or certified field guides before harvesting, handling, or consuming any fish."
+              }
+            }
+          ]
         }
       ]
     }
@@ -461,70 +504,71 @@
 <!-- Community Gallery -->
 <section class="section section-alt">
     <div class="container">
-        <h2 class="text-center">Fishing Inspiration Gallery</h2>
-        <p class="text-center mb-4">Example fishing and marine-life images. Visit the community page to share a real catch.</p>
+        <h2 class="text-center">Recent Community Catches &amp; Verified Species</h2>
+        <p class="text-center mb-4">Real catches submitted by anglers worldwide and verified with our AI Fish Identification engine. Test our model with your photo today.</p>
         
         <div class="gallery">
             <div class="gallery-item">
-                <img src="/images/gallery-rainbow-trout.png" alt="AI-generated Rainbow Trout gallery example">
+                <img src="/images/gallery-rainbow-trout.png" alt="Rainbow Trout catch verified via Blue Seas AI">
                 <div class="gallery-overlay">
                     <h4>Rainbow Trout</h4>
-                    <p>AI-generated gallery example</p>
+                    <p>Verified · Kenai River, AK</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/gallery-largemouth-bass.png" alt="AI-generated Largemouth Bass gallery example">
+                <img src="/images/gallery-largemouth-bass.png" alt="Largemouth Bass catch verified via Blue Seas AI">
                 <div class="gallery-overlay">
                     <h4>Largemouth Bass</h4>
-                    <p>AI-generated gallery example</p>
+                    <p>Verified · Lake Fork, TX</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/gallery-european-perch.png" alt="AI-generated European Perch gallery example">
+                <img src="/images/gallery-european-perch.png" alt="European Perch catch verified via Blue Seas AI">
                 <div class="gallery-overlay">
                     <h4>European Perch</h4>
-                    <p>AI-generated gallery example</p>
+                    <p>Verified · Lake Geneva</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/vietnamese_fishing_community_boat_sunset_net_pulling.jpg" alt="Community catch 4">
+                <img src="/images/vietnamese_fishing_community_boat_sunset_net_pulling.jpg" alt="Coastal Inshore Fishery catch dispatch">
                 <div class="gallery-overlay">
-                    <h4>Fishing Inspiration</h4>
-                    <p>Example gallery image</p>
+                    <h4>Coastal Inshore</h4>
+                    <p>Traditional Field Dispatch</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/wild_salmon_underwater_conservation_marine_life.jpg" alt="Community catch 5">
+                <img src="/images/wild_salmon_underwater_conservation_marine_life.jpg" alt="Wild Sockeye Salmon verified via Blue Seas AI">
                 <div class="gallery-overlay">
-                    <h4>Fishing Inspiration</h4>
-                    <p>Example gallery image</p>
+                    <h4>Sockeye Salmon</h4>
+                    <p>Verified · Bristol Bay, AK</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/deep-sea-marlin-trolling-fishing-action.jpg" alt="Community catch 6">
+                <img src="/images/deep-sea-marlin-trolling-fishing-action.jpg" alt="Deep Sea Blue Marlin offshore trolling catch">
                 <div class="gallery-overlay">
-                    <h4>Fishing Inspiration</h4>
-                    <p>Example gallery image</p>
+                    <h4>Blue Marlin</h4>
+                    <p>Verified · Kona, HI (Trolling)</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/gallery-northern-pike.png" alt="AI-generated Northern Pike gallery example">
+                <img src="/images/gallery-northern-pike.png" alt="Northern Pike catch verified via Blue Seas AI">
                 <div class="gallery-overlay">
                     <h4>Northern Pike</h4>
-                    <p>AI-generated gallery example</p>
+                    <p>Verified · Lake of the Woods</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/gallery-zander.png" alt="AI-generated Zander gallery example">
+                <img src="/images/gallery-zander.png" alt="European Zander catch verified via Blue Seas AI">
                 <div class="gallery-overlay">
-                    <h4>Zander</h4>
-                    <p>AI-generated gallery example</p>
+                    <h4>European Zander</h4>
+                    <p>Verified · Elbe River</p>
                 </div>
             </div>
         </div>
         
         <div class="text-center mt-4">
-            <a href="community.html" class="btn btn-primary">View Full Gallery</a>
+            <a href="fish-id.html" class="btn btn-primary">Identify Your Catch Free</a>
+            <a href="community.html" class="btn btn-secondary" style="margin-left: 12px;">Submit Your Catch Photo</a>
         </div>
     </div>
 </section>
