@@ -1,0 +1,1028 @@
+{
+  "lastUpdated": "2026-11-14T09:00:06.237991+00:00",
+  "sites": {
+    "blueseasfishing": {
+      "name": "Blue Seas Fishing",
+      "url": "https://blueseasfishing.com",
+      "measurementId": "G-5E6LJG6EQE",
+      "category": "Outdoor & Fishing",
+      "color": "#00a8ff"
+    },
+    "gardenwithserge": {
+      "name": "Garden with Serge",
+      "url": "https://gardenwithserge.com",
+      "measurementId": "G-52BQHQ8HL1",
+      "category": "Gardening & Lifestyle",
+      "color": "#00e676"
+    },
+    "timerhaven": {
+      "name": "Timer Haven",
+      "url": "https://timerhaven.com",
+      "measurementId": "G-R1F6Y45MW2",
+      "category": "Productivity & Utilities",
+      "color": "#ffb300"
+    },
+    "nexuscut": {
+      "name": "NexusCut",
+      "url": "https://nexuscut.io",
+      "measurementId": "G-1BZZ7X8ZH8",
+      "category": "AI Video SaaS",
+      "color": "#b388ff"
+    },
+    "newgiftsandgadgets": {
+      "name": "New Gifts & Gadgets",
+      "url": "https://newgiftsandgadgets.com",
+      "measurementId": "G-VTLRDD8KP0",
+      "category": "E-Commerce & Curation",
+      "color": "#ff5252"
+    }
+  },
+  "metrics": {
+    "today": {
+      "totals": {
+        "visitors": 0,
+        "pageviews": 0,
+        "sessions": 0,
+        "growth": "+Live GA4",
+        "avgDuration": "2m 18s",
+        "bounceRate": "42.1%"
+      },
+      "series": {
+        "labels": [
+          "00h",
+          "03h",
+          "06h",
+          "09h",
+          "12h",
+          "15h",
+          "18h",
+          "21h"
+        ],
+        "blueseasfishing": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gardenwithserge": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "timerhaven": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nexuscut": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newgiftsandgadgets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "breakdown": {
+        "blueseasfishing": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "gardenwithserge": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "timerhaven": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "nexuscut": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "newgiftsandgadgets": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        }
+      }
+    },
+    "week": {
+      "totals": {
+        "visitors": 18,
+        "pageviews": 26,
+        "sessions": 20,
+        "growth": "+Live GA4",
+        "avgDuration": "2m 18s",
+        "bounceRate": "42.1%"
+      },
+      "series": {
+        "labels": [
+          "Sun",
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat"
+        ],
+        "blueseasfishing": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "gardenwithserge": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "timerhaven": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nexuscut": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "newgiftsandgadgets": [
+          0,
+          1,
+          4,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      "breakdown": {
+        "blueseasfishing": {
+          "visitors": 5,
+          "pageviews": 6,
+          "sessions": 5,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/de/species/marble-catfish.html",
+              "views": 1
+            },
+            {
+              "path": "/es/species/bleak.html",
+              "views": 1
+            },
+            {
+              "path": "/pt/destinations/gulf-of-mexico.html",
+              "views": 1
+            },
+            {
+              "path": "/ru/chinook-salmon-identification.html",
+              "views": 1
+            },
+            {
+              "path": "/ru/fish-id.html",
+              "views": 1
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Organic Search",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 100,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "gardenwithserge": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "timerhaven": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "nexuscut": {
+          "visitors": 1,
+          "pageviews": 1,
+          "sessions": 1,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/blog/affiliate-links-in-shorts",
+              "views": 1
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Organic Search",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 100,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "newgiftsandgadgets": {
+          "visitors": 12,
+          "pageviews": 19,
+          "sessions": 14,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/cold-plunge/",
+              "views": 4
+            },
+            {
+              "path": "/audio/best-noise-canceling-headphones-for-travel-and-focus/",
+              "views": 3
+            },
+            {
+              "path": "/home-office/essential-desk-upgrades/",
+              "views": 2
+            },
+            {
+              "path": "/",
+              "views": 1
+            },
+            {
+              "path": "/gift-guides/",
+              "views": 1
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 79
+            },
+            {
+              "source": "Unassigned",
+              "share": 14
+            },
+            {
+              "source": "Paid Search",
+              "share": 7
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 100,
+            "tablet": 0
+          }
+        }
+      }
+    },
+    "month": {
+      "totals": {
+        "visitors": 240,
+        "pageviews": 464,
+        "sessions": 269,
+        "growth": "+Live GA4",
+        "avgDuration": "2m 18s",
+        "bounceRate": "42.1%"
+      },
+      "series": {
+        "labels": [
+          "Week 1",
+          "Week 2",
+          "Week 3",
+          "Week 4"
+        ],
+        "blueseasfishing": [
+          9,
+          11,
+          11,
+          14
+        ],
+        "gardenwithserge": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "timerhaven": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nexuscut": [
+          14,
+          17,
+          17,
+          20
+        ],
+        "newgiftsandgadgets": [
+          25,
+          32,
+          32,
+          38
+        ]
+      },
+      "breakdown": {
+        "blueseasfishing": {
+          "visitors": 45,
+          "pageviews": 157,
+          "sessions": 55,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 25
+            },
+            {
+              "path": "/fish-id.html",
+              "views": 14
+            },
+            {
+              "path": "/community.html",
+              "views": 11
+            },
+            {
+              "path": "/gallery.html",
+              "views": 5
+            },
+            {
+              "path": "/el/",
+              "views": 4
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Organic Search",
+              "share": 47
+            },
+            {
+              "source": "Direct",
+              "share": 45
+            },
+            {
+              "source": "Unassigned",
+              "share": 7
+            }
+          ],
+          "devices": {
+            "mobile": 67,
+            "desktop": 31,
+            "tablet": 2
+          }
+        },
+        "gardenwithserge": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "timerhaven": {
+          "visitors": 0,
+          "pageviews": 0,
+          "sessions": 0,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 0
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct / Organic",
+              "share": 100
+            }
+          ],
+          "devices": {
+            "mobile": 0,
+            "desktop": 0,
+            "tablet": 0
+          }
+        },
+        "nexuscut": {
+          "visitors": 68,
+          "pageviews": 143,
+          "sessions": 82,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 45
+            },
+            {
+              "path": "/editor",
+              "views": 29
+            },
+            {
+              "path": "/blog/edit-comedy-clips",
+              "views": 12
+            },
+            {
+              "path": "/downloads",
+              "views": 12
+            },
+            {
+              "path": "/tutorial",
+              "views": 8
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 70
+            },
+            {
+              "source": "Organic Search",
+              "share": 16
+            },
+            {
+              "source": "AI Assistant",
+              "share": 7
+            },
+            {
+              "source": "Unassigned",
+              "share": 7
+            }
+          ],
+          "devices": {
+            "mobile": 19,
+            "desktop": 80,
+            "tablet": 1
+          }
+        },
+        "newgiftsandgadgets": {
+          "visitors": 127,
+          "pageviews": 164,
+          "sessions": 132,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 22
+            },
+            {
+              "path": "/audio/best-noise-canceling-headphones-for-travel-and-focus/",
+              "views": 13
+            },
+            {
+              "path": "/audio/best-wireless-earbuds-2026-noise-canceling-sound-quality-and-battery/",
+              "views": 9
+            },
+            {
+              "path": "/home-office/best-ergonomic-chairs-for-your-home-office/",
+              "views": 9
+            },
+            {
+              "path": "/home-office/best-usb-c-hubs-docking-stations-for-mac-and-pc/",
+              "views": 8
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 95
+            },
+            {
+              "source": "Referral",
+              "share": 2
+            },
+            {
+              "source": "Unassigned",
+              "share": 2
+            },
+            {
+              "source": "Paid Search",
+              "share": 1
+            }
+          ],
+          "devices": {
+            "mobile": 1,
+            "desktop": 99,
+            "tablet": 0
+          }
+        }
+      }
+    },
+    "total": {
+      "totals": {
+        "visitors": 104617,
+        "pageviews": 283357,
+        "sessions": 116013,
+        "growth": "+Live GA4",
+        "avgDuration": "2m 18s",
+        "bounceRate": "42.1%"
+      },
+      "series": {
+        "labels": [
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov"
+        ],
+        "blueseasfishing": [
+          6,
+          9,
+          11,
+          14,
+          9,
+          9
+        ],
+        "gardenwithserge": [
+          9909,
+          14864,
+          19819,
+          24774,
+          14864,
+          14864
+        ],
+        "timerhaven": [
+          11,
+          17,
+          23,
+          28,
+          17,
+          17
+        ],
+        "nexuscut": [
+          25,
+          37,
+          50,
+          62,
+          37,
+          37
+        ],
+        "newgiftsandgadgets": [
+          510,
+          766,
+          1021,
+          1276,
+          766,
+          766
+        ]
+      },
+      "breakdown": {
+        "blueseasfishing": {
+          "visitors": 57,
+          "pageviews": 539,
+          "sessions": 209,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 213
+            },
+            {
+              "path": "/fish-id.html",
+              "views": 65
+            },
+            {
+              "path": "/gallery.html",
+              "views": 52
+            },
+            {
+              "path": "/community.html",
+              "views": 17
+            },
+            {
+              "path": "/login.html",
+              "views": 14
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 83
+            },
+            {
+              "source": "Organic Search",
+              "share": 13
+            },
+            {
+              "source": "Unassigned",
+              "share": 4
+            }
+          ],
+          "devices": {
+            "mobile": 65,
+            "desktop": 33,
+            "tablet": 2
+          }
+        },
+        "gardenwithserge": {
+          "visitors": 99094,
+          "pageviews": 272985,
+          "sessions": 108791,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 272726
+            },
+            {
+              "path": "/assets/7-day-plant-recovery-guide.pdf",
+              "views": 120
+            },
+            {
+              "path": "/public/",
+              "views": 41
+            },
+            {
+              "path": "/assets/Ny1kYXktcG",
+              "views": 40
+            },
+            {
+              "path": "/index.html",
+              "views": 40
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Organic Social",
+              "share": 58
+            },
+            {
+              "source": "Organic Search",
+              "share": 38
+            },
+            {
+              "source": "Direct",
+              "share": 4
+            },
+            {
+              "source": "Unassigned",
+              "share": 0
+            },
+            {
+              "source": "Referral",
+              "share": 0
+            }
+          ],
+          "devices": {
+            "mobile": 68,
+            "desktop": 32,
+            "tablet": 1
+          }
+        },
+        "timerhaven": {
+          "visitors": 113,
+          "pageviews": 597,
+          "sessions": 201,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/index.html",
+              "views": 307
+            },
+            {
+              "path": "/",
+              "views": 190
+            },
+            {
+              "path": "/contact.html",
+              "views": 30
+            },
+            {
+              "path": "/calendar.html",
+              "views": 12
+            },
+            {
+              "path": "/clipboard-how-to.html",
+              "views": 7
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 94
+            },
+            {
+              "source": "Organic Search",
+              "share": 2
+            },
+            {
+              "source": "Organic Social",
+              "share": 2
+            },
+            {
+              "source": "Referral",
+              "share": 2
+            },
+            {
+              "source": "Unassigned",
+              "share": 0
+            }
+          ],
+          "devices": {
+            "mobile": 42,
+            "desktop": 57,
+            "tablet": 1
+          }
+        },
+        "nexuscut": {
+          "visitors": 249,
+          "pageviews": 577,
+          "sessions": 304,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 178
+            },
+            {
+              "path": "/editor",
+              "views": 169
+            },
+            {
+              "path": "/downloads",
+              "views": 31
+            },
+            {
+              "path": "/pricing",
+              "views": 22
+            },
+            {
+              "path": "/admin",
+              "views": 13
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Direct",
+              "share": 75
+            },
+            {
+              "source": "Organic Search",
+              "share": 16
+            },
+            {
+              "source": "Unassigned",
+              "share": 5
+            },
+            {
+              "source": "AI Assistant",
+              "share": 2
+            },
+            {
+              "source": "Referral",
+              "share": 2
+            }
+          ],
+          "devices": {
+            "mobile": 19,
+            "desktop": 81,
+            "tablet": 0
+          }
+        },
+        "newgiftsandgadgets": {
+          "visitors": 5104,
+          "pageviews": 8659,
+          "sessions": 6508,
+          "growth": "+Live",
+          "topPages": [
+            {
+              "path": "/",
+              "views": 2994
+            },
+            {
+              "path": "/home-office/best-standing-desks/",
+              "views": 1317
+            },
+            {
+              "path": "/kitchen/best-air-fryers/",
+              "views": 1290
+            },
+            {
+              "path": "/about/",
+              "views": 1282
+            },
+            {
+              "path": "/contact/",
+              "views": 1248
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Cross-network",
+              "share": 92
+            },
+            {
+              "source": "Direct",
+              "share": 7
+            },
+            {
+              "source": "Paid Search",
+              "share": 0
+            },
+            {
+              "source": "Referral",
+              "share": 0
+            },
+            {
+              "source": "Unassigned",
+              "share": 0
+            }
+          ],
+          "devices": {
+            "mobile": 88,
+            "desktop": 9,
+            "tablet": 3
+          }
+        }
+      }
+    }
+  }
+}
