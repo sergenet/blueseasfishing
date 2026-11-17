@@ -1969,39 +1969,6 @@ window.CAMPAIGN_STATE = {
       "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-06.md"
     },
     {
-      "day": 5,
-      "date": "2026-11-10",
-      "timestamp": "2026-11-06T22:51:59.330650",
-      "theme": "Digital Catch Log & Angler Trophy Diary",
-      "asset_type": "video",
-      "primary_asset": "blueseasfishing-catch-log-reel.mp4",
-      "status": "Scheduled on Meta Planner (Facebook)",
-      "scheduled_for": "2026-11-10T08:30:00",
-      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-10.md"
-    },
-    {
-      "day": 6,
-      "date": "2026-11-11",
-      "timestamp": "2026-11-06T23:03:56.179557",
-      "theme": "Northern Pike Guide & Tooth Safety",
-      "asset_type": "image",
-      "primary_asset": "C-pike-1080x1080.jpg",
-      "status": "Scheduled on Meta Planner (Facebook + Instagram)",
-      "scheduled_for": "2026-11-11T08:30:00",
-      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-11.md"
-    },
-    {
-      "day": 7,
-      "date": "2026-11-12",
-      "timestamp": "2026-11-06T23:08:40.837553",
-      "theme": "Authentic Angler Catch Reaction & Release",
-      "asset_type": "video",
-      "primary_asset": "UGC video 8dcdc6ed-3322-44da-819e-7b738afa3293.mp4",
-      "status": "Scheduled on Meta Planner (Facebook)",
-      "scheduled_for": "2026-11-12T08:30:00",
-      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-12.md"
-    },
-    {
       "day": 2,
       "date": "2026-11-07",
       "timestamp": "2026-11-07T08:30:03.770947",
@@ -2030,8 +1997,88 @@ window.CAMPAIGN_STATE = {
       "primary_asset": "A-fishid-1080x1080.jpg",
       "webhook_status": "Not Configured",
       "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-09.md"
+    },
+    {
+      "day": 5,
+      "date": "2026-11-10",
+      "timestamp": "2026-11-10T08:30:02.538754",
+      "theme": "Digital Catch Log & Angler Trophy Diary",
+      "asset_type": "video",
+      "primary_asset": "blueseasfishing-catch-log-reel.mp4",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-10.md"
+    },
+    {
+      "day": 6,
+      "date": "2026-11-11",
+      "timestamp": "2026-11-11T08:30:02.634334",
+      "theme": "Northern Pike Guide & Tooth Safety",
+      "asset_type": "image",
+      "primary_asset": "C-pike-1080x1080.jpg",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-11.md"
+    },
+    {
+      "day": 7,
+      "date": "2026-11-12",
+      "timestamp": "2026-11-12T08:30:02.204070",
+      "theme": "Authentic Angler Catch Reaction & Release",
+      "asset_type": "video",
+      "primary_asset": "UGC video 8dcdc6ed-3322-44da-819e-7b738afa3293.mp4",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-12.md"
+    },
+    {
+      "day": 8,
+      "date": "2026-11-13",
+      "timestamp": "2026-11-13T08:30:03.071650",
+      "theme": "Fall Trout Stocking & Regional Waters",
+      "asset_type": "image",
+      "primary_asset": "D-trout-1080x1080.jpg",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-13.md"
+    },
+    {
+      "day": 9,
+      "date": "2026-11-14",
+      "timestamp": "2026-11-14T08:30:03.377956",
+      "theme": "Flagship AI Fish Identification Showcase",
+      "asset_type": "video",
+      "primary_asset": "Blue Seas AI Fish Identification.mp4",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-14.md"
+    },
+    {
+      "day": 10,
+      "date": "2026-11-15",
+      "timestamp": "2026-11-15T08:30:03.157111",
+      "theme": "Gear Matched to 548 Species",
+      "asset_type": "image",
+      "primary_asset": "E-gear-1080x1080.jpg",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-15.md"
+    },
+    {
+      "day": 11,
+      "date": "2026-11-16",
+      "timestamp": "2026-11-16T08:30:03.623056",
+      "theme": "AI Fish ID Field Demonstration",
+      "asset_type": "video",
+      "primary_asset": "Blue Seas AI Fish Identification (1).mp4",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-16.md"
+    },
+    {
+      "day": 12,
+      "date": "2026-11-17",
+      "timestamp": "2026-11-17T08:30:04.028708",
+      "theme": "Boat Rigging & Open Water Destinations",
+      "asset_type": "image",
+      "primary_asset": "F-boat-1080x1080.jpg",
+      "webhook_status": "Not Configured",
+      "md_log": "C:\\blueseasfishing\\logs\\social-campaign\\daily-post-2026-11-17.md"
     }
   ],
-  "last_run": "2026-11-09T08:30:02.545897",
-  "total_posted": 7
+  "last_run": "2026-11-17T08:30:04.028708",
+  "total_posted": 12
 };

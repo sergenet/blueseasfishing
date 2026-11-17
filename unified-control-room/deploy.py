@@ -1,13 +1,23 @@
 import os
+import json
 import ftplib
 import sys
 from pathlib import Path
 
-FTP_HOST = 'premium303.web-hosting.com'
-FTP_USER = 'control@blueseasfishing.com'
-FTP_PASS = 'Sako!!BSFControl2026'
-
 LOCAL_DIR = Path(__file__).resolve().parent
+CREDS_FILE = LOCAL_DIR / ".control-room-creds.json"
+
+_creds = {}
+if CREDS_FILE.exists():
+    try:
+        with open(CREDS_FILE, "r", encoding="utf-8") as _cf:
+            _creds = json.load(_cf)
+    except Exception:
+        pass
+
+FTP_HOST = _creds.get("FTP_HOST") or os.environ.get("FTP_HOST", "premium303.web-hosting.com")
+FTP_USER = _creds.get("FTP_USER") or os.environ.get("FTP_USER", "control@blueseasfishing.com")
+FTP_PASS = _creds.get("FTP_PASS") or os.environ.get("FTP_PASS", "")
 
 def upload_dir(ftp, local_path, remote_path=''):
     for item in local_path.iterdir():

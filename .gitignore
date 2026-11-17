@@ -1,3 +1,9 @@
+# Control Room credentials & service accounts
+unified-control-room/ga4-service-account.json
+unified-control-room/*service-account*.json
+unified-control-room/.control-room-creds.json
+unified-control-room/.env*
+
 .env
 .env.*
 !.env.example

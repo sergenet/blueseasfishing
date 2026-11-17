@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T09:00:06.237991+00:00",
+  "lastUpdated": "2026-11-17T19:41:41.505447+00:00",
   "sites": {
     "blueseasfishing": {
       "name": "Blue Seas Fishing",
@@ -229,37 +229,37 @@
     },
     "week": {
       "totals": {
-        "visitors": 18,
-        "pageviews": 26,
-        "sessions": 20,
+        "visitors": 27,
+        "pageviews": 43,
+        "sessions": 31,
         "growth": "+Live GA4",
         "avgDuration": "2m 18s",
         "bounceRate": "42.1%"
       },
       "series": {
         "labels": [
-          "Sun",
-          "Mon",
-          "Tue",
           "Wed",
           "Thu",
           "Fri",
-          "Sat"
+          "Sat",
+          "Sun",
+          "Mon",
+          "Tue"
         ],
         "blueseasfishing": [
-          0,
-          0,
+          7,
           1,
-          0,
           1,
-          0,
+          2,
+          4,
+          3,
           0
         ],
         "gardenwithserge": [
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0
@@ -274,49 +274,80 @@
           0
         ],
         "nexuscut": [
-          0,
-          0,
-          0,
-          0,
+          1,
           0,
           1,
+          0,
+          0,
+          0,
           0
         ],
         "newgiftsandgadgets": [
+          1,
+          1,
+          1,
           0,
-          1,
-          4,
           0,
-          1,
-          1,
+          0,
           0
         ]
       },
       "breakdown": {
         "blueseasfishing": {
-          "visitors": 5,
-          "pageviews": 6,
-          "sessions": 5,
+          "visitors": 19,
+          "pageviews": 19,
+          "sessions": 19,
           "growth": "+Live",
           "topPages": [
+            {
+              "path": "/",
+              "views": 2
+            },
+            {
+              "path": "/ru/destinations/bristol-channel-uk.html",
+              "views": 2
+            },
+            {
+              "path": "/de/species/lesser-amberjack.html",
+              "views": 1
+            },
             {
               "path": "/de/species/marble-catfish.html",
               "views": 1
             },
             {
-              "path": "/es/species/bleak.html",
+              "path": "/de/states/texas.html",
               "views": 1
+            }
+          ],
+          "referrers": [
+            {
+              "source": "Organic Search",
+              "share": 80
             },
             {
-              "path": "/pt/destinations/gulf-of-mexico.html",
-              "views": 1
+              "source": "Direct",
+              "share": 15
             },
             {
-              "path": "/ru/chinook-salmon-identification.html",
-              "views": 1
-            },
+              "source": "Unassigned",
+              "share": 5
+            }
+          ],
+          "devices": {
+            "mobile": 79,
+            "desktop": 21,
+            "tablet": 0
+          }
+        },
+        "gardenwithserge": {
+          "visitors": 1,
+          "pageviews": 1,
+          "sessions": 1,
+          "growth": "+Live",
+          "topPages": [
             {
-              "path": "/ru/fish-id.html",
+              "path": "/crabapple-tree-problems.html",
               "views": 1
             }
           ],
@@ -328,29 +359,6 @@
           ],
           "devices": {
             "mobile": 100,
-            "desktop": 0,
-            "tablet": 0
-          }
-        },
-        "gardenwithserge": {
-          "visitors": 0,
-          "pageviews": 0,
-          "sessions": 0,
-          "growth": "+Live",
-          "topPages": [
-            {
-              "path": "/",
-              "views": 0
-            }
-          ],
-          "referrers": [
-            {
-              "source": "Direct / Organic",
-              "share": 100
-            }
-          ],
-          "devices": {
-            "mobile": 0,
             "desktop": 0,
             "tablet": 0
           }
@@ -379,11 +387,15 @@
           }
         },
         "nexuscut": {
-          "visitors": 1,
-          "pageviews": 1,
-          "sessions": 1,
+          "visitors": 2,
+          "pageviews": 3,
+          "sessions": 2,
           "growth": "+Live",
           "topPages": [
+            {
+              "path": "/",
+              "views": 2
+            },
             {
               "path": "/blog/affiliate-links-in-shorts",
               "views": 1
@@ -396,50 +408,50 @@
             }
           ],
           "devices": {
-            "mobile": 100,
-            "desktop": 0,
+            "mobile": 50,
+            "desktop": 50,
             "tablet": 0
           }
         },
         "newgiftsandgadgets": {
-          "visitors": 12,
-          "pageviews": 19,
-          "sessions": 14,
+          "visitors": 5,
+          "pageviews": 20,
+          "sessions": 9,
           "growth": "+Live",
           "topPages": [
             {
-              "path": "/cold-plunge/",
-              "views": 4
+              "path": "/",
+              "views": 7
             },
             {
-              "path": "/audio/best-noise-canceling-headphones-for-travel-and-focus/",
-              "views": 3
+              "path": "/cold-plunge/",
+              "views": 4
             },
             {
               "path": "/home-office/essential-desk-upgrades/",
               "views": 2
             },
             {
-              "path": "/",
-              "views": 1
+              "path": "/shop/all/",
+              "views": 2
             },
             {
-              "path": "/gift-guides/",
+              "path": "/audio/best-noise-canceling-headphones-for-travel-and-focus/",
               "views": 1
             }
           ],
           "referrers": [
             {
               "source": "Direct",
-              "share": 79
+              "share": 56
             },
             {
               "source": "Unassigned",
-              "share": 14
+              "share": 33
             },
             {
               "source": "Paid Search",
-              "share": 7
+              "share": 11
             }
           ],
           "devices": {
@@ -452,9 +464,9 @@
     },
     "month": {
       "totals": {
-        "visitors": 240,
-        "pageviews": 464,
-        "sessions": 269,
+        "visitors": 231,
+        "pageviews": 431,
+        "sessions": 257,
         "growth": "+Live GA4",
         "avgDuration": "2m 18s",
         "bounceRate": "42.1%"
@@ -467,10 +479,10 @@
           "Week 4"
         ],
         "blueseasfishing": [
-          9,
           11,
-          11,
-          14
+          14,
+          14,
+          16
         ],
         "gardenwithserge": [
           0,
@@ -485,54 +497,54 @@
           0
         ],
         "nexuscut": [
+          11,
           14,
-          17,
-          17,
-          20
+          14,
+          16
         ],
         "newgiftsandgadgets": [
-          25,
-          32,
-          32,
-          38
+          24,
+          30,
+          30,
+          37
         ]
       },
       "breakdown": {
         "blueseasfishing": {
-          "visitors": 45,
-          "pageviews": 157,
-          "sessions": 55,
+          "visitors": 54,
+          "pageviews": 133,
+          "sessions": 59,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 25
-            },
-            {
-              "path": "/fish-id.html",
-              "views": 14
+              "views": 17
             },
             {
               "path": "/community.html",
               "views": 11
             },
             {
-              "path": "/gallery.html",
-              "views": 5
+              "path": "/fish-id.html",
+              "views": 8
+            },
+            {
+              "path": "/de/species/oilfish.html",
+              "views": 2
             },
             {
               "path": "/el/",
-              "views": 4
+              "views": 2
             }
           ],
           "referrers": [
             {
               "source": "Organic Search",
-              "share": 47
+              "share": 67
             },
             {
               "source": "Direct",
-              "share": 45
+              "share": 27
             },
             {
               "source": "Unassigned",
@@ -540,30 +552,30 @@
             }
           ],
           "devices": {
-            "mobile": 67,
-            "desktop": 31,
+            "mobile": 65,
+            "desktop": 33,
             "tablet": 2
           }
         },
         "gardenwithserge": {
-          "visitors": 0,
-          "pageviews": 0,
-          "sessions": 0,
+          "visitors": 1,
+          "pageviews": 1,
+          "sessions": 1,
           "growth": "+Live",
           "topPages": [
             {
-              "path": "/",
-              "views": 0
+              "path": "/crabapple-tree-problems.html",
+              "views": 1
             }
           ],
           "referrers": [
             {
-              "source": "Direct / Organic",
+              "source": "Organic Search",
               "share": 100
             }
           ],
           "devices": {
-            "mobile": 0,
+            "mobile": 100,
             "desktop": 0,
             "tablet": 0
           }
@@ -592,18 +604,18 @@
           }
         },
         "nexuscut": {
-          "visitors": 68,
-          "pageviews": 143,
-          "sessions": 82,
+          "visitors": 54,
+          "pageviews": 130,
+          "sessions": 68,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 45
+              "views": 46
             },
             {
               "path": "/editor",
-              "views": 29
+              "views": 28
             },
             {
               "path": "/blog/edit-comedy-clips",
@@ -611,46 +623,46 @@
             },
             {
               "path": "/downloads",
-              "views": 12
+              "views": 11
             },
             {
               "path": "/tutorial",
-              "views": 8
+              "views": 5
             }
           ],
           "referrers": [
             {
               "source": "Direct",
-              "share": 70
+              "share": 62
             },
             {
               "source": "Organic Search",
-              "share": 16
+              "share": 21
             },
             {
               "source": "AI Assistant",
-              "share": 7
+              "share": 9
             },
             {
               "source": "Unassigned",
-              "share": 7
+              "share": 9
             }
           ],
           "devices": {
-            "mobile": 19,
-            "desktop": 80,
-            "tablet": 1
+            "mobile": 22,
+            "desktop": 76,
+            "tablet": 2
           }
         },
         "newgiftsandgadgets": {
-          "visitors": 127,
-          "pageviews": 164,
-          "sessions": 132,
+          "visitors": 122,
+          "pageviews": 167,
+          "sessions": 129,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 22
+              "views": 27
             },
             {
               "path": "/audio/best-noise-canceling-headphones-for-travel-and-focus/",
@@ -658,15 +670,15 @@
             },
             {
               "path": "/audio/best-wireless-earbuds-2026-noise-canceling-sound-quality-and-battery/",
-              "views": 9
+              "views": 8
             },
             {
               "path": "/home-office/best-ergonomic-chairs-for-your-home-office/",
-              "views": 9
+              "views": 8
             },
             {
-              "path": "/home-office/best-usb-c-hubs-docking-stations-for-mac-and-pc/",
-              "views": 8
+              "path": "/comparisons/roomba-vs-roborock-which-robot-vacuum-is-right-for-you/",
+              "views": 7
             }
           ],
           "referrers": [
@@ -697,9 +709,9 @@
     },
     "total": {
       "totals": {
-        "visitors": 104617,
-        "pageviews": 283357,
-        "sessions": 116013,
+        "visitors": 104635,
+        "pageviews": 283385,
+        "sessions": 116035,
         "growth": "+Live GA4",
         "avgDuration": "2m 18s",
         "bounceRate": "42.1%"
@@ -714,12 +726,12 @@
           "Nov"
         ],
         "blueseasfishing": [
-          6,
-          9,
+          7,
           11,
-          14,
-          9,
-          9
+          15,
+          18,
+          11,
+          11
         ],
         "gardenwithserge": [
           9909,
@@ -739,11 +751,11 @@
         ],
         "nexuscut": [
           25,
-          37,
+          38,
           50,
           62,
-          37,
-          37
+          38,
+          38
         ],
         "newgiftsandgadgets": [
           510,
@@ -756,14 +768,14 @@
       },
       "breakdown": {
         "blueseasfishing": {
-          "visitors": 57,
-          "pageviews": 539,
-          "sessions": 209,
+          "visitors": 74,
+          "pageviews": 556,
+          "sessions": 226,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 213
+              "views": 215
             },
             {
               "path": "/fish-id.html",
@@ -785,11 +797,11 @@
           "referrers": [
             {
               "source": "Direct",
-              "share": 83
+              "share": 78
             },
             {
               "source": "Organic Search",
-              "share": 13
+              "share": 19
             },
             {
               "source": "Unassigned",
@@ -797,14 +809,14 @@
             }
           ],
           "devices": {
-            "mobile": 65,
-            "desktop": 33,
-            "tablet": 2
+            "mobile": 68,
+            "desktop": 31,
+            "tablet": 1
           }
         },
         "gardenwithserge": {
           "visitors": 99094,
-          "pageviews": 272985,
+          "pageviews": 272986,
           "sessions": 108791,
           "growth": "+Live",
           "topPages": [
@@ -913,14 +925,14 @@
           }
         },
         "nexuscut": {
-          "visitors": 249,
-          "pageviews": 577,
-          "sessions": 304,
+          "visitors": 250,
+          "pageviews": 579,
+          "sessions": 305,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 178
+              "views": 180
             },
             {
               "path": "/editor",
@@ -942,7 +954,7 @@
           "referrers": [
             {
               "source": "Direct",
-              "share": 75
+              "share": 74
             },
             {
               "source": "Organic Search",
@@ -969,13 +981,13 @@
         },
         "newgiftsandgadgets": {
           "visitors": 5104,
-          "pageviews": 8659,
-          "sessions": 6508,
+          "pageviews": 8667,
+          "sessions": 6512,
           "growth": "+Live",
           "topPages": [
             {
               "path": "/",
-              "views": 2994
+              "views": 3000
             },
             {
               "path": "/home-office/best-standing-desks/",
